@@ -4,7 +4,10 @@ body {
     background: #111;
     color: white;
 }
-
+.logo {
+    width: 220px;
+    height: auto;
+}
 header {
     display: flex;
     justify-content: space-between;
