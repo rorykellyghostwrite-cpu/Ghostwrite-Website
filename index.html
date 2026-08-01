@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>
-        Ghostwriting, Editing, Journalism & Screenwriting | GhostWrite Studios
+        Independent Intellectual Property Development Studio | GhostWrite Studios
     </title>
 
     <meta
         name="description"
-        content="GhostWrite Studios provides professional ghostwriting, editing, journalism, screenwriting, script coverage, story development, AI content editing, and creative consulting for authors, filmmakers, businesses, and independent creators."
+        content="GhostWrite Studios is an independent intellectual property development studio creating original films, tabletop games, serialized fiction, journalism and multimedia worlds while documenting the process of building a mobile creative studio."
     >
 
     <meta
         name="keywords"
-        content="ghostwriting, professional ghostwriter, editing services, developmental editing, copy editing, line editing, journalism, freelance journalist, article writing, feature writing, screenwriting, screenwriter, screenplay editing, script coverage, script doctor, story development, creative writing, fiction writing, AI content editing, AI decontamination, tabletop game design, narrative design"
+        content="intellectual property development studio, creative IP studio, independent entertainment studio, original IP development, franchise development, transmedia storytelling, worldbuilding studio, narrative design, screenplay development, tabletop game development, trading card game development, mobile creative studio, off-grid writing studio, Ford Explorer mobile office, GhostWrite Studios, Rory Kelly"
     >
 
     <meta name="author" content="Rory Kelly">
 
-    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://ghostwritestudios.com/"
+    >
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="GhostWrite Studios"
+    >
 
     <meta
         property="og:title"
-        content="Ghostwriting, Editing, Journalism & Screenwriting | GhostWrite Studios"
+        content="Independent Intellectual Property Development Studio | GhostWrite Studios"
     >
 
     <meta
         property="og:description"
-        content="Professional ghostwriting, editing, journalism, screenwriting, story development, script coverage, and creative consulting from GhostWrite Studios."
-    >
-
-    <meta
-        property="og:image"
-        content="GhostwriteStudios.png"
+        content="Original films, tabletop games, serialized fiction, journalism and the public journey of building an independent creative studio from the ground up."
     >
 
     <meta
@@ -43,57 +62,245 @@
         content="https://ghostwritestudios.com/"
     >
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta
+        property="og:image"
+        content="https://ghostwritestudios.com/GhostwriteStudios.png"
+    >
 
-    <link rel="canonical" href="https://ghostwritestudios.com/">
+    <meta
+        property="og:image:alt"
+        content="GhostWrite Studios logo"
+    >
 
-    <link rel="stylesheet" href="styles.css">
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Independent Intellectual Property Development Studio"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Follow GhostWrite Studios as it develops original films, tabletop games, serialized fiction and a mobile creative studio."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://ghostwritestudios.com/GhostwriteStudios.png"
+    >
+
+    <style>
+        .home-page {
+            line-height: 1.75;
+        }
+
+        .home-page section {
+            width: min(1100px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding: 4.75rem 0;
+        }
+
+        .home-page .home-hero {
+            padding-top: 6rem;
+            padding-bottom: 5.5rem;
+            text-align: center;
+        }
+
+        .home-page .home-hero p {
+            max-width: 860px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .home-page .eyebrow {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .home-page .hero-actions,
+        .home-page .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .home-page .hero-actions {
+            justify-content: center;
+        }
+
+        .home-page .section-intro,
+        .home-page .question-section p,
+        .home-page .faq-item p {
+            max-width: 860px;
+        }
+
+        .home-page .project-grid,
+        .home-page .pillar-grid,
+        .home-page .journal-grid,
+        .home-page .proof-grid,
+        .home-page .service-grid,
+        .home-page .link-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(250px, 1fr)
+            );
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .home-page .project-card,
+        .home-page .pillar-card,
+        .home-page .journal-card,
+        .home-page .proof-card,
+        .home-page .service-card,
+        .home-page .link-card {
+            padding: 1.75rem;
+            border: 1px solid rgba(127, 127, 127, 0.3);
+            border-radius: 0.8rem;
+        }
+
+        .home-page .project-card h3,
+        .home-page .pillar-card h3,
+        .home-page .journal-card h3,
+        .home-page .proof-card h3,
+        .home-page .service-card h3,
+        .home-page .link-card h3 {
+            margin-top: 0;
+        }
+
+        .home-page .featured-banner {
+            width: 100%;
+            max-width: none;
+            padding: 0;
+        }
+
+        .home-page .featured-banner img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .home-page .quote-block {
+            max-width: 860px;
+            margin: 2.5rem 0;
+            padding: 1.75rem 2rem;
+            border-left: 4px solid currentColor;
+            font-size: 1.15rem;
+        }
+
+        .home-page .studio-list {
+            max-width: 850px;
+            padding-left: 1.25rem;
+        }
+
+        .home-page .studio-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .home-page .faq-item {
+            margin-top: 2.75rem;
+        }
+
+        .home-page .closing-cta {
+            padding-top: 5.5rem;
+            padding-bottom: 5.5rem;
+            text-align: center;
+        }
+
+        .home-page .closing-cta p {
+            max-width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (max-width: 700px) {
+            .home-page section {
+                padding-top: 3.25rem;
+                padding-bottom: 3.25rem;
+            }
+
+            .home-page .home-hero {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+
+            .home-page .hero-actions,
+            .home-page .button-row {
+                flex-direction: column;
+            }
+
+            .home-page .button {
+                text-align: center;
+            }
+        }
+    </style>
 
     <!-- Google tag (gtag.js) -->
     <script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=G-5FK2X831EN">
-    </script>
+        src="https://www.googletagmanager.com/gtag/js?id=G-5FK2X831EN"
+    ></script>
 
     <script>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
-            dataLayer.push(arguments);
+            window.dataLayer.push(arguments);
         }
 
-        gtag('js', new Date());
-        gtag('config', 'G-5FK2X831EN');
+        gtag("js", new Date());
+        gtag("config", "G-5FK2X831EN");
     </script>
 
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
+        "@type": "Organization",
         "name": "GhostWrite Studios",
         "url": "https://ghostwritestudios.com/",
         "logo": "https://ghostwritestudios.com/GhostwriteStudios.png",
-        "description": "GhostWrite Studios provides professional ghostwriting, editing, journalism, screenwriting, script coverage, story development, AI content editing, and creative consulting.",
+        "description": "GhostWrite Studios is an independent intellectual property development studio creating original films, tabletop games, serialized fiction, journalism and multimedia worlds.",
         "founder": {
             "@type": "Person",
             "name": "Rory Kelly",
             "jobTitle": "Founder and Creative Director"
         },
-        "areaServed": {
-            "@type": "Country",
-            "name": "United States"
-        },
-        "serviceType": [
-            "Ghostwriting",
-            "Editing",
-            "Journalism",
+        "knowsAbout": [
+            "Intellectual Property Development",
+            "Franchise Development",
+            "Worldbuilding",
+            "Narrative Design",
             "Screenwriting",
-            "Script Coverage",
-            "Story Development",
+            "Tabletop Game Design",
+            "Trading Card Game Development",
+            "Serialized Fiction",
+            "Journalism",
+            "Creative Development",
             "AI Content Editing",
-            "Creative Consulting",
-            "Tabletop Game Design"
+            "Mobile Creative Work"
         ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "GhostWrite Studios",
+        "url": "https://ghostwritestudios.com/",
+        "description": "Independent intellectual property development studio and creative publication.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "GhostWrite Studios"
+        }
     }
     </script>
 
@@ -104,42 +311,50 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "What is a ghostwriter?",
+                "name": "What is GhostWrite Studios?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "A ghostwriter is a professional writer who creates books, articles, scripts, blogs, speeches, and other written content on behalf of a client. GhostWrite Studios helps clients turn ideas, notes, interviews, and rough drafts into polished work while preserving the client's voice and intent."
+                    "text": "GhostWrite Studios is an independent intellectual property development studio creating original films, tabletop games, serialized fiction, journalism and multimedia worlds while helping creators develop their own intellectual property."
                 }
             },
             {
                 "@type": "Question",
-                "name": "What does a screenwriter do?",
+                "name": "What does an intellectual property development studio do?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "A screenwriter develops stories for film and television using screenplay structure, character development, dialogue, pacing, visual storytelling, and industry-standard formatting. GhostWrite Studios provides original screenwriting, screenplay editing, script coverage, and story development."
+                    "text": "An intellectual property development studio creates and expands original concepts, characters, stories, worlds and systems that can grow across film, games, publishing and other media."
                 }
             },
             {
                 "@type": "Question",
-                "name": "How does the editing process work?",
+                "name": "What original projects is GhostWrite Studios developing?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The editing process begins with the goals of the project and may include developmental editing, structural editing, line editing, copy editing, dialogue refinement, pacing improvements, proofreading, screenplay editing, or AI content cleanup."
+                    "text": "GhostWrite Studios is developing original feature screenplays, the tabletop trading card game Genome: Apex Shifting, the GhostWrite Mini Series, the GhostWrite Studios Journal and a mobile creative studio built inside a 2002 Ford Explorer."
                 }
             },
             {
                 "@type": "Question",
-                "name": "What is the writing process at GhostWrite Studios?",
+                "name": "What is the GhostWrite Studios mobile office?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The writing process begins with the purpose, audience, format, tone, and goals of the project. Research, outlining, drafting, revision, editing, and final polish are then tailored to the needs of the client and the medium."
+                    "text": "The mobile office is an off-grid creative workspace being built inside a 2002 Ford Explorer for writing, editing, publishing, game development and remote creative work while accommodating a dog and cat."
                 }
             },
             {
                 "@type": "Question",
-                "name": "What is AI decontamination?",
+                "name": "Can GhostWrite Studios help develop someone else's intellectual property?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "AI decontamination is the process of editing AI-assisted writing to remove repetitive phrasing, predictable structure, filler language, false confidence, and generic wording so the final piece reads naturally and reflects the author's intended voice."
+                    "text": "Yes. GhostWrite Studios works with creators who need help with concept development, worldbuilding, screenwriting, story structure, character development, editing, narrative design and AI-assisted content refinement."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is Genome: Apex Shifting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Genome: Apex Shifting is an original competitive trading card game developed by GhostWrite Studios. It features evolving ecosystems, creatures, Genes, Afflictions, Climate effects and Hybrid Apex predators."
                 }
             }
         ]
@@ -151,7 +366,10 @@
 
 <header>
 
-    <a href="index.html" aria-label="GhostWrite Studios home">
+    <a
+        href="index.html"
+        aria-label="GhostWrite Studios home"
+    >
         <img
             src="GhostwriteStudios.png"
             alt="GhostWrite Studios logo"
@@ -160,7 +378,13 @@
     </a>
 
     <nav aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Home</a>
+        <a
+            href="index.html"
+            aria-current="page"
+        >
+            Home
+        </a>
+
         <a href="pages/genome.html">Genome</a>
         <a href="pages/portfolio.html">Portfolio</a>
         <a href="pages/writing.html">Writing</a>
@@ -172,201 +396,188 @@
 
 </header>
 
-<main>
+<main class="home-page">
 
-    <section class="hero">
+    <section class="home-hero">
 
         <p class="eyebrow">
-            Independent Writing and Intellectual Property Studio
+            Independent Intellectual Property Development Studio
         </p>
 
         <h1>
-            Professional Ghostwriting, Editing, Journalism and Screenwriting
+            Building Original Worlds, One Franchise at a Time
         </h1>
 
         <p>
-            GhostWrite Studios helps authors, filmmakers, businesses,
-            publications, and independent creators transform ideas into
-            clear, compelling, professionally developed stories.
+            GhostWrite Studios develops original intellectual property across
+            film, tabletop games, serialized fiction, journalism, publishing
+            and emerging media.
         </p>
 
         <p>
-            Services include ghostwriting, developmental editing, copy editing,
-            journalism, feature writing, screenwriting, screenplay editing,
-            script coverage, story development, AI content editing, creative
-            consulting, fiction writing, and narrative design.
+            The studio is also documenting the process of building an
+            independent entertainment company from the ground up, including
+            original screenplays, an upcoming trading card game, a public
+            development journal and an off-grid mobile creative office inside
+            a 2002 Ford Explorer.
         </p>
 
         <div class="hero-actions">
-            <a href="pages/hireme.html" class="button">
-                View Writing Services
+
+            <a
+                href="pages/portfolio.html"
+                class="button"
+            >
+                Explore the Studio
             </a>
 
-            <a href="pages/portfolio.html" class="button button-secondary">
-                Explore the Portfolio
+            <a
+                href="pages/journal.html"
+                class="button button-secondary"
+            >
+                Read the Journal
             </a>
+
         </div>
 
     </section>
 
-    <section class="about">
+    <section class="question-section">
 
-        <h2>What Does GhostWrite Studios Do?</h2>
+        <p class="eyebrow">
+            The Studio
+        </p>
+
+        <h2>
+            What Is GhostWrite Studios?
+        </h2>
 
         <p>
             GhostWrite Studios is an independent creative studio founded by
-            Rory Kelly. The studio develops original intellectual property
-            while providing professional writing, editing, journalism,
-            screenwriting, and creative development services.
+            Rory Kelly to develop original intellectual property with the
+            potential to expand across multiple forms of media.
         </p>
 
         <p>
-            Every project is approached with the same goal: create writing that
-            is clear, memorable, emotionally grounded, and suited to its intended
-            audience. That may mean strengthening a screenplay, ghostwriting an
-            article, editing a manuscript, developing a fictional world, or
-            turning a rough concept into a complete narrative.
+            The studio creates screenplays, tabletop games, serialized fiction,
+            journalism, characters, worlds and narrative systems designed to
+            become larger than any single project.
+        </p>
+
+        <p>
+            GhostWrite Studios also works with independent creators who need
+            help turning early ideas, unfinished stories or loosely connected
+            concepts into structured intellectual property.
         </p>
 
     </section>
 
-    <section class="services">
+    <section>
 
-        <h2>Professional Writing and Editing Services</h2>
-
-        <p>
-            GhostWrite Studios offers flexible creative services for clients
-            who need original writing, thoughtful editing, strong storytelling,
-            or help shaping an unfinished idea.
+        <p class="eyebrow">
+            Original Intellectual Property
         </p>
 
-        <div class="cards">
+        <h2>
+            What Is GhostWrite Studios Building?
+        </h2>
 
-            <article class="card">
+        <p class="section-intro">
+            GhostWrite Studios is building several interconnected creative
+            projects while documenting the practical work required to develop
+            them.
+        </p>
 
-                <h3>Ghostwriting Services</h3>
+        <div class="project-grid">
+
+            <article class="project-card">
+
+                <h3>
+                    🎲 Genome: Apex Shifting
+                </h3>
 
                 <p>
-                    Professional ghostwriting for articles, blogs, personal
-                    essays, fiction, scripts, branded content, newsletters,
-                    speeches, and other written projects.
+                    An original competitive trading card game built around
+                    evolving ecosystems, creatures, Genes, Afflictions,
+                    Climate effects and Hybrid Apex predators.
                 </p>
 
                 <p>
-                    The goal is not to replace the client's voice. It is to make
-                    that voice clearer, stronger, and ready for publication.
+                    Genome is currently in alpha development and local
+                    playtesting.
                 </p>
 
-                <a href="pages/hireme.html">
-                    Learn about ghostwriting services
+                <a href="pages/genome.html">
+                    Explore Genome
                 </a>
 
             </article>
 
-            <article class="card">
+            <article class="project-card">
 
-                <h3>Editing Services</h3>
+                <h3>
+                    🎬 Original Screenplays
+                </h3>
 
                 <p>
-                    Editing services may include developmental editing,
-                    structural editing, line editing, copy editing,
-                    proofreading, dialogue editing, pacing revisions, and
-                    stylistic refinement.
+                    Feature films, horror, science fiction, thrillers and
+                    original cinematic worlds built around character,
+                    atmosphere and expandable story concepts.
                 </p>
 
                 <p>
-                    Editing is tailored to the project rather than forced through
-                    a generic checklist created by people who apparently believe
-                    every sentence should emerge from the same beige factory.
-                </p>
-
-                <a href="pages/hireme.html">
-                    Learn about professional editing
-                </a>
-
-            </article>
-
-            <article class="card">
-
-                <h3>Journalism and Article Writing</h3>
-
-                <p>
-                    Journalism and feature writing services include researched
-                    articles, interviews, profiles, cultural commentary,
-                    business content, explanatory journalism, and long-form
-                    editorial writing.
-                </p>
-
-                <p>
-                    Each piece is built around accuracy, readability, narrative
-                    flow, and a clear understanding of the intended audience.
-                </p>
-
-                <a href="pages/writing.html">
-                    View journalism and article writing
-                </a>
-
-            </article>
-
-            <article class="card">
-
-                <h3>Screenwriting and Script Development</h3>
-
-                <p>
-                    Screenwriting services include original screenplay
-                    development, screenplay editing, script coverage, story
-                    structure, dialogue refinement, character development,
-                    pacing analysis, and script consulting.
-                </p>
-
-                <p>
-                    GhostWrite Studios develops original feature films and genre
-                    projects while also helping filmmakers and writers improve
-                    their own scripts.
+                    The screenplay portfolio includes multiple original genre
+                    projects developed through GhostWrite Studios.
                 </p>
 
                 <a href="pages/portfolio.html">
-                    Explore screenwriting work
+                    View the Portfolio
                 </a>
 
             </article>
 
-            <article class="card">
+            <article class="project-card">
 
-                <h3>AI Content Editing and Decontamination</h3>
+                <h3>
+                    🎭 GhostWrite Mini Series
+                </h3>
 
                 <p>
-                    AI-assisted writing often contains repetitive phrasing,
-                    generic transitions, inflated claims, false certainty,
-                    predictable structure, and language that sounds polished
-                    without sounding human.
+                    An illustrated workplace comedy featuring Inkwell, Glyph,
+                    BooRadley, The Saurus and Rory.
                 </p>
 
                 <p>
-                    AI content editing removes those patterns while preserving
-                    the useful ideas, intended meaning, and individual voice of
-                    the writer.
+                    The series turns ghostwriting, editing, AI cleanup and
+                    professional creative work into recurring characters and
+                    short-form stories.
                 </p>
 
-                <a href="pages/hireme.html">
-                    Learn about AI content editing
+                <a href="pages/journal/ghostwrite-mini-series.html">
+                    Meet the GhostWrite Team
                 </a>
 
             </article>
 
-            <article class="card">
+            <article class="project-card">
 
-                <h3>Story Development and Creative Consulting</h3>
+                <h3>
+                    📖 GhostWrite Studios Journal
+                </h3>
 
                 <p>
-                    Creative consulting supports authors, screenwriters,
-                    filmmakers, game designers, and independent creators who
-                    need help with concepts, story structure, character arcs,
-                    worldbuilding, narrative design, or franchise development.
+                    A growing publication covering writing, editing, digital
+                    nomad life, independent business development, serialized
+                    fiction, tabletop gaming and the creation of original IP.
                 </p>
 
-                <a href="pages/contact.html">
-                    Discuss a creative project
+                <p>
+                    The Journal documents both the finished work and the
+                    imperfect process behind it.
+                </p>
+
+                <a href="pages/journal.html">
+                    Read the Journal
                 </a>
 
             </article>
@@ -375,309 +586,573 @@
 
     </section>
 
-    <section class="aeo">
+    <section class="question-section">
 
-        <h2>What Is a Ghostwriter?</h2>
+        <p class="eyebrow">
+            A Studio Built Differently
+        </p>
+
+        <h2>
+            Why Is GhostWrite Studios Building a Mobile Creative Office?
+        </h2>
 
         <p>
-            A ghostwriter is a professional writer who creates content on behalf
-            of another person, business, or organization. The client provides
-            the idea, experience, message, or source material, and the
-            ghostwriter develops it into a polished finished piece.
+            GhostWrite Studios is developing an off-grid creative office inside
+            a 2002 Ford Explorer.
         </p>
 
         <p>
-            Ghostwriting may include books, articles, blogs, scripts, personal
-            essays, newsletters, speeches, branded content, fiction, and other
-            forms of professional writing.
+            The project is designed to support screenwriting, editing,
+            publishing, game development, remote client work and digital
+            production without relying on a permanent office.
         </p>
 
         <p>
-            At GhostWrite Studios, the ghostwriting process is built around the
-            client's voice, goals, audience, and intended outcome.
+            The build must also safely accommodate Baldur, a 55-pound dog, and
+            Loki, a cat, while managing climate control, power, storage,
+            workspace, internet access and daily living inside a compact
+            vehicle.
         </p>
 
-    </section>
+        <div class="quote-block">
+            Most digital nomad content shows the laptop after the problem has
+            already been solved. GhostWrite Studios is documenting the wiring,
+            layout failures, pet logistics, heat, storage, power calculations
+            and other inconvenient details that usually disappear before the
+            photograph is taken.
+        </div>
 
-    <section class="aeo">
-
-        <h2>What Does a Screenwriter Do?</h2>
-
-        <p>
-            A screenwriter creates and develops stories for film, television,
-            streaming, short films, and other visual media. Screenwriting
-            combines story structure, character development, dialogue, pacing,
-            scene construction, visual storytelling, and screenplay formatting.
-        </p>
-
-        <p>
-            A professional screenwriter may create an original screenplay,
-            adapt existing material, rewrite a script, provide script coverage,
-            revise dialogue, strengthen character arcs, or help a filmmaker
-            solve structural problems before production.
-        </p>
-
-        <p>
-            GhostWrite Studios specializes in original feature screenplays,
-            genre storytelling, screenplay editing, script development, and
-            story consulting.
-        </p>
-
-    </section>
-
-    <section class="aeo">
-
-        <h2>How Do I Edit a Manuscript, Article or Screenplay?</h2>
-
-        <p>
-            Effective editing begins by identifying what the project is supposed
-            to accomplish. A screenplay requires different editing decisions
-            than a news feature, personal essay, novel, website, or branded
-            article.
-        </p>
-
-        <p>
-            The first editing pass focuses on structure, logic, pacing,
-            organization, character development, and missing information. Later
-            passes address sentence clarity, dialogue, consistency, grammar,
-            repetition, tone, formatting, and proofreading.
-        </p>
-
-        <p>
-            Good editing strengthens the writer's purpose without flattening the
-            work into a generic style. The finished piece should still sound like
-            the writer, only sharper, clearer, and less likely to wander into a
-            swamp and forget why it went there.
-        </p>
-
-    </section>
-
-    <section class="aeo">
-
-        <h2>What Is the Writing Process at GhostWrite Studios?</h2>
-
-        <p>
-            Every writing project begins with the purpose of the work, the
-            intended audience, the desired tone, the format, and the outcome the
-            client wants to achieve.
-        </p>
-
-        <ol>
-            <li>
-                <strong>Discovery:</strong>
-                Review the concept, goals, audience, references, source
-                materials, and project requirements.
-            </li>
-
-            <li>
-                <strong>Research:</strong>
-                Gather the information, context, examples, and supporting
-                details needed to write responsibly and accurately.
-            </li>
-
-            <li>
-                <strong>Development:</strong>
-                Build the structure, outline, argument, plot, scenes, or
-                narrative framework.
-            </li>
-
-            <li>
-                <strong>Drafting:</strong>
-                Create the first complete version in the appropriate voice,
-                format, and style.
-            </li>
-
-            <li>
-                <strong>Revision:</strong>
-                Strengthen clarity, structure, pacing, character, logic,
-                tone, and emotional impact.
-            </li>
-
-            <li>
-                <strong>Final Editing:</strong>
-                Complete line editing, copy editing, proofreading, formatting,
-                and delivery.
-            </li>
-        </ol>
-
-        <p>
-            The exact process changes depending on whether the project is a
-            screenplay, article, manuscript, website, fictional story, game
-            narrative, or client ghostwriting assignment.
-        </p>
-
-    </section>
-
-    <section class="aeo">
-
-        <h2>What Is AI Decontamination?</h2>
-
-        <p>
-            AI decontamination is the process of revising AI-assisted writing so
-            that it reads naturally, accurately, and consistently.
-        </p>
-
-        <p>
-            The process may involve removing repetitive sentence structures,
-            generic transitions, filler language, unnecessary summaries,
-            invented details, vague claims, excessive formatting, false
-            confidence, and phrasing commonly associated with AI-generated
-            content.
-        </p>
-
-        <p>
-            AI decontamination does not mean hiding the use of technology. It
-            means taking responsibility for the finished work and making sure
-            the final piece communicates clearly, reflects the writer's intent,
-            and deserves to be read by another human being.
-        </p>
-
-    </section>
-
-    <section class="featured-project">
-
-        <h2>What Is Genome: Apex Shifting?</h2>
-
-        <p>
-            Genome: Apex Shifting is an original strategic tabletop card game
-            developed by GhostWrite Studios. The game combines evolving
-            creatures, ecosystem-based strategy, tactical decision-making,
-            genetic traits, climate effects, afflictions, and competitive play.
-        </p>
-
-        <p>
-            Genome is the studio's first original tabletop game intellectual
-            property and is currently being developed through prototype testing,
-            gameplay refinement, community feedback, and local playtesting.
-        </p>
-
-        <a href="pages/genome.html" class="button">
-            Explore Genome: Apex Shifting
+        <a
+            href="pages/journal/digital-nomad.html"
+            class="button"
+        >
+            Follow the Mobile Studio Build
         </a>
 
     </section>
 
-    <section class="journal-preview">
+    <section>
 
-        <h2>What Is the GhostWrite Studios Journal?</h2>
-
-        <p>
-            The GhostWrite Studios Journal is a collection of articles,
-            commentary, creative work, development notes, guest contributions,
-            and practical resources organized into five main topics.
+        <p class="eyebrow">
+            Building in Public
         </p>
 
-        <div class="cards">
+        <h2>
+            What Makes GhostWrite Studios Different?
+        </h2>
 
-            <article class="card">
-                <h3>Editing</h3>
+        <p class="section-intro">
+            Most creative studios present themselves after the difficult part
+            has already been edited out. GhostWrite Studios is documenting what
+            happens before the polished launch.
+        </p>
+
+        <div class="pillar-grid">
+
+            <article class="pillar-card">
+
+                <h3>
+                    Original Projects
+                </h3>
+
                 <p>
-                    Developmental editing, self-editing, screenplay editing,
-                    dialogue, revision, AI decontamination, and preserving the
-                    writer's voice.
+                    The studio is actively developing its own screenplays,
+                    tabletop game, illustrated series and publishing platform.
                 </p>
+
             </article>
 
-            <article class="card">
-                <h3>Writing</h3>
+            <article class="pillar-card">
+
+                <h3>
+                    Public Development
+                </h3>
+
                 <p>
-                    Screenwriting, fiction, journalism, storytelling, character
-                    development, structure, horror, comedy, and creative craft.
+                    The Journal records experiments, prototypes, failures,
+                    rewrites, discoveries and practical lessons as they happen.
                 </p>
+
             </article>
 
-            <article class="card">
-                <h3>Digital Nomad</h3>
+            <article class="pillar-card">
+
+                <h3>
+                    Multiple Media
+                </h3>
+
                 <p>
-                    Building an independent creative studio, remote work,
-                    entrepreneurship, travel, productivity, and creating under
-                    less-than-perfect circumstances.
+                    GhostWrite Studios approaches stories as expandable worlds
+                    rather than isolated manuscripts or one-time projects.
                 </p>
+
             </article>
 
-            <article class="card">
-                <h3>GhostWrite Mini Series</h3>
+            <article class="pillar-card">
+
+                <h3>
+                    Mobile Infrastructure
+                </h3>
+
                 <p>
-                    Serialized fiction, short stories, recurring characters,
-                    narrative experiments, and behind-the-scenes development.
+                    The studio is building a functioning creative office capable
+                    of operating from the road instead of waiting for ideal
+                    circumstances.
                 </p>
+
             </article>
 
-            <article class="card">
-                <h3>Game Night</h3>
+            <article class="pillar-card">
+
+                <h3>
+                    Creator Collaboration
+                </h3>
+
                 <p>
-                    Tabletop gaming, game design, Genome development,
-                    playtesting, card games, guest articles, local game stores,
-                    designer interviews, and community features.
+                    Client services are grounded in the same practical
+                    development process used to build the studio's own IP.
                 </p>
+
+            </article>
+
+            <article class="pillar-card">
+
+                <h3>
+                    Real Constraints
+                </h3>
+
+                <p>
+                    The studio is being built without pretending money,
+                    transportation, housing, animals, technology or time are
+                    abstract concerns.
+                </p>
+
             </article>
 
         </div>
 
-        <a href="pages/journal.html" class="button">
-            Visit the Journal
-        </a>
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            Intellectual Property Development
+        </p>
+
+        <h2>
+            What Does an IP Development Studio Do?
+        </h2>
+
+        <p>
+            An intellectual property development studio creates and expands
+            original concepts that can grow across multiple forms of media.
+        </p>
+
+        <p>
+            The work may include worldbuilding, character development,
+            screenwriting, game mechanics, story architecture, franchise
+            planning, visual identity, lore, publishing and narrative design.
+        </p>
+
+        <p>
+            Instead of treating every screenplay, story, game or character as a
+            disconnected product, IP development looks for the larger world,
+            audience and long-term potential surrounding the idea.
+        </p>
 
     </section>
 
-    <section class="bio">
+    <section>
 
-        <h2>Who Is Rory Kelly?</h2>
-
-        <p>
-            Rory Kelly is the founder and creative director of GhostWrite
-            Studios. His work includes screenwriting, journalism, fiction,
-            editing, ghostwriting, AI content development, tabletop game design,
-            narrative design, and original intellectual property development.
+        <p class="eyebrow">
+            Studio Capabilities
         </p>
 
-        <p>
-            After years working as a professional chef, Rory left the kitchen to
-            pursue storytelling full time. That background still influences his
-            creative process through discipline, adaptability, practical problem
-            solving, and the understanding that every finished product is built
-            through preparation, revision, timing, and a willingness to fix what
-            is not working.
-        </p>
+        <h2>
+            How Does GhostWrite Studios Develop Original IP?
+        </h2>
 
-        <p>
-            GhostWrite Studios now serves as the home for Rory's growing
-            portfolio of film, writing, journalism, tabletop gaming, and
-            multimedia projects.
-        </p>
+        <div class="proof-grid">
 
-        <a href="pages/about.html">
-            Learn more about Rory Kelly and GhostWrite Studios
-        </a>
+            <article class="proof-card">
+
+                <h3>
+                    Story Development
+                </h3>
+
+                <p>
+                    Concepts, conflict, structure, themes, characters, stakes,
+                    reveals and emotional progression.
+                </p>
+
+            </article>
+
+            <article class="proof-card">
+
+                <h3>
+                    Worldbuilding
+                </h3>
+
+                <p>
+                    Mythology, environments, systems, factions, history,
+                    rules, culture and narrative continuity.
+                </p>
+
+            </article>
+
+            <article class="proof-card">
+
+                <h3>
+                    Screenwriting
+                </h3>
+
+                <p>
+                    Feature scripts, pilots, dialogue, pacing, scene
+                    construction and visual storytelling.
+                </p>
+
+            </article>
+
+            <article class="proof-card">
+
+                <h3>
+                    Game Development
+                </h3>
+
+                <p>
+                    Mechanics, card systems, lore, balance, prototype testing
+                    and player experience.
+                </p>
+
+            </article>
+
+            <article class="proof-card">
+
+                <h3>
+                    Publishing
+                </h3>
+
+                <p>
+                    Journalism, essays, serialized fiction, development notes
+                    and audience-building content.
+                </p>
+
+            </article>
+
+            <article class="proof-card">
+
+                <h3>
+                    Narrative Refinement
+                </h3>
+
+                <p>
+                    Editing, rewriting, AI decontamination, consistency,
+                    clarity and voice preservation.
+                </p>
+
+            </article>
+
+        </div>
 
     </section>
 
-    <section class="cta">
+    <section>
 
-        <h2>Do You Need a Ghostwriter, Editor, Journalist or Screenwriter?</h2>
+        <p class="eyebrow">
+            The Journal
+        </p>
+
+        <h2>
+            Why Follow GhostWrite Studios?
+        </h2>
+
+        <p class="section-intro">
+            The GhostWrite Studios Journal provides an ongoing reason to return
+            by documenting the creative and practical work behind the studio.
+        </p>
+
+        <div class="journal-grid">
+
+            <article class="journal-card">
+
+                <h3>
+                    ✍️ Writing
+                </h3>
+
+                <p>
+                    Screenwriting, fiction, journalism, dialogue, story
+                    structure and creative craft.
+                </p>
+
+                <a href="pages/journal/writing.html">
+                    Explore Writing
+                </a>
+
+            </article>
+
+            <article class="journal-card">
+
+                <h3>
+                    📝 Editing
+                </h3>
+
+                <p>
+                    Developmental editing, revision, screenplay editing,
+                    author voice and AI content cleanup.
+                </p>
+
+                <a href="pages/journal/editing.html">
+                    Explore Editing
+                </a>
+
+            </article>
+
+            <article class="journal-card">
+
+                <h3>
+                    🚙 Digital Nomad
+                </h3>
+
+                <p>
+                    Mobile office construction, remote work, pets, power,
+                    storage, travel and building a studio on the road.
+                </p>
+
+                <a href="pages/journal/digital-nomad.html">
+                    Explore Digital Nomad
+                </a>
+
+            </article>
+
+            <article class="journal-card">
+
+                <h3>
+                    🎭 GhostWrite Mini Series
+                </h3>
+
+                <p>
+                    Illustrated characters, writing humor, editing problems
+                    and the spectral staff behind the studio.
+                </p>
+
+                <a href="pages/journal/ghostwrite-mini-series.html">
+                    Meet the Team
+                </a>
+
+            </article>
+
+            <article class="journal-card">
+
+                <h3>
+                    🎲 Game Night
+                </h3>
+
+                <p>
+                    Tabletop games, TCG development, playtesting, local game
+                    communities and Genome development.
+                </p>
+
+                <a href="pages/journal/game-night.html">
+                    Explore Game Night
+                </a>
+
+            </article>
+
+        </div>
+
+        <div class="button-row">
+
+            <a
+                href="pages/journal.html"
+                class="button"
+            >
+                Visit the Journal
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            Working With the Studio
+        </p>
+
+        <h2>
+            Can GhostWrite Studios Help Develop My Intellectual Property?
+        </h2>
 
         <p>
-            GhostWrite Studios works with authors, filmmakers, entrepreneurs,
-            businesses, publications, game designers, and independent creators
-            who need professional writing, editing, story development, or
-            creative support.
+            Yes. GhostWrite Studios works with creators who need practical help
+            developing stories, characters, worlds, screenplays, games and
+            other original concepts.
         </p>
 
         <p>
-            Whether the project begins as a rough idea, partial draft, unfinished
-            screenplay, interview transcript, article pitch, or chaotic pile of
-            notes, the next step is turning it into something clear, complete,
-            and useful.
+            Support may include worldbuilding, story structure, character
+            development, screenwriting, editing, ghostwriting, narrative
+            design, AI content decontamination and creative consulting.
+        </p>
+
+        <p>
+            These services support the larger identity of the studio rather
+            than defining it. GhostWrite Studios exists to build original IP
+            and to help other creators build theirs.
+        </p>
+
+        <div class="button-row">
+
+            <a
+                href="pages/hireme.html"
+                class="button"
+            >
+                Explore Creative Services
+            </a>
+
+            <a
+                href="pages/contact.html"
+                class="button button-secondary"
+            >
+                Discuss Your Project
+            </a>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <p class="eyebrow">
+            Studio Questions
+        </p>
+
+        <h2>
+            Frequently Asked Questions
+        </h2>
+
+        <article class="faq-item">
+
+            <h3>
+                Is GhostWrite Studios a Writing Agency?
+            </h3>
+
+            <p>
+                No. GhostWrite Studios provides writing and editing services,
+                but its central identity is an independent intellectual
+                property development studio creating original projects across
+                film, games, publishing and multimedia.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Is GhostWrite Studios Developing Its Own Projects?
+            </h3>
+
+            <p>
+                Yes. Current projects include original feature screenplays,
+                Genome: Apex Shifting, the GhostWrite Mini Series, the
+                GhostWrite Studios Journal and the mobile creative office.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Does GhostWrite Studios Work Across Multiple Media?
+            </h3>
+
+            <p>
+                Yes. The studio develops intellectual property through film,
+                tabletop games, journalism, serialized fiction, illustration,
+                publishing and narrative design.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                What Is the Mobile Creative Studio?
+            </h3>
+
+            <p>
+                It is an off-grid office being built inside a 2002 Ford
+                Explorer to support writing, editing, publishing, game
+                development and remote creative work while traveling with a
+                dog and cat.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Can I Follow the Development Process?
+            </h3>
+
+            <p>
+                Yes. The GhostWrite Studios Journal documents the studio's
+                creative work, game development, mobile office build, writing,
+                editing and business development.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Can I Hire GhostWrite Studios?
+            </h3>
+
+            <p>
+                Yes. GhostWrite Studios works with creators who need help with
+                intellectual property development, screenwriting, editing,
+                story structure, worldbuilding, ghostwriting and creative
+                consulting.
+            </p>
+
+        </article>
+
+    </section>
+
+    <section class="closing-cta">
+
+        <p class="eyebrow">
+            Build Something Worth Remembering
+        </p>
+
+        <h2>
+            Develop the World Behind the Idea
+        </h2>
+
+        <p>
+            Whether you are creating a screenplay, tabletop game, fictional
+            universe, serialized project or original franchise, GhostWrite
+            Studios can help develop the structure, characters, world and
+            narrative systems needed to move the idea forward.
         </p>
 
         <div class="hero-actions">
-            <a href="pages/hireme.html" class="button">
-                View Services
+
+            <a
+                href="pages/hireme.html"
+                class="button"
+            >
+                Work With GhostWrite Studios
             </a>
 
-            <a href="pages/contact.html" class="button button-secondary">
-                Contact GhostWrite Studios
+            <a
+                href="pages/contact.html"
+                class="button button-secondary"
+            >
+                Contact the Studio
             </a>
+
         </div>
 
     </section>
@@ -691,7 +1166,10 @@
     </p>
 
     <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="pages/genome.html">Genome</a>
         <a href="pages/portfolio.html">Portfolio</a>
+        <a href="pages/writing.html">Writing</a>
         <a href="pages/journal.html">Journal</a>
         <a href="pages/hireme.html">Hire Me</a>
         <a href="pages/about.html">About</a>
@@ -701,4 +1179,5 @@
 </footer>
 
 </body>
+
 </html>
