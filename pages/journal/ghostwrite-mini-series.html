@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        GhostWrite Mini Series | Writing, Editing and AI Decontamination Characters
+    </title>
+
+    <meta
+        name="description"
+        content="Meet the GhostWrite Mini Series team: Inkwell, Glyph, BooRadley, The Saurus and Rory Kelly. A humorous illustrated series about ghostwriting, editing, AI decontamination, journalism and creative work."
+    >
+
+    <meta
+        name="keywords"
+        content="GhostWrite Mini Series, writing comic, editing characters, ghostwriting series, AI decontamination, AI content editing, writing humor, editing humor, Inkwell GhostWrite, Glyph GhostWrite, BooRadley GhostWrite, The Saurus redundancy checker, Rory Kelly, GhostWrite Studios"
+    >
+
+    <meta name="author" content="Rory Kelly">
+
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://ghostwritestudios.com/pages/journal/ghostwrite-mini-series.html"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../styles.css"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="GhostWrite Studios"
+    >
+
+    <meta
+        property="og:title"
+        content="Meet the GhostWrite Mini Series Team"
+    >
+
+    <meta
+        property="og:description"
+        content="Meet the illustrated spectral team behind GhostWrite Studios: writers, editors, investigators and one deeply judgmental thesaurus."
+    >
+
+    <meta
+        property="og:url"
+        content="https://ghostwritestudios.com/pages/journal/ghostwrite-mini-series.html"
+    >
+
+    <meta
+        property="og:image"
+        content="https://ghostwritestudios.com/ghostwrite-rory.png"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="Rory, the exhausted ghost writer from the GhostWrite Mini Series"
+    >
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="The GhostWrite Mini Series"
+    >
+
+    <meta
+        name="twitter:description"
+        content="An illustrated series about writing, editing, AI cleanup and the strange creatures responsible for professional content."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://ghostwritestudios.com/ghostwrite-rory.png"
+    >
+
+    <style>
+        .series-page {
+            line-height: 1.75;
+        }
+
+        .series-page section {
+            width: min(1100px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding: 4.5rem 0;
+        }
+
+        .series-page .series-hero {
+            padding-top: 5.5rem;
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+
+        .series-page .series-hero p {
+            max-width: 820px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .series-page .eyebrow {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .series-page .hero-actions,
+        .series-page .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .series-page .hero-actions {
+            justify-content: center;
+        }
+
+        .series-page .cast-list {
+            display: grid;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .series-page .character-card {
+            display: grid;
+            grid-template-columns: minmax(260px, 0.85fr) minmax(300px, 1.15fr);
+            gap: 3rem;
+            align-items: center;
+            padding: 2rem;
+            border: 1px solid rgba(127, 127, 127, 0.3);
+            border-radius: 1rem;
+        }
+
+        .series-page .character-card:nth-child(even) .character-image {
+            order: 2;
+        }
+
+        .series-page .character-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 620px;
+            object-fit: contain;
+            border-radius: 0.75rem;
+        }
+
+        .series-page .character-copy h3 {
+            margin-top: 0;
+            margin-bottom: 0.25rem;
+            font-size: clamp(1.6rem, 3vw, 2.25rem);
+        }
+
+        .series-page .character-role {
+            margin-top: 0;
+            font-weight: 700;
+        }
+
+        .series-page .series-grid,
+        .series-page .related-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(250px, 1fr)
+            );
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .series-page .series-card,
+        .series-page .related-card {
+            padding: 1.75rem;
+            border: 1px solid rgba(127, 127, 127, 0.3);
+            border-radius: 0.75rem;
+        }
+
+        .series-page .series-card h3,
+        .series-page .related-card h3 {
+            margin-top: 0;
+        }
+
+        .series-page .section-intro,
+        .series-page .question-section p,
+        .series-page .faq-item p {
+            max-width: 850px;
+        }
+
+        .series-page .team-line {
+            max-width: 900px;
+            margin: 2.5rem auto 0;
+            padding: 2rem;
+            border-left: 4px solid currentColor;
+            font-size: 1.15rem;
+        }
+
+        .series-page .episode-card {
+            padding: 1.75rem;
+            border: 1px solid rgba(127, 127, 127, 0.3);
+            border-radius: 0.75rem;
+        }
+
+        .series-page .episode-label {
+            margin-bottom: 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .series-page .faq-item {
+            margin-top: 2.75rem;
+        }
+
+        .series-page .closing-cta {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+
+        .series-page .closing-cta p {
+            max-width: 780px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (max-width: 800px) {
+            .series-page .character-card {
+                grid-template-columns: 1fr;
+            }
+
+            .series-page .character-card:nth-child(even) .character-image {
+                order: 0;
+            }
+
+            .series-page .character-image img {
+                max-height: 500px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .series-page section {
+                padding-top: 3.25rem;
+                padding-bottom: 3.25rem;
+            }
+
+            .series-page .series-hero {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+
+            .series-page .hero-actions,
+            .series-page .button-row {
+                flex-direction: column;
+            }
+
+            .series-page .button {
+                text-align: center;
+            }
+
+            .series-page .character-card {
+                padding: 1.25rem;
+            }
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-5FK2X831EN"
+    ></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            window.dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+        gtag("config", "G-5FK2X831EN");
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CreativeWorkSeries",
+        "name": "The GhostWrite Mini Series",
+        "url": "https://ghostwritestudios.com/pages/journal/ghostwrite-mini-series.html",
+        "description": "An illustrated humorous series about ghostwriting, editing, journalism, AI content cleanup and creative work.",
+        "creator": {
+            "@type": "Person",
+            "name": "Rory Kelly"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "GhostWrite Studios",
+            "url": "https://ghostwritestudios.com/"
+        },
+        "genre": [
+            "Comedy",
+            "Creative Writing",
+            "Workplace Humor",
+            "Writing Education"
+        ],
+        "character": [
+            {
+                "@type": "Person",
+                "name": "Inkwell",
+                "description": "Lead writer and chronic typist for the GhostWrite team."
+            },
+            {
+                "@type": "Person",
+                "name": "Glyph",
+                "description": "Inspector of patterns and finder of suspicious textual tells."
+            },
+            {
+                "@type": "Person",
+                "name": "BooRadley",
+                "description": "AI decontamination specialist responsible for cleaning and restoring drafts."
+            },
+            {
+                "@type": "Person",
+                "name": "The Saurus",
+                "description": "Staff redundancy checker and sworn enemy of repetitive language."
+            },
+            {
+                "@type": "Person",
+                "name": "Rory",
+                "description": "Editor-in-chief, thinkbrainer and exhausted human-adjacent presence behind the team."
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the GhostWrite Mini Series?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The GhostWrite Mini Series is an illustrated humorous series about a spectral writing and editing team responsible for ghostwriting, pattern detection, AI content cleanup, redundancy checking and creative direction."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Who are the GhostWrite Mini Series characters?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The primary characters are Inkwell, Glyph, BooRadley, The Saurus and Rory."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does Inkwell do?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Inkwell is the lead writer and chronic typist. He specializes in ghostwriting, collaboration, prose and maintaining a strong narrative voice."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does Glyph do?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Glyph investigates patterns, repetition, suspiciously generic writing and other clues that reveal weaknesses in a draft."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does BooRadley do?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "BooRadley is the AI decontamination specialist. He cleans AI-assisted drafts, restores voice and removes generic or mechanical writing patterns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does The Saurus do?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Saurus checks writing for repetition, redundancy and overused language."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ghostwritestudios.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Journal",
+                "item": "https://ghostwritestudios.com/pages/journal.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "GhostWrite Mini Series",
+                "item": "https://ghostwritestudios.com/pages/journal/ghostwrite-mini-series.html"
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+
+<header>
+
+    <a
+        href="../../index.html"
+        aria-label="GhostWrite Studios home"
+    >
+        <img
+            class="logo"
+            src="../../GhostwriteStudios.png"
+            alt="GhostWrite Studios logo"
+        >
+    </a>
+
+    <nav aria-label="Main navigation">
+        <a href="../../index.html">Home</a>
+        <a href="../genome.html">Genome</a>
+        <a href="../portfolio.html">Portfolio</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../journal.html">Journal</a>
+        <a href="../hireme.html">Hire Me</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<main class="series-page">
+
+    <section class="series-hero">
+
+        <p class="eyebrow">
+            GhostWrite Studios Journal
+        </p>
+
+        <h1>
+            Meet the GhostWrite Mini Series
+        </h1>
+
+        <p>
+            GhostWrite Studios is staffed by a small, highly specialized
+            spectral unit responsible for writing, editing, investigating,
+            decontaminating and repeatedly asking whether that sentence truly
+            needs another adjective.
+        </p>
+
+        <p>
+            The GhostWrite Mini Series turns the writing and editing process
+            into an illustrated workplace comedy populated by ghosts, one
+            suspiciously literate dinosaur and the tired editor attempting to
+            keep all of them productive.
+        </p>
+
+        <p>
+            They do not require employee benefits. They do require coffee,
+            functioning grammar and occasional supervision.
+        </p>
+
+        <div class="hero-actions">
+
+            <a
+                href="#meet-the-team"
+                class="button"
+            >
+                Meet the Team
+            </a>
+
+            <a
+                href="../journal.html"
+                class="button button-secondary"
+            >
+                Return to the Journal
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            Illustrated Writing Comedy
+        </p>
+
+        <h2>
+            What Is the GhostWrite Mini Series?
+        </h2>
+
+        <p>
+            The GhostWrite Mini Series is an illustrated comedy about the
+            strange people and creatures responsible for making written work
+            clear, credible, intentional and recognizably human.
+        </p>
+
+        <p>
+            Each member of the GhostWrite staff represents a different part of
+            the creative process. One writes. One investigates. One cleans
+            contaminated drafts. One attacks redundant language. One stares
+            into the middle distance while wondering why the client used
+            fourteen headings in a six-paragraph article.
+        </p>
+
+        <p>
+            Through short episodes, character features and workplace scenes,
+            the series explores ghostwriting, editing, journalism, artificial
+            intelligence, content creation and the recurring indignities of
+            professional creative work.
+        </p>
+
+    </section>
+
+    <section id="meet-the-team">
+
+        <p class="eyebrow">
+            The GhostWrite Staff
+        </p>
+
+        <h2>
+            Who Works at GhostWrite Studios?
+        </h2>
+
+        <p class="section-intro">
+            Every strong creative operation needs a dependable team. GhostWrite
+            Studios has assembled several ghosts, one dinosaur and a deeply
+            questionable human management structure.
+        </p>
+
+        <div class="cast-list">
+
+            <article class="character-card">
+
+                <div class="character-image">
+
+                    <img
+                        src="../../ghostwrite-inkwell.png"
+                        alt="Inkwell, the bespectacled ghost writer typing on a laptop"
+                        width="1024"
+                        height="1536"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="character-copy">
+
+                    <h3>
+                        Inkwell
+                    </h3>
+
+                    <p class="character-role">
+                        Lead Writer and Chronic Typist
+                    </p>
+
+                    <p>
+                        Inkwell wears large glasses, keeps both hands near a
+                        keyboard and types with the determined urgency of
+                        someone whose rent remains due despite being deceased.
+                    </p>
+
+                    <p>
+                        He specializes in ghostwriting, story collaboration,
+                        clean prose and finding the voice buried beneath rough
+                        notes, incomplete drafts and aggressively unhelpful
+                        client instructions.
+                    </p>
+
+                    <p>
+                        Inkwell believes every idea can become readable with
+                        enough focus, enough revision and a laptop that does not
+                        begin installing updates three minutes before delivery.
+                    </p>
+
+                    <p>
+                        He has never missed a deadline in life or death. This
+                        claim has not been independently audited.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="character-card">
+
+                <div class="character-image">
+
+                    <img
+                        src="../../ghostwrite-glyph.png"
+                        alt="Glyph, the ghost detective inspecting an AI symbol with a magnifying glass"
+                        width="1024"
+                        height="1536"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="character-copy">
+
+                    <h3>
+                        Glyph
+                    </h3>
+
+                    <p class="character-role">
+                        Inspector of Patterns and Finder of Tells
+                    </p>
+
+                    <p>
+                        Glyph reads writing the way a detective studies a crime
+                        scene.
+                    </p>
+
+                    <p>
+                        Repeated sentence shapes, suspiciously neutral
+                        language, conclusions that arrive without evidence and
+                        prose polished smooth enough to erase every sign of a
+                        human author all earn his attention.
+                    </p>
+
+                    <p>
+                        He specializes in editing, journalism, pattern
+                        recognition and identifying the traces left behind by
+                        careless AI generation.
+                    </p>
+
+                    <p>
+                        Glyph's favorite tool is a magnifying glass. His
+                        favorite response is “interesting,” delivered slowly
+                        enough to make the paragraph confess on its own.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="character-card">
+
+                <div class="character-image">
+
+                    <img
+                        src="../../ghostwrite-booradley.png"
+                        alt="BooRadley, the ghost AI decontamination specialist cleaning an AI symbol with a hose"
+                        width="1024"
+                        height="1536"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="character-copy">
+
+                    <h3>
+                        BooRadley
+                    </h3>
+
+                    <p class="character-role">
+                        AI Decontamination Specialist
+                    </p>
+
+                    <p>
+                        BooRadley arrives in a bright yellow protective suit
+                        carrying industrial cleaning equipment and absolutely
+                        no judgment.
+                    </p>
+
+                    <p>
+                        Drafts come in contaminated with repetitive phrasing,
+                        generic transitions, suspicious confidence and the
+                        verbal residue of several hundred productivity blogs.
+                        BooRadley sends them back cleaner, clearer and far more
+                        human.
+                    </p>
+
+                    <p>
+                        He handles AI cleanup, voice restoration, sentence
+                        rehabilitation and awkward client admissions with care
+                        and humor.
+                    </p>
+
+                    <p>
+                        BooRadley believes every draft deserves a second chance.
+                        Some deserve a third. A few need to remain inside the
+                        containment chamber until further notice.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="character-card">
+
+                <div class="character-image">
+
+                    <img
+                        src="../../ghostwrite-the-saurus.png"
+                        alt="The Saurus, a green dinosaur editor checking a document for redundant language"
+                        width="1024"
+                        height="1536"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="character-copy">
+
+                    <h3>
+                        The Saurus
+                    </h3>
+
+                    <p class="character-role">
+                        Staff Redundancy Checker
+                    </p>
+
+                    <p>
+                        Once a towering apex predator, The Saurus survived
+                        climate change, mass extinction and the endless
+                        expansion of human vocabulary.
+                    </p>
+
+                    <p>
+                        He now patrols the office with a clipboard, searching
+                        for repeated ideas, redundant modifiers, unnecessary
+                        restatements and phrases that appear to have been
+                        copied from every website built since 2014.
+                    </p>
+
+                    <p>
+                        Nothing shocks him. Nothing surprises him. Every
+                        overused expression is nevertheless treated as a
+                        personal insult.
+                    </p>
+
+                    <p>
+                        To The Saurus, even mass extinction has started to feel
+                        repetitive.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="character-card">
+
+                <div class="character-image">
+
+                    <img
+                        src="../../ghostwrite-rory.png"
+                        alt="Rory, the exhausted ghost editor working late at a laptop with coffee"
+                        width="1024"
+                        height="1536"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="character-copy">
+
+                    <h3>
+                        Rory
+                    </h3>
+
+                    <p class="character-role">
+                        Editor-in-Chief and Thinkbrainer
+                    </p>
+
+                    <p>
+                        Rory is the editor, chief thinkbrainer and only member
+                        of the staff expected to understand invoices.
+                    </p>
+
+                    <p>
+                        He specializes in turning raw drafts into coherent,
+                        credible work by interrogating the ideas beneath the
+                        sentences.
+                    </p>
+
+                    <p>
+                        What is the piece actually saying? What does it believe
+                        it is saying? Where is it avoiding the point? Why did
+                        the introduction promise something the conclusion
+                        forgot existed?
+                    </p>
+
+                    <p>
+                        Rory works at the intersection of writing, editing and
+                        pattern recognition. His editorial priorities are
+                        clarity over decoration, intention over filler and
+                        ideas that remain functional after someone reads them
+                        twice.
+                    </p>
+
+                    <p>
+                        When he is not supervising the spectral staff, he writes
+                        screenplays, essays and original projects while
+                        insisting the work make sense before it merely sounds
+                        impressive.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="team-line">
+            Inkwell writes it. Glyph investigates it. BooRadley cleans it.
+            The Saurus refines it. Rory asks why it needed to be written in
+            the first place.
+        </div>
+
+    </section>
+
+    <section>
+
+        <p class="eyebrow">
+            Inside the Series
+        </p>
+
+        <h2>
+            What Will the GhostWrite Mini Series Cover?
+        </h2>
+
+        <div class="series-grid">
+
+            <article class="series-card">
+
+                <h3>
+                    Ghostwriting
+                </h3>
+
+                <p>
+                    Inkwell turns chaotic notes, vague concepts and client
+                    interviews into work that sounds as though someone planned
+                    it.
+                </p>
+
+            </article>
+
+            <article class="series-card">
+
+                <h3>
+                    Editing
+                </h3>
+
+                <p>
+                    The team confronts weak structure, wandering paragraphs,
+                    dialogue problems and drafts emotionally attached to every
+                    sentence.
+                </p>
+
+            </article>
+
+            <article class="series-card">
+
+                <h3>
+                    AI Decontamination
+                </h3>
+
+                <p>
+                    BooRadley removes generic language, repetitive structures
+                    and the alarming confidence of text that has never checked
+                    a source.
+                </p>
+
+            </article>
+
+            <article class="series-card">
+
+                <h3>
+                    Pattern Detection
+                </h3>
+
+                <p>
+                    Glyph investigates AI fingerprints, suspicious phrasing and
+                    editorial clues hiding in plain sight.
+                </p>
+
+            </article>
+
+            <article class="series-card">
+
+                <h3>
+                    Redundancy Control
+                </h3>
+
+                <p>
+                    The Saurus ensures the same point is not repeated again,
+                    restated twice or redundantly reiterated.
+                </p>
+
+            </article>
+
+            <article class="series-card">
+
+                <h3>
+                    Creative Survival
+                </h3>
+
+                <p>
+                    Rory attempts to manage deadlines, clients, original work
+                    and several dead employees with strong opinions about
+                    punctuation.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <p class="eyebrow">
+            Episodes and Stories
+        </p>
+
+        <h2>
+            Where Should I Start Reading?
+        </h2>
+
+        <p class="section-intro">
+            Future episodes and illustrated stories will appear here in
+            reading order as the GhostWrite staff encounters clients, machines,
+            deadlines and the recurring discovery that “make it pop” is not an
+            actionable editorial note.
+        </p>
+
+        <div class="series-grid">
+
+            <article class="episode-card">
+
+                <p class="episode-label">
+                    Series Introduction
+                </p>
+
+                <h3>
+                    Meet the GhostWrite Team
+                </h3>
+
+                <p>
+                    Meet the spectral specialists responsible for writing,
+                    investigating, decontaminating and editing every project
+                    that enters the office.
+                </p>
+
+                <p>
+                    You are currently reading the beginning of the series.
+                </p>
+
+            </article>
+
+            <article class="episode-card">
+
+                <p class="episode-label">
+                    Future Episode
+                </p>
+
+                <h3>
+                    The Contaminated Draft
+                </h3>
+
+                <p>
+                    BooRadley receives a document containing six conclusions,
+                    twenty-three bullet points and the phrase “in today's
+                    fast-paced digital landscape.”
+                </p>
+
+                <p>
+                    Coming soon.
+                </p>
+
+            </article>
+
+            <article class="episode-card">
+
+                <p class="episode-label">
+                    Future Episode
+                </p>
+
+                <h3>
+                    Glyph Finds a Pattern
+                </h3>
+
+                <p>
+                    Glyph notices that every paragraph contains exactly three
+                    sentences and begins asking uncomfortable questions.
+                </p>
+
+                <p>
+                    Coming soon.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="question-section">
+
+        <h2>
+            Is the GhostWrite Mini Series Fiction or Writing Advice?
+        </h2>
+
+        <p>
+            It is both.
+        </p>
+
+        <p>
+            The characters and situations are fictional, but the writing,
+            editing and content problems they encounter are drawn from real
+            creative processes.
+        </p>
+
+        <p>
+            Episodes may explain editing concepts, expose common AI writing
+            patterns or demonstrate professional writing principles without
+            becoming another beige article titled “Seven Ways to Optimize Your
+            Content Workflow.”
+        </p>
+
+    </section>
+
+    <section class="question-section">
+
+        <h2>
+            Who Created the GhostWrite Mini Series?
+        </h2>
+
+        <p>
+            The GhostWrite Mini Series was created by Rory Kelly through
+            GhostWrite Studios.
+        </p>
+
+        <p>
+            It expands the original GhostWrite staff concept into a recurring
+            illustrated series about professional writing, editing, artificial
+            intelligence and creative work.
+        </p>
+
+        <div class="button-row">
+
+            <a
+                href="../about.html"
+                class="button"
+            >
+                About Rory Kelly
+            </a>
+
+            <a
+                href="../portfolio.html"
+                class="button button-secondary"
+            >
+                View the Portfolio
+            </a>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <p class="eyebrow">
+            Mini Series Questions
+        </p>
+
+        <h2>
+            Frequently Asked Questions
+        </h2>
+
+        <article class="faq-item">
+
+            <h3>
+                Who Is Inkwell?
+            </h3>
+
+            <p>
+                Inkwell is the lead writer and chronic typist. He handles
+                ghostwriting, collaboration, prose and finding the intended
+                voice of a project.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Who Is Glyph?
+            </h3>
+
+            <p>
+                Glyph is the team's investigator. He examines repetition,
+                structure, suspicious language and patterns that reveal weak
+                editing or careless AI generation.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Who Is BooRadley?
+            </h3>
+
+            <p>
+                BooRadley is the AI decontamination specialist. He cleans
+                AI-assisted drafts, restores voice and removes generic,
+                repetitive or mechanical language.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Who Is The Saurus?
+            </h3>
+
+            <p>
+                The Saurus is the staff redundancy checker. He searches for
+                repeated ideas, unnecessary restatements and language that has
+                already survived several extinction events.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Who Is Rory?
+            </h3>
+
+            <p>
+                Rory is the editor-in-chief and thinkbrainer responsible for
+                structure, clarity, creative direction and explaining why
+                nobody may submit a forty-page first paragraph.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Will New GhostWrite Episodes Be Added?
+            </h3>
+
+            <p>
+                New character stories and illustrated episodes will be added
+                to this page as they are completed. No fixed publication
+                schedule is being promised because calendars already possess
+                enough false confidence.
+            </p>
+
+        </article>
+
+    </section>
+
+    <section>
+
+        <h2>
+            Explore More From the Journal
+        </h2>
+
+        <div class="related-grid">
+
+            <article class="related-card">
+
+                <h3>
+                    Editing
+                </h3>
+
+                <p>
+                    Read about developmental editing, rewriting, screenplay
+                    editing and AI content cleanup.
+                </p>
+
+                <a href="editing.html">
+                    Explore Editing
+                </a>
+
+            </article>
+
+            <article class="related-card">
+
+                <h3>
+                    Writing
+                </h3>
+
+                <p>
+                    Explore screenwriting, fiction, journalism, dialogue and
+                    creative craft.
+                </p>
+
+                <a href="writing.html">
+                    Explore Writing
+                </a>
+
+            </article>
+
+            <article class="related-card">
+
+                <h3>
+                    Digital Nomad
+                </h3>
+
+                <p>
+                    Follow the process of building GhostWrite Studios while
+                    traveling and working remotely.
+                </p>
+
+                <a href="digital-nomad.html">
+                    Explore Digital Nomad
+                </a>
+
+            </article>
+
+            <article class="related-card">
+
+                <h3>
+                    Game Night
+                </h3>
+
+                <p>
+                    Read about tabletop games, TCG development, playtesting and
+                    Genome: Apex Shifting.
+                </p>
+
+                <a href="game-night.html">
+                    Explore Game Night
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="closing-cta">
+
+        <p class="eyebrow">
+            Hauntingly Good Writing
+        </p>
+
+        <h2>
+            Need the Actual GhostWrite Team?
+        </h2>
+
+        <p>
+            GhostWrite Studios provides professional ghostwriting, editing,
+            screenplay development, journalism, AI content editing and
+            creative consulting.
+        </p>
+
+        <p>
+            The ghosts are fictional. The services, deadlines and concern over
+            redundant language are regrettably real.
+        </p>
+
+        <div class="hero-actions">
+
+            <a
+                href="../hireme.html"
+                class="button"
+            >
+                View Professional Services
+            </a>
+
+            <a
+                href="../contact.html"
+                class="button button-secondary"
+            >
+                Contact GhostWrite Studios
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; 2026 GhostWrite Studios. All rights reserved.
+    </p>
+
+    <nav aria-label="Footer navigation">
+        <a href="../../index.html">Home</a>
+        <a href="../genome.html">Genome</a>
+        <a href="../portfolio.html">Portfolio</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../journal.html">Journal</a>
+        <a href="../hireme.html">Hire Me</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+</footer>
+
+</body>
+
+</html>

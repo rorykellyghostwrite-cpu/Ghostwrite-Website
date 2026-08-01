@@ -1,282 +1,1381 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hire Me | GhostWrite Studios</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="../styles.css">
+    <title>
+        Hire a Ghostwriter, Editor, Screenwriter or Journalist | GhostWrite Studios
+    </title>
+
+    <meta
+        name="description"
+        content="Hire GhostWrite Studios for professional ghostwriting, editing, screenwriting, journalism, article writing, story development, AI content editing, screenplay help, creative consulting and web content."
+    >
+
+    <meta
+        name="keywords"
+        content="hire a ghostwriter, professional ghostwriter, ghostwriting services, hire an editor, freelance editor, developmental editing, line editing, copy editing, proofreading, hire a screenwriter, screenplay editor, script doctor, script coverage, journalism services, freelance journalist, article writer, feature writer, story development, character development, AI content editing, AI decontamination, creative consultant, web content writer, website copywriting"
+    >
+
+    <meta name="author" content="Rory Kelly">
+
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://ghostwritestudios.com/pages/hireme.html"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../styles.css"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="GhostWrite Studios"
+    >
+
+    <meta
+        property="og:title"
+        content="Hire a Ghostwriter, Editor, Screenwriter or Journalist"
+    >
+
+    <meta
+        property="og:description"
+        content="Professional ghostwriting, editing, journalism, screenwriting, story development and creative consulting from GhostWrite Studios."
+    >
+
+    <meta
+        property="og:url"
+        content="https://ghostwritestudios.com/pages/hireme.html"
+    >
+
+    <meta
+        property="og:image"
+        content="https://ghostwritestudios.com/GhostwriteStudios.png"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="GhostWrite Studios logo"
+    >
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Hire GhostWrite Studios"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Hire a professional ghostwriter, editor, screenwriter, journalist or creative consultant."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://ghostwritestudios.com/GhostwriteStudios.png"
+    >
+
+    <style>
+        .hire-page {
+            line-height: 1.75;
+        }
+
+        .hire-page section {
+            width: min(1100px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding: 4.5rem 0;
+        }
+
+        .hire-page .hire-hero {
+            padding-top: 5.5rem;
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+
+        .hire-page .hire-hero p {
+            max-width: 820px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .hire-page .eyebrow {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .hire-page .hero-actions,
+        .hire-page .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .hire-page .hero-actions {
+            justify-content: center;
+        }
+
+        .hire-page .service-grid,
+        .hire-page .process-grid,
+        .hire-page .link-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(240px, 1fr)
+            );
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .hire-page .service-card,
+        .hire-page .process-card,
+        .hire-page .link-card {
+            padding: 1.75rem;
+            border: 1px solid rgba(127, 127, 127, 0.3);
+            border-radius: 0.75rem;
+        }
+
+        .hire-page .service-card h3,
+        .hire-page .process-card h3,
+        .hire-page .link-card h3 {
+            margin-top: 0;
+        }
+
+        .hire-page .service-card ul {
+            padding-left: 1.2rem;
+        }
+
+        .hire-page .service-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        .hire-page .section-intro {
+            max-width: 820px;
+        }
+
+        .hire-page .question-section p,
+        .hire-page .faq-item p {
+            max-width: 850px;
+        }
+
+        .hire-page .faq-item {
+            margin-top: 2.75rem;
+        }
+
+        .hire-page .closing-cta {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+
+        .hire-page .closing-cta p {
+            max-width: 760px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (max-width: 700px) {
+            .hire-page section {
+                padding-top: 3.25rem;
+                padding-bottom: 3.25rem;
+            }
+
+            .hire-page .hire-hero {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+
+            .hire-page .hero-actions,
+            .hire-page .button-row {
+                flex-direction: column;
+            }
+
+            .hire-page .button {
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-5FK2X831EN">
+    </script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            window.dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+        gtag("config", "G-5FK2X831EN");
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "GhostWrite Studios",
+        "url": "https://ghostwritestudios.com/pages/hireme.html",
+        "description": "Professional ghostwriting, editing, journalism, screenwriting, story development, creative consulting, AI content editing and web content services.",
+        "founder": {
+            "@type": "Person",
+            "name": "Rory Kelly"
+        },
+        "serviceType": [
+            "Ghostwriting",
+            "Developmental Editing",
+            "Line Editing",
+            "Copy Editing",
+            "Proofreading",
+            "Screenwriting",
+            "Screenplay Editing",
+            "Script Coverage",
+            "Journalism",
+            "Article Writing",
+            "Story Development",
+            "Character Development",
+            "AI Content Editing",
+            "Creative Consulting",
+            "Website Content Writing"
+        ],
+        "areaServed": {
+            "@type": "Country",
+            "name": "United States"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I hire a ghostwriter?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To hire a ghostwriter through GhostWrite Studios, send a project inquiry describing the format, intended audience, approximate length, current materials, desired tone, deadline and intended outcome."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does a ghostwriter do?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A ghostwriter develops written material on behalf of a client using the client's ideas, experiences, source materials and intended voice. Ghostwriting may include articles, essays, scripts, fiction, newsletters, blogs and other written projects."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I hire an editor?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To hire an editor, provide the project type, current word count or page count, stage of development, deadline and the kind of feedback or revision needed."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What kind of editing does GhostWrite Studios offer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Editing services may include developmental editing, structural editing, line editing, copy editing, proofreading, dialogue refinement, screenplay editing and AI content editing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I hire GhostWrite Studios to write a screenplay?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Screenwriting services may include concept development, screenplay drafting, rewriting, dialogue, formatting, pacing, story structure, character development and script consulting."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does GhostWrite Studios offer journalism and article writing?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Journalism and article writing services may include interviews, profiles, feature articles, research-based content, commentary, explanatory journalism and long-form editorial writing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is AI decontamination?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AI decontamination is the process of revising AI-assisted writing to remove repetitive phrasing, generic structure, filler language, false confidence and inconsistent voice so the final work reads more naturally and accurately."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much do writing and editing services cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pricing depends on project length, complexity, research requirements, editing depth, deadline and the condition of the existing material. A project description is required before an accurate quote can be provided."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ghostwritestudios.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Hire Me",
+                "item": "https://ghostwritestudios.com/pages/hireme.html"
+            }
+        ]
+    }
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5FK2X831EN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-5FK2X831EN');
-</script>
 <body>
 
-    <header>
+<header>
 
-        <a href="../index.html">
-            <img
-                class="logo"
-                src="../GhostwriteStudios.png"
-                alt="GhostWrite Studios Logo"
-            >
+    <a
+        href="../index.html"
+        aria-label="GhostWrite Studios home"
+    >
+        <img
+            class="logo"
+            src="../GhostwriteStudios.png"
+            alt="GhostWrite Studios logo"
+        >
+    </a>
+
+    <nav aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="genome.html">Genome</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="writing.html">Writing</a>
+        <a href="journal.html">Journal</a>
+
+        <a
+            href="hireme.html"
+            aria-current="page"
+        >
+            Hire Me
         </a>
 
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="genome.html">Genome</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="writing.html">Writing</a>
-            <a href="hireme.html">Hire Me</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-    </header>
+</header>
 
-    <main>
+<main class="hire-page">
 
-        <section class="hero">
+    <section class="hire-hero">
 
-            <h1>Hire GhostWrite Studios</h1>
+        <p class="eyebrow">
+            Professional Writing and Editing Services
+        </p>
+
+        <h1>
+            Hire a Ghostwriter, Editor, Screenwriter or Journalist
+        </h1>
+
+        <p>
+            GhostWrite Studios helps authors, filmmakers, businesses,
+            publications and independent creators turn ideas, outlines,
+            interviews and unfinished drafts into polished professional work.
+        </p>
+
+        <p>
+            Services include ghostwriting, developmental editing, line editing,
+            copy editing, journalism, article writing, screenwriting,
+            screenplay editing, story development, AI content editing,
+            creative consulting and website content.
+        </p>
+
+        <div class="hero-actions">
+
+            <a
+                href="contact.html"
+                class="button"
+            >
+                Start a Project
+            </a>
+
+            <a
+                href="portfolio.html"
+                class="button button-secondary"
+            >
+                View the Portfolio
+            </a>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>
+            What Services Does GhostWrite Studios Offer?
+        </h2>
+
+        <p class="section-intro">
+            GhostWrite Studios provides flexible writing, editing and creative
+            development services tailored to the needs of each project.
+        </p>
+
+        <div class="service-grid">
+
+            <article class="service-card">
+
+                <h3>
+                    Ghostwriting
+                </h3>
+
+                <p>
+                    Professional ghostwriting transforms your ideas, notes,
+                    interviews, research or incomplete drafts into finished
+                    work while preserving your voice and intent.
+                </p>
+
+                <ul>
+                    <li>Articles and blog posts</li>
+                    <li>Personal essays</li>
+                    <li>Newsletters</li>
+                    <li>Scripts and narrative content</li>
+                    <li>Fiction and short stories</li>
+                    <li>Branded and professional content</li>
+                </ul>
+
+            </article>
+
+            <article class="service-card">
+
+                <h3>
+                    Editing and Rewriting
+                </h3>
+
+                <p>
+                    Editing services strengthen clarity, structure, pacing,
+                    tone, grammar, consistency and overall effectiveness.
+                </p>
+
+                <ul>
+                    <li>Developmental editing</li>
+                    <li>Structural editing</li>
+                    <li>Line editing</li>
+                    <li>Copy editing</li>
+                    <li>Proofreading</li>
+                    <li>Substantial rewriting</li>
+                </ul>
+
+            </article>
+
+            <article class="service-card">
+
+                <h3>
+                    Screenwriting
+                </h3>
+
+                <p>
+                    Screenwriting support is available for feature films,
+                    short films, pilots, television concepts, web series and
+                    other visual storytelling projects.
+                </p>
+
+                <ul>
+                    <li>Original screenplay development</li>
+                    <li>Screenplay drafting</li>
+                    <li>Script rewriting</li>
+                    <li>Dialogue refinement</li>
+                    <li>Scene development</li>
+                    <li>Industry-standard formatting</li>
+                </ul>
+
+            </article>
+
+            <article class="service-card">
+
+                <h3>
+                    Screenplay Editing and Script Coverage
+                </h3>
+
+                <p>
+                    Screenplay services identify structural, character,
+                    dialogue and pacing problems before they become much more
+                    expensive production problems.
+                </p>
+
+                <ul>
+                    <li>Script coverage</li>
+                    <li>Story notes</li>
+                    <li>Character arc analysis</li>
+                    <li>Pacing review</li>
+                    <li>Dialogue editing</li>
+                    <li>Rewrite recommendations</li>
+                </ul>
+
+            </article>
+
+            <article class="service-card">
+
+                <h3>
+                    Journalism and Article Writing
+                </h3>
+
+                <p>
+                    Journalism and editorial writing services focus on
+                    accuracy, clarity, research, narrative flow and audience.
+                </p>
+
+                <ul>
+                    <li>Feature articles</li>
+                    <li>Interviews and profiles</li>
+                    <li>Research-based content</li>
+                    <li>Opinion and commentary</li>
+                    <li>Explanatory journalism</li>
+                    <li>Long-form editorial writing</li>
+                </ul>
+
+            </article>
+
+            <article class="service-card">
+
+                <h3>
+                    Story Development
+                </h3>
+
+                <p>
+                    Story development helps organize ideas into a coherent,
+                    engaging narrative with clear stakes and meaningful
+                    progression.
+                </p>
+
+                <ul>
+                    <li>Plot development</li>
+                    <li>Story structure</li>
+                    <li>Character arcs</li>
+                    <li>Conflict and stakes</li>
+                    <li>Theme and tone</li>
+                    <li>Reveals and turning points</li>
+                </ul>
+
+            </article>
+
+            <article class="service-card">
+
+                <h3>
+                    Character Development
+                </h3>
+
+                <p>
+                    Character development creates stronger motivations,
+                    conflicts, relationships, contradictions and emotional
+                    arcs.
+                </p>
+
+                <ul>
+                    <li>Character histories</li>
+                    <li>Motivations and flaws</li>
+                    <li>Dialogue and voice</li>
+                    <li>Relationships</li>
+                    <li>Internal conflict</li>
+                    <li>Character growth</li>
+                </ul>
+
+            </article>
+
+            <article class="service-card">
+
+                <h3>
+                    AI Content Editing
+                </h3>
+
+                <p>
+                    AI-assisted writing often needs careful revision before it
+                    is accurate, natural, consistent and worth asking another
+                    human being to read.
+                </p>
+
+                <ul>
+                    <li>Remove repetitive phrasing</li>
+                    <li>Reduce generic language</li>
+                    <li>Correct invented or unsupported claims</li>
+                    <li>Improve voice consistency</li>
+                    <li>Strengthen sentence flow</li>
+                    <li>Restore human judgment and intent</li>
+                </ul>
+
+            </article>
+
+            <article class="service-card">
+
+                <h3>
+                    Creative Collaboration
+                </h3>
+
+                <p>
+                    Collaboration is available for creators who want active
+                    help developing ideas, solving narrative problems or
+                    building an original project.
+                </p>
+
+                <ul>
+                    <li>Brainstorming</li>
+                    <li>Concept development</li>
+                    <li>Worldbuilding</li>
+                    <li>Narrative design</li>
+                    <li>Creative problem-solving</li>
+                    <li>Intellectual property development</li>
+                </ul>
+
+            </article>
+
+            <article class="service-card">
+
+                <h3>
+                    Website Content and Basic Web Design
+                </h3>
+
+                <p>
+                    GhostWrite Studios provides straightforward website
+                    content and basic HTML and CSS development for creators,
+                    portfolios and small businesses.
+                </p>
+
+                <ul>
+                    <li>Website copywriting</li>
+                    <li>Page organization</li>
+                    <li>Navigation structure</li>
+                    <li>Basic responsive design</li>
+                    <li>HTML and CSS pages</li>
+                    <li>SEO and AEO content structure</li>
+                </ul>
+
+            </article>
+
+            <article class="service-card">
+
+                <h3>
+                    Custom Creative Requests
+                </h3>
+
+                <p>
+                    Creative projects rarely fit neatly into predefined
+                    categories because apparently ideas refuse to respect
+                    administrative convenience.
+                </p>
+
+                <ul>
+                    <li>Unusual writing projects</li>
+                    <li>Editorial consulting</li>
+                    <li>Creative research</li>
+                    <li>Project development</li>
+                    <li>Content restructuring</li>
+                    <li>Specialized collaboration</li>
+                </ul>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            Professional Ghostwriting
+        </p>
+
+        <h2>
+            What Does a Ghostwriter Do?
+        </h2>
+
+        <p>
+            A ghostwriter creates written work on behalf of another person,
+            company or organization. The client provides the ideas,
+            experience, message, source material or desired outcome, and the
+            ghostwriter develops that information into polished content.
+        </p>
+
+        <p>
+            Ghostwriting may begin with an outline, interview, transcript,
+            collection of notes, incomplete draft or little more than a clear
+            concept.
+        </p>
+
+        <p>
+            The goal is not to replace the client's identity. The goal is to
+            communicate that identity more clearly and effectively.
+        </p>
+
+    </section>
+
+    <section class="question-section">
+
+        <h2>
+            How Do I Hire a Ghostwriter?
+        </h2>
+
+        <p>
+            Begin by describing the type of project, intended audience,
+            approximate length, preferred tone, available source material,
+            deadline and intended outcome.
+        </p>
+
+        <p>
+            You do not need to arrive with a complete outline. Useful material
+            may include notes, interviews, recordings, research, examples of
+            your natural voice or a rough explanation of what you want the
+            finished project to accomplish.
+        </p>
+
+        <p>
+            Once the project has been reviewed, the scope, deliverables,
+            timeline and pricing can be discussed.
+        </p>
+
+        <a
+            href="contact.html"
+            class="button"
+        >
+            Request Ghostwriting Services
+        </a>
+
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            Professional Editing
+        </p>
+
+        <h2>
+            What Kind of Editor Do I Need?
+        </h2>
+
+        <p>
+            The right editing service depends on the condition of the project
+            and the problems that need to be solved.
+        </p>
+
+        <div class="process-grid">
+
+            <article class="process-card">
+
+                <h3>
+                    Developmental Editing
+                </h3>
+
+                <p>
+                    Focuses on the entire project, including structure,
+                    organization, pacing, logic, character, argument and
+                    missing information.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    Line Editing
+                </h3>
+
+                <p>
+                    Improves sentence flow, voice, rhythm, clarity, tone and
+                    word choice.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    Copy Editing
+                </h3>
+
+                <p>
+                    Corrects grammar, punctuation, usage, consistency and
+                    mechanical errors.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    Proofreading
+                </h3>
+
+                <p>
+                    Provides a final review for typographical errors,
+                    formatting problems and minor mistakes before publication.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    Rewriting
+                </h3>
+
+                <p>
+                    Reconstructs weak or incomplete material when editing alone
+                    is not enough.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    Screenplay Editing
+                </h3>
+
+                <p>
+                    Focuses on story structure, visual storytelling, scene
+                    construction, dialogue, pacing, character and screenplay
+                    format.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="question-section">
+
+        <h2>
+            How Do I Hire an Editor?
+        </h2>
+
+        <p>
+            Send the project type, current word count or page count, stage of
+            development, deadline and the kind of help you believe the work
+            needs.
+        </p>
+
+        <p>
+            It is also useful to explain whether you want direct edits,
+            editorial notes, a full rewrite or a combination of approaches.
+        </p>
+
+        <p>
+            If you are uncertain which level of editing is appropriate,
+            describe the problems you are encountering. The service can be
+            determined after reviewing the project.
+        </p>
+
+        <a
+            href="contact.html"
+            class="button"
+        >
+            Request Editing Services
+        </a>
+
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            Film and Television Writing
+        </p>
+
+        <h2>
+            Can I Hire GhostWrite Studios to Write or Edit a Screenplay?
+        </h2>
+
+        <p>
+            Yes. GhostWrite Studios provides screenwriting, screenplay editing,
+            story development and script consulting for short films, feature
+            films, pilots, web series and other visual storytelling projects.
+        </p>
+
+        <p>
+            Services may include original screenplay development, drafting,
+            rewriting, dialogue refinement, scene construction, pacing,
+            character arcs, story structure and screenplay formatting.
+        </p>
+
+        <p>
+            Projects may begin as a concept, logline, treatment, outline,
+            partial screenplay or completed draft.
+        </p>
+
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            Editorial and Journalism Services
+        </p>
+
+        <h2>
+            Can I Hire GhostWrite Studios to Write an Article?
+        </h2>
+
+        <p>
+            Yes. Article writing and journalism services are available for
+            interviews, profiles, feature stories, research-based content,
+            explanatory articles, commentary and long-form editorial work.
+        </p>
+
+        <p>
+            Each project is approached according to its audience, purpose,
+            research requirements, publication format and editorial goals.
+        </p>
+
+        <p>
+            Visit the
+            <a href="writing.html">
+                Writing page
+            </a>
+            to learn more about professional writing and journalism.
+        </p>
+
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            AI Content Editing
+        </p>
+
+        <h2>
+            What Is AI Decontamination?
+        </h2>
+
+        <p>
+            AI decontamination is the process of revising AI-assisted writing
+            so it becomes clearer, more accurate, more natural and more
+            consistent with the writer's actual voice.
+        </p>
+
+        <p>
+            This may involve removing repetitive phrasing, generic
+            transitions, filler language, exaggerated claims, invented
+            details, mechanical sentence patterns and unnecessary summaries.
+        </p>
+
+        <p>
+            The objective is not to disguise technology. It is to ensure the
+            final work reflects human judgment, intention and responsibility.
+        </p>
+
+    </section>
+
+    <section class="question-section">
+
+        <h2>
+            What Is the GhostWrite Studios Creative Process?
+        </h2>
+
+        <div class="process-grid">
+
+            <article class="process-card">
+
+                <h3>
+                    1. Project Review
+                </h3>
+
+                <p>
+                    The project type, audience, goals, source material,
+                    timeline and desired outcome are reviewed.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    2. Scope
+                </h3>
+
+                <p>
+                    The service, deliverables, revision expectations and
+                    boundaries of the project are defined.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    3. Research and Development
+                </h3>
+
+                <p>
+                    Relevant research, source material, structure and creative
+                    direction are developed.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    4. Drafting or Editing
+                </h3>
+
+                <p>
+                    The project is written, revised or edited according to the
+                    agreed scope.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    5. Revision
+                </h3>
+
+                <p>
+                    Feedback is reviewed and appropriate revisions are made
+                    within the agreed project terms.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    6. Final Delivery
+                </h3>
+
+                <p>
+                    The completed project is polished and delivered in the
+                    agreed format.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <p class="eyebrow">
+            Hiring Questions
+        </p>
+
+        <h2>
+            Frequently Asked Questions
+        </h2>
+
+        <article class="faq-item">
+
+            <h3>
+                How Much Do Ghostwriting and Editing Services Cost?
+            </h3>
 
             <p>
-                Every story begins as an idea. GhostWrite Studios helps turn
-                that idea into something structured, compelling, and ready
-                to reach an audience.
+                Pricing depends on the type of project, length, complexity,
+                research requirements, editing depth, deadline and condition
+                of the existing material.
             </p>
 
             <p>
-                Whether you need help developing a concept, strengthening an
-                existing draft, or bringing an entire project to life,
-                professional creative support is available.
+                A short article, full screenplay rewrite and book-length
+                ghostwriting project require very different amounts of work.
+                Submit the project details before requesting an accurate quote.
             </p>
 
-        </section>
+        </article>
 
-        <section class="lore">
+        <article class="faq-item">
 
-            <h2>Creative Services</h2>
-
-            <p>
-                GhostWrite Studios offers flexible creative services for
-                writers, filmmakers, businesses, independent creators, and
-                anyone with a story worth telling.
-            </p>
-
-        </section>
-
-        <section class="lore">
-
-            <h2>Ghostwriting</h2>
+            <h3>
+                Can You Work From an Existing Draft?
+            </h3>
 
             <p>
-                Your ideas, your voice, and your vision remain at the center of
-                the work.
+                Yes. Projects may begin as notes, outlines, transcripts,
+                partial drafts, completed manuscripts, screenplays or
+                AI-assisted writing.
             </p>
 
             <p>
-                Ghostwriting services can help transform outlines, notes,
-                concepts, interviews, or unfinished drafts into polished
-                material while preserving the identity and intent of the
-                original creator.
+                The condition of the material helps determine whether the
+                project needs editing, rewriting, ghostwriting or another
+                service.
             </p>
 
-        </section>
+        </article>
 
-        <section class="lore">
+        <article class="faq-item">
 
-            <h2>Screenwriting</h2>
-
-            <p>
-                Screenwriting services are available for short films, feature
-                films, television concepts, pilots, web series, and other
-                visual storytelling projects.
-            </p>
+            <h3>
+                Can You Help With Only Part of a Project?
+            </h3>
 
             <p>
-                Support may include concept development, screenplay drafting,
-                rewriting, formatting, dialogue, pacing, structure, and scene
-                development.
-            </p>
-
-        </section>
-
-        <section class="lore">
-
-            <h2>Collaboration</h2>
-
-            <p>
-                Some projects are stronger when they are built through active
-                collaboration.
+                Yes. Services may focus on a specific chapter, article,
+                screenplay sequence, character arc, website page, dialogue
+                pass or structural problem.
             </p>
 
             <p>
-                GhostWrite Studios can work alongside creators to brainstorm,
-                develop ideas, solve story problems, build fictional worlds,
-                and shape projects from early concepts into complete creative
-                works.
+                The scope should be clearly defined before work begins.
             </p>
 
-        </section>
+        </article>
 
-        <section class="lore">
+        <article class="faq-item">
 
-            <h2>AI Decontamination</h2>
+            <h3>
+                Will the Finished Work Still Sound Like Me?
+            </h3>
 
             <p>
-                Artificial intelligence can generate material quickly, but the
-                results often feel repetitive, generic, inconsistent, or
-                disconnected from the creator's actual voice.
+                Preserving the client's voice is a central goal of ghostwriting
+                and editing.
             </p>
 
             <p>
-                AI decontamination focuses on rewriting and refining
-                AI-assisted material so that it reads naturally, maintains a
-                consistent voice, avoids obvious machine-generated patterns,
-                and better reflects the creator's original intent.
+                Source material, interviews, writing samples and clear feedback
+                help establish the intended tone and style.
             </p>
 
-        </section>
+        </article>
 
-        <section class="lore">
+        <article class="faq-item">
 
-            <h2>Editing and Rewriting</h2>
-
-            <p>
-                Existing work can be reviewed for clarity, flow, grammar,
-                pacing, tone, consistency, and overall effectiveness.
-            </p>
+            <h3>
+                Do You Keep Client Work Confidential?
+            </h3>
 
             <p>
-                Editing services may range from careful line-level revisions
-                to substantial rewrites designed to strengthen the entire
-                project.
-            </p>
-
-        </section>
-
-        <section class="lore">
-
-            <h2>Story Structure</h2>
-
-            <p>
-                Strong ideas can lose their impact when the structure is not
-                supporting them.
+                Client materials, unpublished ideas and project details are
+                treated as private professional information.
             </p>
 
             <p>
-                Story-structuring services help organize plot points, character
-                arcs, conflict, pacing, themes, reveals, and emotional turning
-                points into a coherent narrative.
+                Specific nondisclosure, ownership or credit terms should be
+                discussed before the project begins.
             </p>
 
-        </section>
+        </article>
 
-        <section class="lore">
+        <article class="faq-item">
 
-            <h2>Character Development</h2>
-
-            <p>
-                Memorable characters need more than names and descriptions.
-                They need motivations, flaws, relationships, contradictions,
-                and meaningful choices.
-            </p>
+            <h3>
+                Who Owns the Finished Work?
+            </h3>
 
             <p>
-                Character-development services can help create new characters
-                or deepen existing ones through stronger personalities,
-                histories, dialogue, conflicts, and arcs.
-            </p>
-
-        </section>
-
-        <section class="lore">
-
-            <h2>Journalism and Article Writing</h2>
-
-            <p>
-                Writing services are available for articles, interviews,
-                profiles, opinion pieces, features, research-based content,
-                and other journalistic or editorial projects.
+                Ownership and usage rights depend on the service and written
+                agreement.
             </p>
 
             <p>
-                Each project is approached with attention to clarity, accuracy,
-                audience, tone, and the purpose of the finished piece.
+                Ghostwriting, editing, collaboration, screenwriting and
+                intellectual property development may involve different
+                ownership or credit arrangements. Those terms should be
+                established before work begins.
             </p>
 
-        </section>
+        </article>
 
-        <section class="lore">
+        <article class="faq-item">
 
-            <h2>Web Design</h2>
-
-            <p>
-                GhostWrite Studios also offers straightforward website design
-                for independent creators, small businesses, portfolios, and
-                creative projects.
-            </p>
+            <h3>
+                What Should I Include in My Project Inquiry?
+            </h3>
 
             <p>
-                Services may include page layout, written content, navigation,
-                visual presentation, responsive design, and basic website
-                development using HTML and CSS.
-            </p>
-
-        </section>
-
-        <section class="lore">
-
-            <h2>Custom Requests</h2>
-
-            <p>
-                Creative projects rarely fit perfectly into predefined
-                categories.
+                Include the type of project, approximate length, intended
+                audience, current stage, deadline, available source material,
+                desired service and intended outcome.
             </p>
 
             <p>
-                Other writing, editing, development, consulting, and creative
-                requests may be possible after the project has been reviewed.
-                Scope, deadlines, expectations, and pricing will be evaluated
-                before work begins.
+                A clear description makes it easier to evaluate the project
+                without resorting to divination, which remains tragically
+                unreliable for estimating page counts.
             </p>
 
-        </section>
+        </article>
 
-        <section class="lore">
+    </section>
 
-            <h2>Let GhostWrite Bring Your Story to Life</h2>
+    <section>
 
-            <p>
-                Whether you are beginning with a single idea or struggling with
-                a project that is almost finished, GhostWrite Studios can help
-                you find the strongest version of your work.
-            </p>
+        <h2>
+            Where Can I See Examples and Learn More?
+        </h2>
 
-            <p>
-                Visit the
-                <a href="contact.html"><strong>Contact</strong></a>
-                page to describe your project, the services you need, and what
-                you hope to accomplish.
-            </p>
+        <div class="link-grid">
 
-        </section>
+            <article class="link-card">
 
-    </main>
+                <h3>
+                    Portfolio
+                </h3>
 
-    <footer>
-        <p>© 2026 GhostWrite Studios</p>
-    </footer>
+                <p>
+                    Explore screenwriting, journalism, fiction, editing and
+                    creative development work.
+                </p>
+
+                <a href="portfolio.html">
+                    View the Portfolio
+                </a>
+
+            </article>
+
+            <article class="link-card">
+
+                <h3>
+                    Writing
+                </h3>
+
+                <p>
+                    Learn more about journalism, articles, fiction and
+                    professional writing.
+                </p>
+
+                <a href="writing.html">
+                    Explore Writing
+                </a>
+
+            </article>
+
+            <article class="link-card">
+
+                <h3>
+                    Journal
+                </h3>
+
+                <p>
+                    Read about writing, editing, AI content, digital nomad life,
+                    serialized fiction and tabletop gaming.
+                </p>
+
+                <a href="journal.html">
+                    Read the Journal
+                </a>
+
+            </article>
+
+            <article class="link-card">
+
+                <h3>
+                    About
+                </h3>
+
+                <p>
+                    Learn about Rory Kelly and the development of GhostWrite
+                    Studios.
+                </p>
+
+                <a href="about.html">
+                    About GhostWrite Studios
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="closing-cta">
+
+        <p class="eyebrow">
+            Start Your Project
+        </p>
+
+        <h2>
+            Do You Need a Ghostwriter, Editor, Screenwriter or Journalist?
+        </h2>
+
+        <p>
+            Whether you are beginning with a single idea, an unfinished draft
+            or a nearly complete project that refuses to behave, GhostWrite
+            Studios can help identify the strongest version of the work.
+        </p>
+
+        <p>
+            Use the contact form to describe the project, requested service,
+            approximate length, timeline and intended outcome.
+        </p>
+
+        <div class="hero-actions">
+
+            <a
+                href="contact.html"
+                class="button"
+            >
+                Contact GhostWrite Studios
+            </a>
+
+            <a
+                href="portfolio.html"
+                class="button button-secondary"
+            >
+                View Previous Work
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; 2026 GhostWrite Studios. All rights reserved.
+    </p>
+
+    <nav aria-label="Footer navigation">
+        <a href="../index.html">Home</a>
+        <a href="genome.html">Genome</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="writing.html">Writing</a>
+        <a href="journal.html">Journal</a>
+        <a href="hireme.html">Hire Me</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</footer>
 
 </body>
 
 </html>
+```

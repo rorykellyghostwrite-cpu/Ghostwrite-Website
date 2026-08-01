@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Tabletop Games, TCG Development and Game Night Articles | GhostWrite Studios
+    </title>
+
+    <meta
+        name="description"
+        content="Read GhostWrite Studios articles about tabletop games, trading card games, board games, indie TCG development, playtesting, game design, local game stores and Genome: Apex Shifting."
+    >
+
+    <meta
+        name="keywords"
+        content="tabletop game articles, trading card game articles, TCG development, indie TCG, new trading card games, upcoming TCGs, board game articles, tabletop game design, card game design, game playtesting, board game playtesting, local game stores, San Diego tabletop gaming, Genome Apex Shifting, Game Night, GhostWrite Studios"
+    >
+
+    <meta name="author" content="Rory Kelly">
+
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://ghostwritestudios.com/pages/journal/game-night.html"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../styles.css"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="GhostWrite Studios"
+    >
+
+    <meta
+        property="og:title"
+        content="Tabletop Games, TCG Development and Game Night Articles"
+    >
+
+    <meta
+        property="og:description"
+        content="Articles about tabletop games, trading card games, game design, playtesting, local gaming communities and Genome: Apex Shifting."
+    >
+
+    <meta
+        property="og:url"
+        content="https://ghostwritestudios.com/pages/journal/game-night.html"
+    >
+
+    <meta
+        property="og:image"
+        content="https://ghostwritestudios.com/genomebanner.png"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="Genome: Apex Shifting tabletop trading card game banner"
+    >
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Game Night | Tabletop Games and TCG Development"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Tabletop games, board games, indie TCG development, playtesting and Genome: Apex Shifting."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://ghostwritestudios.com/genomebanner.png"
+    >
+
+    <style>
+        .game-night-page {
+            line-height: 1.75;
+        }
+
+        .game-night-page section {
+            width: min(1100px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding: 4.5rem 0;
+        }
+
+        .game-night-page .game-night-hero {
+            padding-top: 5.5rem;
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+
+        .game-night-page .game-night-hero p {
+            max-width: 820px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .game-night-page .banner {
+            width: 100%;
+            max-width: none;
+            padding: 0;
+        }
+
+        .game-night-page .banner img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .game-night-page .eyebrow {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .game-night-page .hero-actions,
+        .game-night-page .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .game-night-page .hero-actions {
+            justify-content: center;
+        }
+
+        .game-night-page .topic-grid,
+        .game-night-page .article-grid,
+        .game-night-page .related-grid,
+        .game-night-page .process-grid,
+        .game-night-page .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(250px, 1fr)
+            );
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .game-night-page .topic-card,
+        .game-night-page .article-card,
+        .game-night-page .related-card,
+        .game-night-page .process-card,
+        .game-night-page .feature-card {
+            padding: 1.75rem;
+            border: 1px solid rgba(127, 127, 127, 0.3);
+            border-radius: 0.75rem;
+        }
+
+        .game-night-page .topic-card h3,
+        .game-night-page .article-card h3,
+        .game-night-page .related-card h3,
+        .game-night-page .process-card h3,
+        .game-night-page .feature-card h3 {
+            margin-top: 0;
+        }
+
+        .game-night-page .section-intro,
+        .game-night-page .question-section p,
+        .game-night-page .faq-item p {
+            max-width: 850px;
+        }
+
+        .game-night-page .article-category {
+            margin-bottom: 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .game-night-page .article-meta {
+            font-size: 0.95rem;
+        }
+
+        .game-night-page .quote-block {
+            max-width: 800px;
+            margin: 2.5rem 0;
+            padding: 1.5rem 1.75rem;
+            border-left: 4px solid currentColor;
+            font-size: 1.1rem;
+        }
+
+        .game-night-page .faq-item {
+            margin-top: 2.75rem;
+        }
+
+        .game-night-page .closing-cta {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+
+        .game-night-page .closing-cta p {
+            max-width: 780px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (max-width: 700px) {
+            .game-night-page section {
+                padding-top: 3.25rem;
+                padding-bottom: 3.25rem;
+            }
+
+            .game-night-page .game-night-hero {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+
+            .game-night-page .hero-actions,
+            .game-night-page .button-row {
+                flex-direction: column;
+            }
+
+            .game-night-page .button {
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-5FK2X831EN"
+    ></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            window.dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+        gtag("config", "G-5FK2X831EN");
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Game Night Tabletop and TCG Articles",
+        "url": "https://ghostwritestudios.com/pages/journal/game-night.html",
+        "description": "Articles about tabletop games, trading card games, board games, game design, playtesting, local gaming communities and Genome: Apex Shifting.",
+        "isPartOf": {
+            "@type": "Blog",
+            "name": "GhostWrite Studios Journal",
+            "url": "https://ghostwritestudios.com/pages/journal.html"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Rory Kelly"
+        },
+        "about": [
+            "Tabletop Games",
+            "Trading Card Games",
+            "Board Games",
+            "Game Design",
+            "Card Game Design",
+            "Playtesting",
+            "Indie Game Development",
+            "Genome: Apex Shifting",
+            "Local Game Stores"
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the Game Night section of the GhostWrite Studios Journal?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Game Night is the tabletop gaming section of the GhostWrite Studios Journal. It covers trading card games, board games, game design, playtesting, indie development, local gaming communities and Genome: Apex Shifting."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a trading card game?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A trading card game is a competitive card game in which players build decks from available cards and use strategy, card combinations and resource management to defeat an opponent."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does tabletop game playtesting work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tabletop game playtesting involves observing players as they learn and play a game, collecting feedback and evaluating rules clarity, balance, pacing, strategy, accessibility and enjoyment."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is Genome: Apex Shifting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Genome: Apex Shifting is an upcoming indie trading card game developed by GhostWrite Studios. Players build ecosystems, deploy creatures, splice Genes, spread Afflictions, alter Climate conditions and evolve Hybrid Apex predators."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I submit a guest article to Game Night?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "GhostWrite Studios accepts selected pitches for guest articles about tabletop games, trading card games, board games, playtesting, game design, local stores and gaming communities."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I apply to playtest Genome: Apex Shifting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Interested players may contact GhostWrite Studios about future Genome: Apex Shifting alpha playtesting opportunities in the San Diego area."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ghostwritestudios.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Journal",
+                "item": "https://ghostwritestudios.com/pages/journal.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Game Night",
+                "item": "https://ghostwritestudios.com/pages/journal/game-night.html"
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+
+<header>
+
+    <a
+        href="../../index.html"
+        aria-label="GhostWrite Studios home"
+    >
+        <img
+            class="logo"
+            src="../../GhostwriteStudios.png"
+            alt="GhostWrite Studios logo"
+        >
+    </a>
+
+    <nav aria-label="Main navigation">
+        <a href="../../index.html">Home</a>
+        <a href="../genome.html">Genome</a>
+        <a href="../portfolio.html">Portfolio</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../journal.html">Journal</a>
+        <a href="../hireme.html">Hire Me</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<main class="game-night-page">
+
+    <section class="banner">
+
+        <img
+            src="../../genomebanner.png"
+            alt="Genome: Apex Shifting, an upcoming indie tabletop trading card game"
+            width="1600"
+            height="600"
+            fetchpriority="high"
+        >
+
+    </section>
+
+    <section class="game-night-hero">
+
+        <p class="eyebrow">
+            GhostWrite Studios Journal
+        </p>
+
+        <h1>
+            Tabletop Games, TCG Development and Game Night Articles
+        </h1>
+
+        <p>
+            Game Night covers tabletop games, trading card games, board games,
+            game design, playtesting, local gaming communities and the
+            development of <strong>Genome: Apex Shifting</strong>.
+        </p>
+
+        <p>
+            This is where mechanics are tested, strategies are argued over,
+            decks are rebuilt and otherwise reasonable adults spend twenty
+            minutes debating the meaning of one sentence printed on cardboard.
+        </p>
+
+        <div class="hero-actions">
+
+            <a
+                href="#game-night-topics"
+                class="button"
+            >
+                Explore Game Night
+            </a>
+
+            <a
+                href="../genome.html"
+                class="button button-secondary"
+            >
+                Discover Genome
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="question-section">
+
+        <h2>
+            What Is the Game Night Section?
+        </h2>
+
+        <p>
+            Game Night is the tabletop gaming category of the GhostWrite
+            Studios Journal.
+        </p>
+
+        <p>
+            It covers trading card games, board games, card game mechanics,
+            playtesting, indie game development, game stores, gaming
+            communities and the process of turning a game concept into
+            something other people can actually learn and play.
+        </p>
+
+        <p>
+            It also serves as the development journal for
+            <strong>Genome: Apex Shifting</strong>, an original competitive
+            trading card game created through GhostWrite Studios.
+        </p>
+
+    </section>
+
+    <section id="game-night-topics">
+
+        <p class="eyebrow">
+            Tabletop Topics
+        </p>
+
+        <h2>
+            What Does Game Night Cover?
+        </h2>
+
+        <p class="section-intro">
+            Game Night covers both the creative and practical sides of
+            tabletop gaming.
+        </p>
+
+        <div class="topic-grid">
+
+            <article class="topic-card">
+
+                <h3>
+                    Trading Card Games
+                </h3>
+
+                <p>
+                    Deck construction, card interaction, strategy, balance,
+                    archetypes and competitive play.
+                </p>
+
+            </article>
+
+            <article class="topic-card">
+
+                <h3>
+                    Board Games
+                </h3>
+
+                <p>
+                    Reviews, mechanics, replayability, player interaction,
+                    accessibility and tabletop experience.
+                </p>
+
+            </article>
+
+            <article class="topic-card">
+
+                <h3>
+                    Game Design
+                </h3>
+
+                <p>
+                    Rules, systems, player choices, theme, balance, pacing and
+                    the relationship between mechanics and story.
+                </p>
+
+            </article>
+
+            <article class="topic-card">
+
+                <h3>
+                    Playtesting
+                </h3>
+
+                <p>
+                    Rules clarity, deck balance, learning difficulty, player
+                    behavior and using feedback without redesigning the game
+                    after every opinion.
+                </p>
+
+            </article>
+
+            <article class="topic-card">
+
+                <h3>
+                    Indie Game Development
+                </h3>
+
+                <p>
+                    Prototyping, artwork, production, marketing, community
+                    building and developing a tabletop game from the ground up.
+                </p>
+
+            </article>
+
+            <article class="topic-card">
+
+                <h3>
+                    Local Game Stores
+                </h3>
+
+                <p>
+                    Community events, game nights, playtesting spaces, local
+                    stores and the people who keep tabletop gaming social.
+                </p>
+
+            </article>
+
+            <article class="topic-card">
+
+                <h3>
+                    Guest Features
+                </h3>
+
+                <p>
+                    Articles from designers, players, artists, reviewers,
+                    playtesters and members of local gaming communities.
+                </p>
+
+            </article>
+
+            <article class="topic-card">
+
+                <h3>
+                    Genome Development
+                </h3>
+
+                <p>
+                    Starter decks, ecosystems, Genes, Afflictions, Climate,
+                    Hybrid Apex predators and alpha playtesting.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            Trading Card Games
+        </p>
+
+        <h2>
+            What Is a Trading Card Game?
+        </h2>
+
+        <p>
+            A trading card game, commonly called a TCG, is a competitive card
+            game in which players build decks from a larger collection of
+            available cards.
+        </p>
+
+        <p>
+            Players use creatures, actions, resources, abilities and card
+            combinations to pursue a victory condition.
+        </p>
+
+        <p>
+            Strong TCGs reward deck construction, tactical decisions,
+            knowledge of card interactions and the ability to adapt when an
+            opponent refuses to follow the elegant plan you built in your
+            imagination.
+        </p>
+
+    </section>
+
+    <section class="question-section">
+
+        <h2>
+            What Makes a Good Trading Card Game?
+        </h2>
+
+        <p>
+            A good trading card game provides meaningful choices, clear rules,
+            strategic variety and enough interaction to keep both players
+            involved.
+        </p>
+
+        <p>
+            Cards should create combinations without reducing the game to one
+            dominant strategy. Strong decks should feel powerful without making
+            weaker decks irrelevant.
+        </p>
+
+        <p>
+            The game should also provide multiple paths to victory and room for
+            players to express different play styles.
+        </p>
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+
+                <h3>
+                    Meaningful Decisions
+                </h3>
+
+                <p>
+                    Choices should create consequences rather than merely fill
+                    time between draws.
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+
+                <h3>
+                    Strategic Variety
+                </h3>
+
+                <p>
+                    Aggressive, defensive, control, combo and adaptive
+                    strategies should all have room to function.
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+
+                <h3>
+                    Clear Card Language
+                </h3>
+
+                <p>
+                    Players should not need a committee hearing to determine
+                    what a card does.
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+
+                <h3>
+                    Counterplay
+                </h3>
+
+                <p>
+                    Players need opportunities to respond, adapt and recover
+                    from pressure.
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+
+                <h3>
+                    Replayability
+                </h3>
+
+                <p>
+                    Different draws, strategies and matchups should create new
+                    decisions across repeated games.
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+
+                <h3>
+                    Strong Theme
+                </h3>
+
+                <p>
+                    Mechanics should reinforce the world and identity of the
+                    game rather than existing as unrelated math.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            Board Games and Tabletop Design
+        </p>
+
+        <h2>
+            What Makes a Good Tabletop Game?
+        </h2>
+
+        <p>
+            A good tabletop game gives players understandable goals, meaningful
+            choices and enough interaction to make each session feel different.
+        </p>
+
+        <p>
+            The rules should be clear enough to learn without removing the
+            depth that encourages players to improve.
+        </p>
+
+        <p>
+            Theme and mechanics should support one another. If a game claims
+            to be about survival, diplomacy or exploration, the player should
+            experience those ideas through decisions rather than merely read
+            them in flavor text.
+        </p>
+
+    </section>
+
+    <section class="question-section">
+
+        <h2>
+            What Is the Difference Between a TCG and a Board Game?
+        </h2>
+
+        <p>
+            A traditional board game usually includes a fixed collection of
+            components designed to be played together.
+        </p>
+
+        <p>
+            A trading card game allows players to build customized decks from a
+            wider card pool, creating different strategies and combinations.
+        </p>
+
+        <p>
+            Both can involve tactical decisions, resource management,
+            competition, cooperation and replayable systems. The distinction
+            usually lies in how components are collected, customized and used.
+        </p>
+
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            Testing the Game
+        </p>
+
+        <h2>
+            How Does Tabletop Game Playtesting Work?
+        </h2>
+
+        <p>
+            Tabletop game playtesting involves observing players as they learn,
+            understand and play a game.
+        </p>
+
+        <p>
+            The designer evaluates rules clarity, pacing, balance, strategy,
+            player engagement and whether the game produces the intended
+            experience.
+        </p>
+
+        <p>
+            Playtesting is not simply asking whether players liked the game.
+            It means watching where they become confused, which choices feel
+            meaningful, which cards dominate and where the game quietly stops
+            being fun while everyone remains too polite to mention it.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>
+            What Should a Playtest Evaluate?
+        </h2>
+
+        <div class="process-grid">
+
+            <article class="process-card">
+
+                <h3>
+                    Rules Clarity
+                </h3>
+
+                <p>
+                    Can players understand the rules without constant
+                    explanation from the designer?
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    Balance
+                </h3>
+
+                <p>
+                    Are certain decks, cards or strategies consistently too
+                    strong or too weak?
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    Pacing
+                </h3>
+
+                <p>
+                    Does the game move naturally, or does it stall beneath
+                    unnecessary phases and decisions?
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    Accessibility
+                </h3>
+
+                <p>
+                    Can new players learn the game while experienced players
+                    still find depth?
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    Player Interaction
+                </h3>
+
+                <p>
+                    Do players respond to one another, or merely operate two
+                    separate machines across the same table?
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <h3>
+                    Enjoyment
+                </h3>
+
+                <p>
+                    Do players remain engaged, curious and interested in
+                    playing again?
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            Genome: Apex Shifting
+        </p>
+
+        <h2>
+            What Is Genome: Apex Shifting?
+        </h2>
+
+        <p>
+            Genome: Apex Shifting is an upcoming indie trading card game
+            developed by GhostWrite Studios.
+        </p>
+
+        <p>
+            Players build ecosystems, deploy creatures, splice Genes, spread
+            Afflictions, manipulate Climate conditions and evolve ordinary
+            wildlife into powerful Hybrid Apex predators.
+        </p>
+
+        <p>
+            The primary objective is to reduce the opposing player's Dominance
+            to zero through combat, adaptation, environmental pressure,
+            disease and ecosystem control.
+        </p>
+
+        <div class="button-row">
+
+            <a
+                href="../genome.html"
+                class="button"
+            >
+                Explore Genome
+            </a>
+
+            <a
+                href="../contact.html"
+                class="button button-secondary"
+            >
+                Ask About Playtesting
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="question-section">
+
+        <h2>
+            What Makes Genome Different From Other TCGs?
+        </h2>
+
+        <p>
+            Genome treats the ecosystem itself as part of the battlefield.
+        </p>
+
+        <p>
+            Creatures interact with predators, prey, environmental effects,
+            Genes, Afflictions and Climate conditions.
+        </p>
+
+        <p>
+            The game focuses on adaptation rather than relying only on direct
+            combat. A fallen creature may feed another organism. A Gene may
+            transform a weak species into a major threat. A Climate effect may
+            force both players to rebuild their strategy.
+        </p>
+
+        <div class="quote-block">
+            In Genome, evolution is not flavor text. It is the engine of the
+            game.
+        </div>
+
+    </section>
+
+    <section class="question-section">
+
+        <h2>
+            How Can I Playtest Genome: Apex Shifting?
+        </h2>
+
+        <p>
+            Genome is currently in alpha development and playtesting.
+        </p>
+
+        <p>
+            Interested players can contact GhostWrite Studios and include
+            their location, tabletop experience and general availability.
+        </p>
+
+        <p>
+            Current in-person playtesting opportunities are focused on the San
+            Diego area.
+        </p>
+
+        <p>
+            Both experienced TCG players and newer tabletop players are useful.
+            Experienced players can identify balance and strategy issues, while
+            new players reveal where the rules become unclear or unnecessarily
+            complicated.
+        </p>
+
+    </section>
+
+    <section>
+
+        <p class="eyebrow">
+            Game Night Articles
+        </p>
+
+        <h2>
+            Latest Tabletop and TCG Journal Entries
+        </h2>
+
+        <p class="section-intro">
+            New Game Night articles will be added here as they are published.
+        </p>
+
+        <div class="article-grid">
+
+            <article class="article-card">
+
+                <p class="article-category">
+                    Genome Development
+                </p>
+
+                <h3>
+                    Designing Genome: Apex Shifting
+                </h3>
+
+                <p>
+                    A behind-the-scenes look at ecosystems, Genes, Afflictions,
+                    Climate mechanics and Hybrid Apex predators.
+                </p>
+
+                <p class="article-meta">
+                    Article page coming soon
+                </p>
+
+            </article>
+
+            <article class="article-card">
+
+                <p class="article-category">
+                    Playtesting
+                </p>
+
+                <h3>
+                    What Alpha Playtesting Actually Reveals
+                </h3>
+
+                <p>
+                    Why player confusion, unintended strategies and broken card
+                    combinations are valuable development information.
+                </p>
+
+                <p class="article-meta">
+                    Coming soon
+                </p>
+
+            </article>
+
+            <article class="article-card">
+
+                <p class="article-category">
+                    TCG Design
+                </p>
+
+                <h3>
+                    Why Every Card Game Needs Counterplay
+                </h3>
+
+                <p>
+                    Powerful strategies feel better when opponents have real
+                    opportunities to respond.
+                </p>
+
+                <p class="article-meta">
+                    Coming soon
+                </p>
+
+            </article>
+
+            <article class="article-card">
+
+                <p class="article-category">
+                    Game Design
+                </p>
+
+                <h3>
+                    Theme Should Affect the Mechanics
+                </h3>
+
+                <p>
+                    Why a game's world becomes more convincing when players
+                    experience it through decisions rather than decoration.
+                </p>
+
+                <p class="article-meta">
+                    Coming soon
+                </p>
+
+            </article>
+
+            <article class="article-card">
+
+                <p class="article-category">
+                    Local Gaming
+                </p>
+
+                <h3>
+                    Why Local Game Stores Still Matter
+                </h3>
+
+                <p>
+                    Community, playtesting, events and the social infrastructure
+                    that online marketplaces cannot replace.
+                </p>
+
+                <p class="article-meta">
+                    Coming soon
+                </p>
+
+            </article>
+
+            <article class="article-card">
+
+                <p class="article-category">
+                    Guest Article
+                </p>
+
+                <h3>
+                    Submit a Game Night Feature
+                </h3>
+
+                <p>
+                    Game designers, players, artists, reviewers and local stores
+                    may pitch selected guest articles.
+                </p>
+
+                <p class="article-meta">
+                    Pitches open
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="question-section">
+
+        <p class="eyebrow">
+            Community Contributions
+        </p>
+
+        <h2>
+            Can I Submit a Guest Article to Game Night?
+        </h2>
+
+        <p>
+            GhostWrite Studios accepts selected pitches for guest articles
+            about tabletop games, trading card games, board games, indie game
+            development, playtesting, local stores and gaming communities.
+        </p>
+
+        <p>
+            Potential contributors may include game designers, card artists,
+            playtesters, reviewers, event organizers, store owners and players
+            with useful experience or a strong perspective.
+        </p>
+
+        <p>
+            A pitch should include the proposed topic, a short summary, the
+            writer's relevant experience and why the article would be useful to
+            Game Night readers.
+        </p>
+
+        <a
+            href="../contact.html"
+            class="button"
+        >
+            Pitch a Game Night Article
+        </a>
+
+    </section>
+
+    <section class="question-section">
+
+        <h2>
+            Can Local Game Stores Be Featured?
+        </h2>
+
+        <p>
+            Yes. Game Night may feature local game stores, events, playtesting
+            opportunities, community organizers and businesses supporting
+            tabletop gaming.
+        </p>
+
+        <p>
+            A store feature should focus on useful information, community
+            value, events or a meaningful story rather than functioning as a
+            disguised advertisement assembled from promotional adjectives.
+        </p>
+
+    </section>
+
+    <section>
+
+        <p class="eyebrow">
+            Tabletop Questions
+        </p>
+
+        <h2>
+            Frequently Asked Questions
+        </h2>
+
+        <article class="faq-item">
+
+            <h3>
+                Does Game Night Only Cover Genome?
+            </h3>
+
+            <p>
+                No. Genome is a major focus, but Game Night also covers other
+                trading card games, board games, game design, playtesting,
+                stores, events and guest contributions.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Are Board Game Reviews Accepted?
+            </h3>
+
+            <p>
+                Selected reviews and analytical articles may be accepted when
+                they offer useful insight rather than merely repeating product
+                descriptions.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Can Independent Game Designers Contribute?
+            </h3>
+
+            <p>
+                Yes. Independent designers may pitch articles about
+                development, mechanics, production, playtesting, setbacks and
+                lessons learned.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Can I Apply to Playtest Genome?
+            </h3>
+
+            <p>
+                Yes. Contact GhostWrite Studios with your location, tabletop
+                experience and availability. Current alpha opportunities are
+                focused on San Diego.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Do I Need TCG Experience to Playtest?
+            </h3>
+
+            <p>
+                No. Experienced and new players provide different kinds of
+                useful feedback.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Will Game Night Cover Local Events?
+            </h3>
+
+            <p>
+                Game Night may cover selected tabletop events, store nights,
+                tournaments, playtests and community gatherings.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Is Genome Available for Purchase?
+            </h3>
+
+            <p>
+                Not yet. Genome: Apex Shifting is currently in alpha
+                development and playtesting.
+            </p>
+
+        </article>
+
+    </section>
+
+    <section>
+
+        <h2>
+            Explore Other Journal Topics
+        </h2>
+
+        <div class="related-grid">
+
+            <article class="related-card">
+
+                <h3>
+                    Writing
+                </h3>
+
+                <p>
+                    Screenwriting, fiction, journalism, dialogue and creative
+                    craft.
+                </p>
+
+                <a href="writing.html">
+                    Explore Writing
+                </a>
+
+            </article>
+
+            <article class="related-card">
+
+                <h3>
+                    Editing
+                </h3>
+
+                <p>
+                    Developmental editing, revision, rewriting, screenplay
+                    editing and AI content cleanup.
+                </p>
+
+                <a href="editing.html">
+                    Explore Editing
+                </a>
+
+            </article>
+
+            <article class="related-card">
+
+                <h3>
+                    Digital Nomad
+                </h3>
+
+                <p>
+                    Remote work, creative entrepreneurship, travel and building
+                    GhostWrite Studios on the road.
+                </p>
+
+                <a href="digital-nomad.html">
+                    Explore Digital Nomad
+                </a>
+
+            </article>
+
+            <article class="related-card">
+
+                <h3>
+                    GhostWrite Mini Series
+                </h3>
+
+                <p>
+                    Meet the illustrated writing and editing staff behind
+                    GhostWrite Studios.
+                </p>
+
+                <a href="ghostwrite-mini-series.html">
+                    Meet the GhostWrite Team
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="closing-cta">
+
+        <p class="eyebrow">
+            Join the Table
+        </p>
+
+        <h2>
+            Interested in Games, Playtesting or Guest Writing?
+        </h2>
+
+        <p>
+            Contact GhostWrite Studios about Genome: Apex Shifting,
+            tabletop game playtesting, guest articles, local game coverage or
+            creative collaboration.
+        </p>
+
+        <div class="hero-actions">
+
+            <a
+                href="../contact.html"
+                class="button"
+            >
+                Contact GhostWrite Studios
+            </a>
+
+            <a
+                href="../genome.html"
+                class="button button-secondary"
+            >
+                Explore Genome
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; 2026 GhostWrite Studios. All rights reserved.
+    </p>
+
+    <nav aria-label="Footer navigation">
+        <a href="../../index.html">Home</a>
+        <a href="../genome.html">Genome</a>
+        <a href="../portfolio.html">Portfolio</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../journal.html">Journal</a>
+        <a href="../hireme.html">Hire Me</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+</footer>
+
+</body>
+
+</html>

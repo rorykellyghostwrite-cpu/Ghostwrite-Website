@@ -1,59 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact | GhostWrite Studios</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="../styles.css">
+    <title>
+        Contact GhostWrite Studios | Hire a Ghostwriter, Editor or Screenwriter
+    </title>
+
+    <meta
+        name="description"
+        content="Contact GhostWrite Studios to hire a professional ghostwriter, editor, journalist or screenwriter, request creative consulting, discuss a writing project or apply to playtest Genome: Apex Shifting."
+    >
+
+    <meta
+        name="keywords"
+        content="contact GhostWrite Studios, hire a ghostwriter, hire an editor, hire a screenwriter, professional ghostwriting services, freelance editor, screenplay editor, script consultant, journalism services, writing services, story development, creative consulting, Genome Apex Shifting playtesting, San Diego TCG playtester"
+    >
+
+    <meta name="author" content="Rory Kelly">
+
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://ghostwritestudios.com/pages/contact.html"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../styles.css"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="GhostWrite Studios"
+    >
+
+    <meta
+        property="og:title"
+        content="Contact GhostWrite Studios"
+    >
+
+    <meta
+        property="og:description"
+        content="Hire a ghostwriter, editor, journalist or screenwriter, discuss a creative project or ask about Genome: Apex Shifting playtesting."
+    >
+
+    <meta
+        property="og:url"
+        content="https://ghostwritestudios.com/pages/contact.html"
+    >
+
+    <meta
+        property="og:image"
+        content="https://ghostwritestudios.com/GhostwriteStudios.png"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="GhostWrite Studios logo"
+    >
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Contact GhostWrite Studios"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Contact GhostWrite Studios about ghostwriting, editing, screenwriting, journalism, creative consulting or Genome playtesting."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://ghostwritestudios.com/GhostwriteStudios.png"
+    >
+
+    <style>
+        .contact-page {
+            line-height: 1.75;
+        }
+
+        .contact-page section {
+            width: min(1000px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding: 4.5rem 0;
+        }
+
+        .contact-page .contact-hero {
+            padding-top: 5.5rem;
+            padding-bottom: 4.5rem;
+            text-align: center;
+        }
+
+        .contact-page .contact-hero p {
+            max-width: 760px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .contact-page .eyebrow {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .contact-page .contact-options {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(220px, 1fr)
+            );
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .contact-page .contact-card {
+            padding: 1.75rem;
+            border: 1px solid rgba(127, 127, 127, 0.3);
+            border-radius: 0.75rem;
+        }
+
+        .contact-page .contact-card h3 {
+            margin-top: 0;
+        }
+
+        .contact-page .contact-form-container {
+            max-width: 760px;
+        }
+
+        .contact-page form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .contact-page label {
+            margin-top: 0.75rem;
+            font-weight: 700;
+        }
+
+        .contact-page input,
+        .contact-page select,
+        .contact-page textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0.9rem 1rem;
+            border: 1px solid rgba(127, 127, 127, 0.5);
+            border-radius: 0.4rem;
+            font: inherit;
+        }
+
+        .contact-page textarea {
+            min-height: 190px;
+            resize: vertical;
+        }
+
+        .contact-page .form-note {
+            margin-top: 0;
+            font-size: 0.95rem;
+        }
+
+        .contact-page .faq-intro {
+            max-width: 800px;
+        }
+
+        .contact-page .faq-item {
+            max-width: 850px;
+            margin-top: 2.75rem;
+        }
+
+        .contact-page .faq-item h3 {
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-page .closing-links {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(220px, 1fr)
+            );
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .contact-page .link-card {
+            padding: 1.75rem;
+            border: 1px solid rgba(127, 127, 127, 0.3);
+            border-radius: 0.75rem;
+        }
+
+        .contact-page .link-card h3 {
+            margin-top: 0;
+        }
+
+        .contact-page .privacy-note {
+            max-width: 760px;
+            margin-top: 2rem;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 700px) {
+            .contact-page section {
+                padding-top: 3.25rem;
+                padding-bottom: 3.25rem;
+            }
+
+            .contact-page .contact-hero {
+                padding-top: 4rem;
+                padding-bottom: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-5FK2X831EN">
+    </script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            window.dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+        gtag("config", "G-5FK2X831EN");
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact GhostWrite Studios",
+        "url": "https://ghostwritestudios.com/pages/contact.html",
+        "description": "Contact GhostWrite Studios about ghostwriting, editing, journalism, screenwriting, creative consulting or Genome: Apex Shifting playtesting.",
+        "mainEntity": {
+            "@type": "ProfessionalService",
+            "name": "GhostWrite Studios",
+            "url": "https://ghostwritestudios.com/",
+            "email": "rory@ghostwritestudios.com",
+            "founder": {
+                "@type": "Person",
+                "name": "Rory Kelly"
+            },
+            "serviceType": [
+                "Ghostwriting",
+                "Editing",
+                "Journalism",
+                "Screenwriting",
+                "Screenplay Editing",
+                "Script Coverage",
+                "Story Development",
+                "Creative Consulting",
+                "AI Content Editing",
+                "Tabletop Game Playtesting"
+            ]
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I hire a ghostwriter?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To hire a ghostwriter through GhostWrite Studios, send a message describing the project, intended audience, format, approximate length, current materials and desired outcome. GhostWrite Studios will review the information and respond about scope, availability and next steps."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I hire an editor?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To hire an editor, describe the type of project, current word count or page count, editing goals, deadline and the kind of feedback needed. Editing services may include developmental editing, structural editing, line editing, copy editing, proofreading, screenplay editing and AI content editing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I become a Genome: Apex Shifting playtester?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To ask about Genome: Apex Shifting playtesting, select the playtesting option in the contact form and include your location, tabletop gaming experience and general availability. Current alpha testing opportunities are focused on the San Diego area."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I hire a screenwriter or screenplay editor?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Send information about the screenplay, film concept, genre, format, current page count and the help required. Services may include original screenwriting, screenplay editing, dialogue revision, story structure, script coverage and creative consulting."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What should I include in a writing project inquiry?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Include the type of project, audience, approximate length, deadline, current stage, available source material, desired service and intended outcome. Clear project details make it easier to evaluate scope and provide an accurate response."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does GhostWrite Studios offer journalism and article writing?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. GhostWrite Studios offers journalism, feature writing, interviews, profiles, researched articles, commentary, explanatory writing and long-form editorial content."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does GhostWrite Studios keep client projects confidential?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Client materials and project details are treated as private professional information. Specific confidentiality terms or nondisclosure requirements should be discussed before work begins."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much do ghostwriting and editing services cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pricing depends on the project type, length, complexity, research requirements, editing depth, deadline and condition of the existing material. A project description is required before an accurate quote can be provided."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ghostwritestudios.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://ghostwritestudios.com/pages/contact.html"
+            }
+        ]
+    }
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5FK2X831EN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-5FK2X831EN');
-</script>
 <body>
 
 <header>
 
-    <img
-        src="../GhostwriteStudios.png"
-        alt="GhostWrite Studios Logo"
-        class="logo"
+    <a
+        href="../index.html"
+        aria-label="GhostWrite Studios home"
     >
+        <img
+            src="../GhostwriteStudios.png"
+            alt="GhostWrite Studios logo"
+            class="logo"
+        >
+    </a>
 
-    <nav>
+    <nav aria-label="Main navigation">
         <a href="../index.html">Home</a>
         <a href="genome.html">Genome</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="writing.html">Writing</a>
+        <a href="journal.html">Journal</a>
         <a href="hireme.html">Hire Me</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+
+        <a
+            href="contact.html"
+            aria-current="page"
+        >
+            Contact
+        </a>
     </nav>
 
 </header>
 
-<main>
+<main class="contact-page">
 
-    <section class="hero">
+    <section class="contact-hero">
 
-        <h1>Contact GhostWrite Studios</h1>
+        <p class="eyebrow">
+            Writing, Editing and Creative Inquiries
+        </p>
+
+        <h1>
+            Contact GhostWrite Studios
+        </h1>
 
         <p>
-            For business inquiries, collaborations, writing projects,
-            questions about our work, or interest in Genome: Apex Shifting,
-            send us a message below.
+            Contact GhostWrite Studios to discuss professional ghostwriting,
+            editing, journalism, screenwriting, screenplay development,
+            creative consulting, original intellectual property or
+            <strong>Genome: Apex Shifting</strong> playtesting.
+        </p>
+
+        <p>
+            Include as much useful information as possible about your project,
+            goals, format and timeline. “I need words, possibly good ones”
+            remains technically an inquiry, but it gives everyone considerably
+            more archaeological work to perform.
         </p>
 
     </section>
 
-    <section class="contact-form">
+    <section>
+
+        <h2>
+            What Can I Contact GhostWrite Studios About?
+        </h2>
+
+        <div class="contact-options">
+
+            <article class="contact-card">
+
+                <h3>Hire a Ghostwriter</h3>
+
+                <p>
+                    Ask about ghostwriting for articles, essays, blogs,
+                    newsletters, scripts, fiction, personal stories,
+                    branded content or other written projects.
+                </p>
+
+            </article>
+
+            <article class="contact-card">
+
+                <h3>Hire an Editor</h3>
+
+                <p>
+                    Request developmental editing, structural editing,
+                    line editing, copy editing, proofreading, dialogue
+                    refinement or AI content editing.
+                </p>
+
+            </article>
+
+            <article class="contact-card">
+
+                <h3>Screenwriting Services</h3>
+
+                <p>
+                    Discuss original screenwriting, screenplay editing,
+                    script coverage, dialogue, pacing, story structure
+                    or character development.
+                </p>
+
+            </article>
+
+            <article class="contact-card">
+
+                <h3>Journalism and Articles</h3>
+
+                <p>
+                    Request interviews, profiles, features, researched
+                    articles, explanatory journalism, commentary or
+                    long-form editorial writing.
+                </p>
+
+            </article>
+
+            <article class="contact-card">
+
+                <h3>Creative Consulting</h3>
+
+                <p>
+                    Ask about story development, worldbuilding, narrative
+                    design, intellectual property development or tabletop
+                    game concepts.
+                </p>
+
+            </article>
+
+            <article class="contact-card">
+
+                <h3>Genome Playtesting</h3>
+
+                <p>
+                    Ask about alpha playtesting opportunities for
+                    Genome: Apex Shifting in the San Diego area.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="contact-form-container">
+
+        <p class="eyebrow">
+            Send a Project Inquiry
+        </p>
+
+        <h2>
+            How Do I Contact GhostWrite Studios?
+        </h2>
+
+        <p>
+            Complete the form below with your contact information, inquiry
+            type and project details.
+        </p>
 
         <form
             action="https://formsubmit.co/rory@ghostwritestudios.com"
@@ -72,47 +551,560 @@
                 value="false"
             >
 
-            <label for="name">Name</label>
+            <input
+                type="hidden"
+                name="_template"
+                value="table"
+            >
+
+            <input
+                type="text"
+                name="_honey"
+                tabindex="-1"
+                autocomplete="off"
+                style="display: none;"
+                aria-hidden="true"
+            >
+
+            <label for="name">
+                Name
+            </label>
 
             <input
                 type="text"
                 id="name"
                 name="name"
+                autocomplete="name"
                 required
             >
 
-            <label for="email">Email</label>
+            <label for="email">
+                Email
+            </label>
 
             <input
                 type="email"
                 id="email"
                 name="email"
+                autocomplete="email"
                 required
             >
 
-            <label for="subject">Subject</label>
+            <label for="inquiry-type">
+                What are you contacting us about?
+            </label>
+
+            <select
+                id="inquiry-type"
+                name="inquiry_type"
+                required
+            >
+                <option value="">
+                    Select an inquiry type
+                </option>
+
+                <option value="Ghostwriting">
+                    Ghostwriting
+                </option>
+
+                <option value="Editing">
+                    Editing
+                </option>
+
+                <option value="Screenwriting">
+                    Screenwriting or screenplay editing
+                </option>
+
+                <option value="Journalism">
+                    Journalism or article writing
+                </option>
+
+                <option value="Creative consulting">
+                    Creative consulting or story development
+                </option>
+
+                <option value="Genome playtesting">
+                    Genome: Apex Shifting playtesting
+                </option>
+
+                <option value="Collaboration">
+                    Collaboration or guest contribution
+                </option>
+
+                <option value="Other">
+                    Other inquiry
+                </option>
+            </select>
+
+            <label for="subject">
+                Subject
+            </label>
 
             <input
                 type="text"
                 id="subject"
                 name="subject"
+                placeholder="Example: Developmental editing for a feature screenplay"
                 required
             >
 
-            <label for="message">Message</label>
+            <label for="project-type">
+                Project type
+            </label>
+
+            <input
+                type="text"
+                id="project-type"
+                name="project_type"
+                placeholder="Article, screenplay, manuscript, game, website or other project"
+            >
+
+            <label for="project-length">
+                Approximate word count or page count
+            </label>
+
+            <input
+                type="text"
+                id="project-length"
+                name="project_length"
+                placeholder="Example: 1,500 words or 105 screenplay pages"
+            >
+
+            <label for="deadline">
+                Desired deadline
+            </label>
+
+            <input
+                type="text"
+                id="deadline"
+                name="deadline"
+                placeholder="Include a date or describe your preferred timeline"
+            >
+
+            <label for="budget">
+                Estimated budget
+            </label>
+
+            <input
+                type="text"
+                id="budget"
+                name="budget"
+                placeholder="Optional, but useful for determining scope"
+            >
+
+            <label for="message">
+                Project details
+            </label>
 
             <textarea
                 id="message"
                 name="message"
-                rows="8"
+                rows="10"
+                placeholder="Describe the project, current stage, intended audience, goals, available materials and the kind of help you need."
                 required
             ></textarea>
+
+            <p class="form-note">
+                Do not paste an entire unpublished manuscript or screenplay
+                into this form. A summary, page count and description of the
+                requested service are enough for the first message.
+            </p>
 
             <button type="submit">
                 Send Message
             </button>
 
         </form>
+
+        <p class="privacy-note">
+            Information submitted through this form is used to review and
+            respond to your inquiry. Client materials and project details are
+            treated as private professional information.
+        </p>
+
+    </section>
+
+    <section>
+
+        <p class="eyebrow">
+            Hiring and Playtesting Questions
+        </p>
+
+        <h2>
+            Frequently Asked Questions
+        </h2>
+
+        <p class="faq-intro">
+            These answers explain how to hire GhostWrite Studios, what
+            information to include in an inquiry and how to ask about
+            Genome: Apex Shifting playtesting.
+        </p>
+
+        <article class="faq-item">
+
+            <h3>
+                How Do I Hire a Ghostwriter?
+            </h3>
+
+            <p>
+                To hire a ghostwriter, send a message describing the kind of
+                project you want to create, its intended audience, approximate
+                length, current materials, preferred tone and desired outcome.
+            </p>
+
+            <p>
+                Useful source materials may include notes, outlines,
+                interviews, transcripts, research, rough drafts or examples
+                of your natural voice. You do not need to have a polished
+                concept before making contact.
+            </p>
+
+            <p>
+                After reviewing the inquiry, GhostWrite Studios can determine
+                whether the project is a good fit and discuss scope,
+                availability, deliverables and pricing.
+            </p>
+
+            <p>
+                Learn more about
+                <a href="hireme.html">
+                    professional ghostwriting services
+                </a>.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                How Do I Hire an Editor?
+            </h3>
+
+            <p>
+                To hire an editor, describe the type of project, its current
+                word count or page count, the stage of development and the
+                problems you want the edit to address.
+            </p>
+
+            <p>
+                Editing may include developmental editing, structural editing,
+                line editing, copy editing, proofreading, dialogue refinement,
+                screenplay editing, pacing analysis or AI content editing.
+            </p>
+
+            <p>
+                It is also useful to mention your deadline, intended audience
+                and whether you want detailed editorial notes, direct changes
+                to the text or both.
+            </p>
+
+            <p>
+                Review available
+                <a href="hireme.html">
+                    editing and writing services
+                </a>.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                How Do I Hire a Screenwriter or Screenplay Editor?
+            </h3>
+
+            <p>
+                Send a short description of the film or television project,
+                including the genre, format, current page count, development
+                stage and the kind of help needed.
+            </p>
+
+            <p>
+                Screenwriting services may include original screenplay
+                development, screenplay editing, dialogue revision, character
+                development, story structure, pacing analysis, script coverage
+                and creative consulting.
+            </p>
+
+            <p>
+                You may also include a logline, synopsis or brief explanation
+                of the central concept. There is no need to submit an entire
+                screenplay before the project and service have been discussed.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                How Do I Apply to Playtest Genome: Apex Shifting?
+            </h3>
+
+            <p>
+                Select <strong>Genome: Apex Shifting playtesting</strong> in
+                the inquiry form and include your general location, tabletop
+                gaming experience and availability.
+            </p>
+
+            <p>
+                Current alpha playtesting is focused on the San Diego,
+                California area. Both experienced trading card game players
+                and newer tabletop players may provide valuable feedback.
+            </p>
+
+            <p>
+                Playtesters may be asked to evaluate rules clarity, deck
+                balance, card interactions, match pacing, learning difficulty
+                and the overall gameplay experience.
+            </p>
+
+            <p>
+                Read more about the
+                <a href="genome.html">
+                    Genome: Apex Shifting trading card game
+                </a>.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                What Should I Include in a Writing Project Inquiry?
+            </h3>
+
+            <p>
+                Include the project type, approximate length, current stage,
+                intended audience, desired service, deadline and expected
+                outcome.
+            </p>
+
+            <p>
+                You should also mention whether you already have an outline,
+                draft, research, interviews, references or other source
+                material. More context allows GhostWrite Studios to assess the
+                work accurately instead of estimating through interpretive
+                smoke signals.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                How Much Do Ghostwriting and Editing Services Cost?
+            </h3>
+
+            <p>
+                Pricing depends on the project type, length, complexity,
+                research requirements, editing depth, deadline and condition
+                of the existing material.
+            </p>
+
+            <p>
+                A short article, complete screenplay edit and book-length
+                ghostwriting project require very different amounts of work.
+                Submit the project details through the contact form so the
+                scope can be reviewed before pricing is discussed.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Does GhostWrite Studios Offer Journalism and Article Writing?
+            </h3>
+
+            <p>
+                Yes. Journalism and article writing services may include
+                interviews, profiles, features, researched articles,
+                explanatory journalism, cultural commentary, business
+                content and long-form editorial writing.
+            </p>
+
+            <p>
+                Visit the
+                <a href="writing.html">
+                    Writing page
+                </a>
+                for more information about published and professional writing.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Can I Contact GhostWrite Studios About a Collaboration?
+            </h3>
+
+            <p>
+                Yes. Collaboration inquiries may include guest Journal
+                contributions, tabletop gaming coverage, interviews, creative
+                partnerships, independent film projects, editorial work or
+                related professional opportunities.
+            </p>
+
+            <p>
+                Explain the proposed collaboration, who is involved, the
+                intended audience and what you would like GhostWrite Studios
+                to contribute.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Are Client Projects Kept Confidential?
+            </h3>
+
+            <p>
+                Client materials, unpublished ideas and project details are
+                treated as private professional information.
+            </p>
+
+            <p>
+                Any specific nondisclosure agreement, ownership requirement,
+                credit arrangement or confidentiality term should be discussed
+                before work begins.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Who Owns the Finished Work?
+            </h3>
+
+            <p>
+                Ownership and usage rights depend on the type of service and
+                the written agreement for the project.
+            </p>
+
+            <p>
+                Ghostwriting, editing, collaboration, screenwriting and
+                intellectual property development may involve different credit
+                and ownership arrangements. Those terms should be clearly
+                established before the project begins.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Can GhostWrite Studios Work With an Existing Draft?
+            </h3>
+
+            <p>
+                Yes. Projects may begin as rough notes, incomplete drafts,
+                interview transcripts, outlines, finished manuscripts,
+                screenplays or AI-assisted writing.
+            </p>
+
+            <p>
+                The condition of the material helps determine whether the
+                project needs ghostwriting, rewriting, developmental editing,
+                line editing, proofreading or another service.
+            </p>
+
+        </article>
+
+        <article class="faq-item">
+
+            <h3>
+                Does GhostWrite Studios Edit AI-Assisted Writing?
+            </h3>
+
+            <p>
+                Yes. AI content editing focuses on removing generic phrasing,
+                repetitive structure, filler language, false confidence,
+                invented details and other patterns that weaken AI-assisted
+                writing.
+            </p>
+
+            <p>
+                The purpose is to create clearer, more accurate and more
+                natural work while preserving the writer's intended meaning
+                and individual voice.
+            </p>
+
+        </article>
+
+    </section>
+
+    <section>
+
+        <h2>
+            Where Can I Learn More Before Making Contact?
+        </h2>
+
+        <div class="closing-links">
+
+            <article class="link-card">
+
+                <h3>Hire Me</h3>
+
+                <p>
+                    Review professional ghostwriting, editing, screenwriting
+                    and creative development services.
+                </p>
+
+                <a href="hireme.html">
+                    View services
+                </a>
+
+            </article>
+
+            <article class="link-card">
+
+                <h3>Portfolio</h3>
+
+                <p>
+                    Explore screenwriting, journalism, fiction, editing and
+                    other creative work.
+                </p>
+
+                <a href="portfolio.html">
+                    View the portfolio
+                </a>
+
+            </article>
+
+            <article class="link-card">
+
+                <h3>Genome</h3>
+
+                <p>
+                    Learn about Genome: Apex Shifting, its starter ecosystems
+                    and current alpha playtesting.
+                </p>
+
+                <a href="genome.html">
+                    Explore Genome
+                </a>
+
+            </article>
+
+            <article class="link-card">
+
+                <h3>Journal</h3>
+
+                <p>
+                    Read articles about writing, editing, digital nomad life,
+                    serialized fiction and tabletop gaming.
+                </p>
+
+                <a href="journal.html">
+                    Read the Journal
+                </a>
+
+            </article>
+
+        </div>
 
     </section>
 
@@ -121,10 +1113,22 @@
 <footer>
 
     <p>
-        © 2026 GhostWrite Studios
+        &copy; 2026 GhostWrite Studios. All rights reserved.
     </p>
+
+    <nav aria-label="Footer navigation">
+        <a href="../index.html">Home</a>
+        <a href="genome.html">Genome</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="writing.html">Writing</a>
+        <a href="journal.html">Journal</a>
+        <a href="hireme.html">Hire Me</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
 </footer>
 
 </body>
+
 </html>

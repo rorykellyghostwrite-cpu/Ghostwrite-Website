@@ -1,40 +1,431 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Genome: Apex Shifting | GhostWrite Studios</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="../styles.css">
+    <title>
+        Genome: Apex Shifting | New Trading Card Game and Strategy TCG
+    </title>
+
+    <meta
+        name="description"
+        content="Discover Genome: Apex Shifting, an upcoming indie trading card game and competitive tabletop strategy game featuring evolving creatures, ecosystems, Genes, Afflictions, Climate effects and Hybrid Apex predators. Currently in alpha playtesting in San Diego."
+    >
+
+    <meta
+        name="keywords"
+        content="Genome Apex Shifting, new trading card game, upcoming TCG, new TCG, indie trading card game, strategy card game, tabletop card game, collectible card game, competitive card game, new board game, upcoming board games, indie board game, tabletop strategy game, creature card game, evolution card game, ecosystem game, deck building game, tactical card game, card battler, alpha playtesting, tabletop game playtesting, San Diego board games, San Diego TCG, GhostWrite Studios"
+    >
+
+    <meta name="author" content="Rory Kelly">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="#111111">
+
+    <link
+        rel="canonical"
+        href="https://ghostwritestudios.com/pages/genome.html"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../styles.css"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="GhostWrite Studios"
+    >
+
+    <meta
+        property="og:title"
+        content="Genome: Apex Shifting | Upcoming Indie Trading Card Game"
+    >
+
+    <meta
+        property="og:description"
+        content="Adapt, evolve and dominate in Genome: Apex Shifting, an upcoming competitive strategy card game built around ecosystems, evolving wildlife, genetic enhancements and Hybrid Apex predators."
+    >
+
+    <meta
+        property="og:url"
+        content="https://ghostwritestudios.com/pages/genome.html"
+    >
+
+    <meta
+        property="og:image"
+        content="https://ghostwritestudios.com/genomebanner.png"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="Genome: Apex Shifting trading card game banner"
+    >
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Genome: Apex Shifting | New Strategy TCG"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Explore an upcoming indie trading card game where ecosystems become kingdoms and evolution becomes a weapon."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://ghostwritestudios.com/genomebanner.png"
+    >
+
+    <!--
+        Page-specific spacing.
+        These rules affect only the Genome page and do not require separate
+        changes to the main stylesheet.
+    -->
+    <style>
+        .genome-page {
+            line-height: 1.75;
+        }
+
+        .genome-page section {
+            width: min(1100px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding: 4.5rem 0;
+        }
+
+        .genome-page .genome-hero {
+            padding-top: 5.5rem;
+            padding-bottom: 5.5rem;
+            text-align: center;
+        }
+
+        .genome-page .genome-hero p {
+            max-width: 800px;
+            margin: 1.25rem auto 0;
+        }
+
+        .genome-page .eyebrow {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .genome-page .tagline {
+            font-size: clamp(1.25rem, 3vw, 2rem);
+            font-weight: 700;
+        }
+
+        .genome-page .section-intro {
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+
+        .genome-page .lore p,
+        .genome-page .gameplay p,
+        .genome-page .faq p,
+        .genome-page .playtesting p {
+            max-width: 850px;
+        }
+
+        .genome-page .feature-grid,
+        .genome-page .deck-grid,
+        .genome-page .link-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(240px, 1fr)
+            );
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .genome-page .feature-card,
+        .genome-page .deck-card,
+        .genome-page .link-card {
+            padding: 1.75rem;
+            border: 1px solid rgba(127, 127, 127, 0.3);
+            border-radius: 0.75rem;
+        }
+
+        .genome-page .feature-card h3,
+        .genome-page .deck-card h3,
+        .genome-page .link-card h3 {
+            margin-top: 0;
+        }
+
+        .genome-page .image-section {
+            width: 100%;
+            max-width: none;
+            padding: 0;
+        }
+
+        .genome-page .image-section img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .genome-page .contained-image {
+            text-align: center;
+        }
+
+        .genome-page .contained-image img {
+            display: block;
+            width: min(100%, 760px);
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .genome-page .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .genome-page .centered-buttons {
+            justify-content: center;
+        }
+
+        .genome-page .text-link {
+            font-weight: 700;
+        }
+
+        .genome-page .status-list {
+            max-width: 800px;
+            padding-left: 1.25rem;
+        }
+
+        .genome-page .status-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .genome-page .faq-item {
+            max-width: 850px;
+            margin-top: 2.5rem;
+        }
+
+        .genome-page .faq-item h3 {
+            margin-bottom: 0.75rem;
+        }
+
+        .genome-page .closing-cta {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+
+        .genome-page .closing-cta p {
+            max-width: 760px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (max-width: 700px) {
+            .genome-page section {
+                padding-top: 3.25rem;
+                padding-bottom: 3.25rem;
+            }
+
+            .genome-page .genome-hero {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+
+            .genome-page .button-row {
+                flex-direction: column;
+            }
+
+            .genome-page .button-row .button {
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-5FK2X831EN">
+    </script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            window.dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+        gtag("config", "G-5FK2X831EN");
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Genome: Apex Shifting",
+        "alternateName": "Genome TCG",
+        "url": "https://ghostwritestudios.com/pages/genome.html",
+        "image": [
+            "https://ghostwritestudios.com/genomebanner.png",
+            "https://ghostwritestudios.com/CARDBACK2.png"
+        ],
+        "description": "Genome: Apex Shifting is an upcoming competitive trading card game and tabletop strategy game in which players build ecosystems, deploy creatures, splice Genes, spread Afflictions, manipulate Climate and evolve Hybrid Apex predators.",
+        "category": [
+            "Trading Card Game",
+            "Strategy Card Game",
+            "Tabletop Game",
+            "Competitive Card Game",
+            "Indie Board Game"
+        ],
+        "audience": {
+            "@type": "Audience",
+            "audienceType": [
+                "Trading card game players",
+                "Tabletop strategy gamers",
+                "Board game players",
+                "TCG playtesters"
+            ]
+        },
+        "brand": {
+            "@type": "Brand",
+            "name": "GhostWrite Studios"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "GhostWrite Studios",
+            "url": "https://ghostwritestudios.com/"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Genome: Apex Shifting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Genome: Apex Shifting is an upcoming indie trading card game and competitive tabletop strategy game developed by GhostWrite Studios. Players build ecosystems, deploy creatures, splice Genes, spread Afflictions, alter the Climate and evolve Hybrid Apex predators."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do you play Genome: Apex Shifting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Players create and defend evolving ecosystems while using creatures, Genes, Afflictions, Climate effects and Hybrid Apex predators. The primary objective is to reduce the opposing player's Dominance to zero."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Genome a trading card game or a board game?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Genome is a competitive tabletop trading card game. It may also appeal to players searching for strategic board games, collectible card games, deck-building experiences and creature-based tabletop games."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What makes Genome different from other trading card games?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Genome treats evolution and ecology as core gameplay systems. Players manage ecosystems, enhance creatures with Genes, spread Afflictions, manipulate environmental conditions and create powerful Hybrid Apex organisms."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Genome: Apex Shifting available to play?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Genome: Apex Shifting is currently in alpha development and playtesting in San Diego, California. Interested tabletop and trading card game players may contact GhostWrite Studios for information about future playtesting opportunities."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What starter decks are available in Genome?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The current alpha game includes five starter ecosystems: Rot Garden Delirium, Frostfang Titans, Stormtalon Depths, Honeyfang Hunters and Sandsting Nightmares."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ghostwritestudios.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Genome: Apex Shifting",
+                "item": "https://ghostwritestudios.com/pages/genome.html"
+            }
+        ]
+    }
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5FK2X831EN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-5FK2X831EN');
-</script>
 <body>
 
     <header>
 
-        <a href="../index.html">
+        <a
+            href="../index.html"
+            aria-label="GhostWrite Studios home"
+        >
             <img
                 class="logo"
                 src="../GhostwriteStudios.png"
-                alt="GhostWrite Studios Logo"
+                alt="GhostWrite Studios logo"
             >
         </a>
 
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="../index.html">Home</a>
-            <a href="genome.html">Genome</a>
+
+            <a
+                href="genome.html"
+                aria-current="page"
+            >
+                Genome
+            </a>
+
             <a href="portfolio.html">Portfolio</a>
             <a href="writing.html">Writing</a>
+            <a href="journal.html">Journal</a>
             <a href="hireme.html">Hire Me</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
@@ -42,294 +433,930 @@
 
     </header>
 
-    <section class="banner">
-        <img
-            src="../genomebanner.png"
-            alt="Genome: Apex Shifting Banner"
+    <div class="genome-page">
+
+        <section
+            class="image-section"
+            aria-label="Genome: Apex Shifting banner"
         >
-    </section>
-
-    <main>
-
-        <section class="hero">
-
-            <h1>Genome: Apex Shifting</h1>
-
-            <p>
-                Adapt. Evolve. Dominate.
-            </p>
-
-            <p>
-                An original tabletop strategy card game currently in development
-                by GhostWrite Studios.
-            </p>
-
-        </section>
-
-        <section class="banner">
             <img
-                src="../lucidbanner.png"
-                alt="Lucid Evolution Banner"
+                src="../genomebanner.png"
+                alt="Genome: Apex Shifting, an upcoming indie trading card game by GhostWrite Studios"
+                width="1600"
+                height="600"
+                fetchpriority="high"
             >
         </section>
 
-        <section class="hero">
+        <main>
 
-            <h1>Genome: Apex Shifting</h1>
+            <section class="genome-hero">
 
-            <p class="tagline">
-                Before mankind ruled the Earth, the gods ruled mankind.
-            </p>
+                <p class="eyebrow">
+                    Upcoming Indie Trading Card Game
+                </p>
 
-        </section>
+                <h1>
+                    Genome: Apex Shifting
+                </h1>
 
-        <section class="lore">
+                <p class="tagline">
+                    Adapt. Evolve. Dominate.
+                </p>
 
-            <h2>The Age of Humanity</h2>
+                <p>
+                    <strong>Genome: Apex Shifting</strong> is a new
+                    competitive trading card game and tabletop strategy game
+                    currently in alpha development by GhostWrite Studios.
+                </p>
 
-            <p>
-                Long before recorded history, the gods did not wage war against
-                one another directly. Instead, they chose champions. Entire
-                civilizations became extensions of divine ambition.
-            </p>
+                <p>
+                    Build a living ecosystem, deploy powerful creatures,
+                    splice genetic enhancements, spread devastating
+                    Afflictions, manipulate the Climate and evolve ordinary
+                    wildlife into legendary Hybrid Apex predators.
+                </p>
 
-            <p>
-                Odin rallied the Vikings. Zeus commanded the Greeks. Tyr and Ares
-                each forged warriors in their own image. Ra watched over Egypt.
-                Amaterasu guided Japan. Every pantheon cultivated its people,
-                believing their followers would one day establish the dominant
-                civilization of the world.
-            </p>
+                <div class="button-row centered-buttons">
 
-            <p>
-                Every conquest, every crusade, every empire was another move in a
-                game played by immortal hands.
-            </p>
+                    <a
+                        href="#about-genome"
+                        class="button"
+                    >
+                        Discover the Game
+                    </a>
 
-        </section>
+                    <a
+                        href="contact.html"
+                        class="button button-secondary"
+                    >
+                        Apply to Playtest
+                    </a>
 
-        <section class="lore">
+                </div>
 
-            <h2>The Great Disappointment</h2>
+            </section>
 
-            <p>
-                Time, however, changed mankind.
-            </p>
-
-            <p>
-                Humanity grew independent. Faith weakened. Nations stopped
-                belonging to gods and instead belonged to themselves. Men no
-                longer marched because Odin commanded them. They marched because
-                kings demanded it. They no longer sacrificed for Zeus. They
-                questioned him.
-            </p>
-
-            <p>
-                The gods had not lost their power. They had lost their influence.
-            </p>
-
-        </section>
-
-        <section class="lore">
-
-            <h2>Loki's Proposal</h2>
-
-            <p>
-                It was Loki who first spoke the idea aloud.
-            </p>
-
-            <p>
-                If humanity had become too unpredictable, then why continue
-                relying upon them at all?
-            </p>
-
-            <p>
-                Why wage wars through creatures capable of doubt, rebellion, and
-                free will... when evolution itself could become the battlefield?
-            </p>
-
-            <p>
-                The other gods laughed. Then they listened.
-            </p>
-
-        </section>
-
-        <section class="proposal-banner">
-            <img
-                src="../Lokisproposal.png"
-                alt="Loki proposes a new battlefield to the assembled pantheons"
+            <section
+                class="image-section"
+                aria-label="Evolution artwork from Genome"
             >
-        </section>
+                <img
+                    src="../lucidbanner.png"
+                    alt="Evolution-themed artwork for Genome: Apex Shifting"
+                    width="1600"
+                    height="600"
+                    loading="lazy"
+                >
+            </section>
 
-        <section class="lore">
-
-            <h2>The Apex Shift</h2>
-
-            <p>
-                The pantheons abandoned humanity as their chosen armies and
-                turned their attention toward life itself.
-            </p>
-
-            <p>
-                Ecosystems became kingdoms. Evolution became a weapon. Predators
-                were reshaped. Species were rewritten. Every mutation was
-                intentional. Every adaptation served a god.
-            </p>
-
-            <p>
-                The old wars never ended.
-            </p>
-
-            <p>
-                They simply found new soldiers.
-            </p>
-
-        </section>
-
-        <section class="lore">
-
-            <h2>About the Game</h2>
-
-            <p>
-                Genome: Apex Shifting is a competitive trading card game where
-                evolution is your greatest weapon.
-            </p>
-
-            <p>
-                Build thriving ecosystems, unleash powerful creatures, splice
-                Genes, infect your enemies with devastating Afflictions,
-                manipulate the Climate, and evolve ordinary wildlife into
-                terrifying Hybrid Apex predators.
-            </p>
-
-            <p>
-                Every decision changes the balance of your ecosystem. Every
-                creature can become something greater... or become food for
-                something else.
-            </p>
-
-            <p>
-                Victory comes by reducing your opponent's Dominance to zero, but
-                there are countless ways to get there. Overwhelm them with
-                predators. Spread disease through their ecosystem. Adapt your
-                creatures with powerful genetic enhancements. Or evolve
-                legendary apex organisms capable of rewriting the battlefield.
-            </p>
-
-        </section>
-
-        <section class="lore">
-
-            <h2>Five Alpha Starter Decks</h2>
-
-            <p>
-                Every Alpha Starter Deck represents a unique ecosystem and a
-                different philosophy of survival. No two decks play alike. Each
-                rewards a completely different approach to evolution, combat,
-                and adaptation.
-            </p>
-
-            <ul>
-
-                <li>
-                    <strong>🌿 Rot Garden Delirium</strong><br>
-                    Death fuels new life. Fungi, parasites, scavengers, and
-                    decomposers transform every fallen creature into an
-                    opportunity for explosive growth.
-                </li>
-
-                <li>
-                    <strong>❄ Frostfang Titans</strong><br>
-                    Towering predators dominate frozen wildernesses through
-                    overwhelming strength, precision strikes, and colossal
-                    hybrid evolution.
-                </li>
-
-                <li>
-                    <strong>🌊 Stormtalon Depths</strong><br>
-                    Master the oceans and mountains with devastating natural
-                    disasters, information control, and relentless evolutionary
-                    tempo.
-                </li>
-
-                <li>
-                    <strong>🌾 Honeyfang Hunters</strong><br>
-                    Fast predators, venomous reptiles, swarming insects, and
-                    aggressive genetic enhancements overwhelm opponents before
-                    they can stabilize.
-                </li>
-
-                <li>
-                    <strong>🏜 Sandsting Nightmares</strong><br>
-                    Strike from the dunes with coordinated Pack tactics, deadly
-                    venom, mirages, and relentless battlefield pressure.
-                </li>
-
-            </ul>
-
-        </section>
-
-        <section class="lore">
-
-            <h2>Evolution Never Ends</h2>
-
-            <p>
-                Every creature can be enhanced with Genes. Every Gene can reshape
-                the battlefield. Every Hybrid represents years of impossible
-                evolution condensed into a single terrifying organism.
-            </p>
-
-            <p>
-                No two games unfold the same way. Every ecosystem evolves
-                differently. Every battle tells a new story.
-            </p>
-
-        </section>
-
-        <section class="card-showcase">
-            <img
-                src="../CARDBACK2.png"
-                alt="Genome Card Back"
+            <section
+                class="gameplay"
+                id="about-genome"
             >
-        </section>
 
-        <section class="lore">
+                <p class="eyebrow">
+                    New TCG in Development
+                </p>
 
-            <h2>Join the Evolution</h2>
+                <h2>
+                    What Is Genome: Apex Shifting?
+                </h2>
 
-            <p>
-                <strong>Genome: Apex Shifting</strong> is currently undergoing
-                <strong>Alpha Testing</strong> in San Diego, California.
-            </p>
+                <p class="section-intro">
+                    Genome: Apex Shifting is an upcoming indie trading card
+                    game built around evolution, ecology and competitive
+                    strategy. Players command entire ecosystems rather than
+                    relying on a single species, faction or hero.
+                </p>
 
-            <p>
-                Every game played helps shape the future of Genome. New mechanics
-                are refined, creatures evolve, and player feedback directly
-                influences the world taking shape today.
-            </p>
+                <p>
+                    Each player develops an ecosystem filled with creatures,
+                    predators, prey, environmental effects and evolutionary
+                    possibilities. Genes can strengthen existing organisms.
+                    Afflictions can destabilize an opposing ecosystem.
+                    Climate cards can transform the battlefield. Hybrid cards
+                    can combine evolutionary paths into powerful Apex
+                    organisms.
+                </p>
 
-            <p>
-                If you're passionate about strategy games, trading card games,
-                or simply want to help build something from the ground up, we'd
-                love to have you at the table.
-            </p>
+                <p>
+                    The primary objective is to reduce your opponent's
+                    <strong>Dominance</strong> to zero. How you accomplish that
+                    depends on the ecosystem you build and the evolutionary
+                    strategy you choose.
+                </p>
 
-            <p>
-                Interested in becoming an Alpha playtester?
-                Visit the <a href="contact.html"><strong>Contact</strong></a>
-                page and send us a message. We'll get in touch with information
-                about upcoming playtesting sessions in
-                <strong>San Diego, California.</strong>
-            </p>
+                <div class="feature-grid">
 
-        </section>
+                    <article class="feature-card">
 
-    </main>
+                        <h3>Build an Ecosystem</h3>
+
+                        <p>
+                            Develop a functioning network of creatures,
+                            resources, predators and survival strategies.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <h3>Splice Powerful Genes</h3>
+
+                        <p>
+                            Enhance creatures with new genetic traits,
+                            abilities and evolutionary advantages.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <h3>Spread Afflictions</h3>
+
+                        <p>
+                            Infect enemy creatures and disrupt the balance of
+                            opposing ecosystems.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <h3>Manipulate the Climate</h3>
+
+                        <p>
+                            Change environmental conditions and force both
+                            players to adapt their strategies.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <h3>Create Hybrid Apex Predators</h3>
+
+                        <p>
+                            Combine evolutionary traits to unleash organisms
+                            capable of reshaping the battlefield.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <h3>Destroy Enemy Dominance</h3>
+
+                        <p>
+                            Win through aggression, adaptation, disease,
+                            attrition or overwhelming evolutionary pressure.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="lore">
+
+                <p class="eyebrow">
+                    The World Behind the Cards
+                </p>
+
+                <h2>
+                    What Is the Story of Genome?
+                </h2>
+
+                <p class="tagline">
+                    Before mankind ruled the Earth, the gods ruled mankind.
+                </p>
+
+                <p>
+                    Long before recorded history, the gods did not wage war
+                    against one another directly. Instead, they chose human
+                    champions. Entire civilizations became extensions of
+                    divine ambition.
+                </p>
+
+                <p>
+                    Odin rallied the Vikings. Zeus commanded the Greeks.
+                    Tyr and Ares each forged warriors in their own image.
+                    Ra watched over Egypt. Amaterasu guided Japan. Every
+                    pantheon cultivated its people, believing its followers
+                    would one day establish the dominant civilization of the
+                    world.
+                </p>
+
+                <p>
+                    Every conquest, every crusade and every empire became
+                    another move in a game played by immortal hands.
+                </p>
+
+            </section>
+
+            <section class="lore">
+
+                <h2>
+                    Why Did the Gods Abandon Humanity?
+                </h2>
+
+                <p>
+                    Time changed mankind.
+                </p>
+
+                <p>
+                    Humanity grew independent. Faith weakened. Nations stopped
+                    belonging to gods and began belonging to themselves.
+                    People no longer marched because Odin commanded them.
+                    They marched because kings demanded it. They no longer
+                    sacrificed for Zeus. They questioned him.
+                </p>
+
+                <p>
+                    The gods had not lost their power.
+                </p>
+
+                <p>
+                    They had lost their influence.
+                </p>
+
+            </section>
+
+            <section class="lore">
+
+                <h2>
+                    What Was Loki's Proposal?
+                </h2>
+
+                <p>
+                    It was Loki who first spoke the idea aloud.
+                </p>
+
+                <p>
+                    If humanity had become too unpredictable, why continue
+                    relying upon it?
+                </p>
+
+                <p>
+                    Why wage wars through creatures capable of doubt,
+                    rebellion and free will when evolution itself could
+                    become the battlefield?
+                </p>
+
+                <p>
+                    The other gods laughed.
+                </p>
+
+                <p>
+                    Then they listened.
+                </p>
+
+            </section>
+
+            <section
+                class="image-section"
+                aria-label="Loki proposes a new battlefield"
+            >
+                <img
+                    src="../Lokisproposal.png"
+                    alt="Loki proposes using evolution as a battlefield in Genome: Apex Shifting"
+                    width="1600"
+                    height="900"
+                    loading="lazy"
+                >
+            </section>
+
+            <section class="lore">
+
+                <h2>
+                    What Is the Apex Shift?
+                </h2>
+
+                <p>
+                    The pantheons abandoned humanity as their chosen armies
+                    and turned their attention toward life itself.
+                </p>
+
+                <p>
+                    Ecosystems became kingdoms. Evolution became a weapon.
+                    Predators were reshaped. Species were rewritten. Every
+                    mutation was intentional. Every adaptation served a god.
+                </p>
+
+                <p>
+                    The old wars never ended.
+                </p>
+
+                <p>
+                    They simply found new soldiers.
+                </p>
+
+            </section>
+
+            <section class="gameplay">
+
+                <p class="eyebrow">
+                    Competitive Tabletop Strategy
+                </p>
+
+                <h2>
+                    How Do You Play Genome: Apex Shifting?
+                </h2>
+
+                <p>
+                    Players begin with an ecosystem and a strategy for
+                    survival. Creatures enter the battlefield, interact with
+                    their environment and create opportunities for attack,
+                    defense, growth and adaptation.
+                </p>
+
+                <p>
+                    Genes enhance creatures with new abilities. Afflictions
+                    weaken or infect opposing organisms. Climate effects alter
+                    the conditions of play. Hybrid Apex cards represent
+                    impossible evolutionary leaps capable of changing an
+                    entire match.
+                </p>
+
+                <p>
+                    Players reduce opposing Dominance through combat,
+                    evolutionary advantages, environmental disruption,
+                    disease, resource pressure and ecosystem control.
+                </p>
+
+                <p>
+                    No two games develop in exactly the same way because every
+                    ecosystem changes according to the creatures, Genes,
+                    Afflictions, Climate effects and tactical decisions played
+                    during the match.
+                </p>
+
+            </section>
+
+            <section class="gameplay">
+
+                <h2>
+                    What Makes Genome Different From Other TCGs?
+                </h2>
+
+                <p>
+                    Genome treats the ecosystem itself as part of the
+                    battlefield. Creatures are not isolated units waiting to
+                    attack on command. They exist within a larger network of
+                    predators, prey, environmental pressures and evolutionary
+                    possibilities.
+                </p>
+
+                <p>
+                    Players are encouraged to build strategies around ecology,
+                    adaptation and interaction. A fallen creature may feed
+                    another organism. A Gene may turn an overlooked species
+                    into a major threat. An Affliction may spread through an
+                    opposing ecosystem. A Climate shift may transform a
+                    reliable strategy into a desperate fight for survival.
+                </p>
+
+                <p>
+                    This creates a strategy card game where the battlefield
+                    changes continuously and survival depends on more than
+                    simply playing the largest creature.
+                </p>
+
+            </section>
+
+            <section class="gameplay">
+
+                <p class="eyebrow">
+                    Alpha Deck Lineup
+                </p>
+
+                <h2>
+                    What Starter Decks Are Available in Genome?
+                </h2>
+
+                <p class="section-intro">
+                    The current alpha version of Genome includes five starter
+                    ecosystems. Each deck represents a different environment,
+                    survival philosophy and approach to competitive play.
+                </p>
+
+                <div class="deck-grid">
+
+                    <article class="deck-card">
+
+                        <h3>
+                            🌿 Rot Garden Delirium
+                        </h3>
+
+                        <p>
+                            Death fuels new life. Fungi, parasites,
+                            scavengers and decomposers transform fallen
+                            creatures into opportunities for explosive
+                            growth.
+                        </p>
+
+                        <p>
+                            <strong>Strategy:</strong>
+                            Recursion, decomposition, parasitic growth and
+                            value generated from creature loss.
+                        </p>
+
+                    </article>
+
+                    <article class="deck-card">
+
+                        <h3>
+                            ❄ Frostfang Titans
+                        </h3>
+
+                        <p>
+                            Towering predators dominate frozen wildernesses
+                            through overwhelming strength, precision strikes
+                            and colossal Hybrid evolution.
+                        </p>
+
+                        <p>
+                            <strong>Strategy:</strong>
+                            Large creatures, controlled aggression,
+                            battlefield pressure and powerful Apex threats.
+                        </p>
+
+                    </article>
+
+                    <article class="deck-card">
+
+                        <h3>
+                            🌊 Stormtalon Depths
+                        </h3>
+
+                        <p>
+                            Master the oceans and mountains with natural
+                            disasters, information control and relentless
+                            evolutionary tempo.
+                        </p>
+
+                        <p>
+                            <strong>Strategy:</strong>
+                            Tactical disruption, environmental manipulation,
+                            tempo and adaptable creatures.
+                        </p>
+
+                    </article>
+
+                    <article class="deck-card">
+
+                        <h3>
+                            🌾 Honeyfang Hunters
+                        </h3>
+
+                        <p>
+                            Fast predators, venomous reptiles, swarming
+                            insects and aggressive genetic enhancements
+                            overwhelm opponents before they can stabilize.
+                        </p>
+
+                        <p>
+                            <strong>Strategy:</strong>
+                            Speed, venom, swarming attacks and rapid genetic
+                            enhancement.
+                        </p>
+
+                    </article>
+
+                    <article class="deck-card">
+
+                        <h3>
+                            🏜 Sandsting Nightmares
+                        </h3>
+
+                        <p>
+                            Strike from the dunes with coordinated Pack
+                            tactics, deadly venom, mirages and relentless
+                            battlefield pressure.
+                        </p>
+
+                        <p>
+                            <strong>Strategy:</strong>
+                            Pack synergy, deception, coordinated attacks and
+                            sustained pressure.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="gameplay">
+
+                <h2>
+                    Is Genome a TCG, CCG or Board Game?
+                </h2>
+
+                <p>
+                    Genome: Apex Shifting is designed as a competitive
+                    tabletop trading card game. It belongs to the same broad
+                    family of games commonly described as TCGs, collectible
+                    card games, customizable card games, deck-building games
+                    and strategic tabletop card games.
+                </p>
+
+                <p>
+                    Players searching for new board games may also find Genome
+                    through its tabletop strategy, ecosystem management,
+                    asymmetrical starter decks and replayable competitive
+                    gameplay. Unlike a traditional board game, however, the
+                    primary components and strategies are built around cards,
+                    decks and evolving combinations.
+                </p>
+
+            </section>
+
+            <section class="gameplay">
+
+                <h2>
+                    Why Does Evolution Matter in Genome?
+                </h2>
+
+                <p>
+                    Evolution is not merely part of the artwork or story. It
+                    drives the mechanics of the game.
+                </p>
+
+                <p>
+                    Every creature can be enhanced through Genes. Every Gene
+                    can change how that organism interacts with combat,
+                    resources, predators, prey, Climate or Afflictions.
+                    Hybrid Apex organisms represent radical evolutionary
+                    transformations capable of redefining the battlefield.
+                </p>
+
+                <p>
+                    Every ecosystem evolves differently. Every match produces
+                    a new chain of adaptations. Every battle tells a different
+                    story.
+                </p>
+
+            </section>
+
+            <section class="contained-image">
+
+                <img
+                    src="../CARDBACK2.png"
+                    alt="Card back design for the Genome: Apex Shifting trading card game"
+                    width="760"
+                    height="1064"
+                    loading="lazy"
+                >
+
+            </section>
+
+            <section class="playtesting">
+
+                <p class="eyebrow">
+                    Upcoming Tabletop Game
+                </p>
+
+                <h2>
+                    Is Genome: Apex Shifting Available to Play?
+                </h2>
+
+                <p>
+                    Genome: Apex Shifting is currently undergoing
+                    <strong>alpha testing</strong> in San Diego, California.
+                    The game is still being developed, tested and refined
+                    before a wider release.
+                </p>
+
+                <p>
+                    Alpha playtesting helps evaluate deck balance, card
+                    interactions, match length, rules clarity, ecosystem
+                    mechanics and the overall experience of competitive play.
+                    Feedback from tabletop gamers and TCG players directly
+                    influences the game's continued development.
+                </p>
+
+                <ul class="status-list">
+
+                    <li>
+                        Five physical alpha starter decks have been developed.
+                    </li>
+
+                    <li>
+                        Core ecosystem, Gene, Affliction, Climate and Hybrid
+                        systems are being tested.
+                    </li>
+
+                    <li>
+                        Deck balance and gameplay clarity continue to be
+                        refined.
+                    </li>
+
+                    <li>
+                        Local playtesting opportunities are being developed in
+                        the San Diego area.
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="playtesting">
+
+                <h2>
+                    How Can I Become a Genome Playtester?
+                </h2>
+
+                <p>
+                    GhostWrite Studios is seeking strategy game players,
+                    trading card game fans, tabletop gamers and curious
+                    playtesters interested in helping shape a new independent
+                    game from its earliest stages.
+                </p>
+
+                <p>
+                    Prior TCG experience is useful but not required. Playtesting
+                    benefits from both experienced card game players and new
+                    players who can identify confusing rules, unclear card
+                    language or barriers to learning.
+                </p>
+
+                <p>
+                    Use the contact page to introduce yourself and ask about
+                    upcoming Genome playtesting opportunities in San Diego,
+                    California.
+                </p>
+
+                <div class="button-row">
+
+                    <a
+                        href="contact.html"
+                        class="button"
+                    >
+                        Contact GhostWrite Studios
+                    </a>
+
+                    <a
+                        href="journal.html"
+                        class="button button-secondary"
+                    >
+                        Follow Genome Development
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section class="faq">
+
+                <p class="eyebrow">
+                    Genome TCG Questions
+                </p>
+
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+
+                <article class="faq-item">
+
+                    <h3>
+                        Is Genome: Apex Shifting a new trading card game?
+                    </h3>
+
+                    <p>
+                        Yes. Genome is an original indie trading card game
+                        currently in alpha development. It combines competitive
+                        card play with ecosystems, creature evolution,
+                        environmental strategy and genetic enhancement.
+                    </p>
+
+                </article>
+
+                <article class="faq-item">
+
+                    <h3>
+                        When will Genome: Apex Shifting be released?
+                    </h3>
+
+                    <p>
+                        No public release date has been announced. The game is
+                        currently undergoing alpha testing, mechanic refinement
+                        and deck balancing. Development updates will be shared
+                        through the
+                        <a href="journal.html">GhostWrite Studios Journal</a>.
+                    </p>
+
+                </article>
+
+                <article class="faq-item">
+
+                    <h3>
+                        Is Genome suitable for experienced TCG players?
+                    </h3>
+
+                    <p>
+                        Genome is designed to reward strategic planning,
+                        adaptation, deck knowledge and tactical decision-making.
+                        Experienced TCG players may recognize familiar ideas
+                        such as card synergy, tempo, control and aggressive
+                        pressure, while the ecosystem and evolution systems
+                        create a distinct style of play.
+                    </p>
+
+                </article>
+
+                <article class="faq-item">
+
+                    <h3>
+                        Can new tabletop players learn Genome?
+                    </h3>
+
+                    <p>
+                        One goal of alpha testing is to make the rules,
+                        terminology and starter decks understandable to newer
+                        tabletop players without removing the strategic depth
+                        expected by experienced card game fans.
+                    </p>
+
+                </article>
+
+                <article class="faq-item">
+
+                    <h3>
+                        Will Genome have additional ecosystems and cards?
+                    </h3>
+
+                    <p>
+                        The current alpha version focuses on five starter
+                        ecosystems. Genome is designed around an expandable
+                        world of creatures, Genes, Afflictions, Climate effects
+                        and evolutionary combinations, although future content
+                        will depend on continued development and testing.
+                    </p>
+
+                </article>
+
+                <article class="faq-item">
+
+                    <h3>
+                        Who created Genome: Apex Shifting?
+                    </h3>
+
+                    <p>
+                        Genome: Apex Shifting was created by Rory Kelly and is
+                        being developed through GhostWrite Studios, an
+                        independent writing, game development and intellectual
+                        property studio.
+                    </p>
+
+                </article>
+
+            </section>
+
+            <section class="gameplay">
+
+                <h2>
+                    Where Can I Find Genome Development Updates?
+                </h2>
+
+                <p>
+                    Development notes, tabletop gaming articles, playtesting
+                    updates and behind-the-scenes discussions will appear in
+                    the <strong>Game Night</strong> section of the GhostWrite
+                    Studios Journal.
+                </p>
+
+                <div class="link-grid">
+
+                    <article class="link-card">
+
+                        <h3>Game Night</h3>
+
+                        <p>
+                            Read about tabletop games, TCG strategy, local game
+                            communities, guest articles and Genome development.
+                        </p>
+
+                        <a
+                            href="journal.html"
+                            class="text-link"
+                        >
+                            Visit the Journal
+                        </a>
+
+                    </article>
+
+                    <article class="link-card">
+
+                        <h3>GhostWrite Studios</h3>
+
+                        <p>
+                            Learn more about the independent creative studio
+                            developing Genome and other original intellectual
+                            properties.
+                        </p>
+
+                        <a
+                            href="about.html"
+                            class="text-link"
+                        >
+                            About the Studio
+                        </a>
+
+                    </article>
+
+                    <article class="link-card">
+
+                        <h3>Creative Portfolio</h3>
+
+                        <p>
+                            Explore additional projects in screenwriting,
+                            fiction, journalism, editing and narrative
+                            development.
+                        </p>
+
+                        <a
+                            href="portfolio.html"
+                            class="text-link"
+                        >
+                            View the Portfolio
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="closing-cta">
+
+                <p class="eyebrow">
+                    Join the Evolution
+                </p>
+
+                <h2>
+                    Help Shape an Upcoming Indie TCG
+                </h2>
+
+                <p>
+                    Every alpha match helps refine Genome: Apex Shifting.
+                    New mechanics are tested, creatures evolve, decks are
+                    balanced and player feedback helps determine what the game
+                    becomes next.
+                </p>
+
+                <p>
+                    Tabletop gamers, trading card game players and local San
+                    Diego playtesters are invited to follow the project and
+                    contact GhostWrite Studios about future opportunities.
+                </p>
+
+                <div class="button-row centered-buttons">
+
+                    <a
+                        href="contact.html"
+                        class="button"
+                    >
+                        Ask About Playtesting
+                    </a>
+
+                    <a
+                        href="journal.html"
+                        class="button button-secondary"
+                    >
+                        Read Game Night
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
 
     <footer>
-        <p>© 2026 GhostWrite Studios</p>
+
+        <p>
+            &copy; 2026 GhostWrite Studios. All rights reserved.
+        </p>
+
+        <nav aria-label="Footer navigation">
+            <a href="../index.html">Home</a>
+            <a href="genome.html">Genome</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="writing.html">Writing</a>
+            <a href="journal.html">Journal</a>
+            <a href="hireme.html">Hire Me</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
     </footer>
 
 </body>
 
 </html>
+```
