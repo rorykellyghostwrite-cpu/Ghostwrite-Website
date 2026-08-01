@@ -10,21 +10,20 @@
     >
 
     <title>
-        Independent Intellectual Property Development Studio | GhostWrite Studios
+        GhostWrite Studios | Independent Intellectual Property Development Studio
     </title>
 
     <meta
         name="description"
-        content="GhostWrite Studios is an independent intellectual property development studio creating original films, tabletop games, serialized fiction, journalism and multimedia worlds while documenting the process of building a mobile creative studio."
+        content="GhostWrite Studios is an independent intellectual property development studio creating original films, tabletop games, books, journalism, illustrations and expandable entertainment worlds while building a mobile creative headquarters in public."
     >
 
     <meta
         name="keywords"
-        content="intellectual property development studio, creative IP studio, independent entertainment studio, original IP development, franchise development, transmedia storytelling, worldbuilding studio, narrative design, screenplay development, tabletop game development, trading card game development, mobile creative studio, off-grid writing studio, Ford Explorer mobile office, GhostWrite Studios, Rory Kelly"
+        content="independent intellectual property development studio, creative studio, original IP development, franchise development, worldbuilding, narrative design, entertainment studio, tabletop game development, screenwriting, mobile creative studio, off grid office, digital nomad creator, AEO, GhostWrite Studios, Genome Apex Shifting"
     >
 
     <meta name="author" content="Rory Kelly">
-
     <meta name="robots" content="index, follow">
 
     <link
@@ -49,12 +48,12 @@
 
     <meta
         property="og:title"
-        content="Independent Intellectual Property Development Studio | GhostWrite Studios"
+        content="GhostWrite Studios | Independent Intellectual Property Development Studio"
     >
 
     <meta
         property="og:description"
-        content="Original films, tabletop games, serialized fiction, journalism and the public journey of building an independent creative studio from the ground up."
+        content="Original films, tabletop games, illustrated characters and a mobile creative headquarters. Follow an independent entertainment studio being built from scratch."
     >
 
     <meta
@@ -79,12 +78,12 @@
 
     <meta
         name="twitter:title"
-        content="Independent Intellectual Property Development Studio"
+        content="GhostWrite Studios | Original IP Built in Public"
     >
 
     <meta
         name="twitter:description"
-        content="Follow GhostWrite Studios as it develops original films, tabletop games, serialized fiction and a mobile creative studio."
+        content="An independent intellectual property development studio creating original entertainment while building a mobile creative headquarters."
     >
 
     <meta
@@ -93,152 +92,1211 @@
     >
 
     <style>
-        .home-page {
-            line-height: 1.75;
+        :root {
+            --home-bg: #090b10;
+            --home-surface: #11151d;
+            --home-surface-raised: #171c26;
+            --home-surface-soft: #0e1219;
+            --home-border: rgba(255, 255, 255, 0.12);
+            --home-border-strong: rgba(255, 255, 255, 0.22);
+            --home-text: #f4f1ea;
+            --home-text-soft: #b9bdc8;
+            --home-text-muted: #858b99;
+            --home-accent: #8c7cff;
+            --home-accent-light: #bdb4ff;
+            --home-accent-soft: rgba(140, 124, 255, 0.13);
+            --home-gold: #d5aa68;
+            --home-max: 1180px;
+            --home-radius: 1.25rem;
+            --home-shadow: 0 28px 80px rgba(0, 0, 0, 0.32);
         }
 
-        .home-page section {
-            width: min(1100px, calc(100% - 2rem));
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background:
+                radial-gradient(
+                    circle at 82% 8%,
+                    rgba(140, 124, 255, 0.12),
+                    transparent 27rem
+                ),
+                radial-gradient(
+                    circle at 10% 34%,
+                    rgba(213, 170, 104, 0.06),
+                    transparent 25rem
+                ),
+                var(--home-bg);
+            color: var(--home-text);
+        }
+
+        body,
+        button,
+        input,
+        textarea,
+        select {
+            font-family:
+                Inter,
+                ui-sans-serif,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .skip-link {
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+            padding: 0.8rem 1rem;
+            border-radius: 0.5rem;
+            background: var(--home-text);
+            color: var(--home-bg);
+            font-weight: 800;
+            transform: translateY(-180%);
+            transition: transform 160ms ease;
+        }
+
+        .skip-link:focus {
+            transform: translateY(0);
+        }
+
+        .site-header {
+            position: relative;
+            z-index: 50;
+            width: 100%;
+            border-bottom: 1px solid var(--home-border);
+            background: rgba(9, 11, 16, 0.88);
+            backdrop-filter: blur(18px);
+        }
+
+        .site-header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: min(var(--home-max), calc(100% - 2rem));
+            min-height: 86px;
             margin: 0 auto;
-            padding: 4.75rem 0;
+            gap: 2rem;
         }
 
-        .home-page .home-hero {
-            padding-top: 6rem;
-            padding-bottom: 5.5rem;
-            text-align: center;
+        .brand-link {
+            display: inline-flex;
+            align-items: center;
+            flex: 0 0 auto;
+            text-decoration: none;
         }
 
-        .home-page .home-hero p {
-            max-width: 860px;
-            margin-right: auto;
-            margin-left: auto;
+        .brand-link .logo {
+            display: block;
+            width: auto;
+            max-width: 230px;
+            max-height: 64px;
+            object-fit: contain;
         }
 
-        .home-page .eyebrow {
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
+        .site-nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+        }
+
+        .site-nav a {
+            padding: 0.7rem 0.8rem;
+            border-radius: 0.5rem;
+            color: var(--home-text-soft);
+            font-size: 0.88rem;
             font-weight: 700;
-            letter-spacing: 0.12em;
+            letter-spacing: 0.01em;
+            text-decoration: none;
+            transition:
+                color 160ms ease,
+                background 160ms ease;
+        }
+
+        .site-nav a:hover,
+        .site-nav a:focus-visible,
+        .site-nav a[aria-current="page"] {
+            background: rgba(255, 255, 255, 0.07);
+            color: var(--home-text);
+        }
+
+        .home-page {
+            overflow: hidden;
+        }
+
+        .home-shell {
+            width: min(var(--home-max), calc(100% - 2rem));
+            margin: 0 auto;
+        }
+
+        .home-section {
+            position: relative;
+            padding: 6.5rem 0;
+        }
+
+        .home-section + .home-section {
+            border-top: 1px solid var(--home-border);
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            margin: 0 0 1.2rem;
+            color: var(--home-accent-light);
+            font-size: 0.78rem;
+            font-weight: 850;
+            letter-spacing: 0.16em;
+            line-height: 1.4;
             text-transform: uppercase;
         }
 
-        .home-page .hero-actions,
-        .home-page .button-row {
+        .eyebrow::before {
+            width: 2.25rem;
+            height: 1px;
+            background: currentColor;
+            content: "";
+        }
+
+        .section-heading {
+            max-width: 820px;
+            margin: 0;
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+            font-size: clamp(2.35rem, 5vw, 4.8rem);
+            font-weight: 500;
+            letter-spacing: -0.045em;
+            line-height: 0.98;
+        }
+
+        .section-intro {
+            max-width: 760px;
+            margin: 1.5rem 0 0;
+            color: var(--home-text-soft);
+            font-size: clamp(1.05rem, 2vw, 1.25rem);
+            line-height: 1.75;
+        }
+
+        .text-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--home-accent-light);
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .text-link::after {
+            content: "→";
+            transition: transform 160ms ease;
+        }
+
+        .text-link:hover::after,
+        .text-link:focus-visible::after {
+            transform: translateX(0.25rem);
+        }
+
+        .button-row {
             display: flex;
+            align-items: center;
             flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 2rem;
+            gap: 0.85rem;
+            margin-top: 2.25rem;
         }
 
-        .home-page .hero-actions {
+        .home-button {
+            display: inline-flex;
+            align-items: center;
             justify-content: center;
+            min-height: 3.25rem;
+            padding: 0.85rem 1.3rem;
+            border: 1px solid var(--home-accent);
+            border-radius: 999px;
+            background: var(--home-accent);
+            color: #ffffff;
+            font-size: 0.93rem;
+            font-weight: 850;
+            line-height: 1.2;
+            text-align: center;
+            text-decoration: none;
+            transition:
+                transform 160ms ease,
+                background 160ms ease,
+                border-color 160ms ease;
         }
 
-        .home-page .section-intro,
-        .home-page .question-section p,
-        .home-page .faq-item p {
-            max-width: 860px;
+        .home-button:hover,
+        .home-button:focus-visible {
+            border-color: var(--home-accent-light);
+            background: var(--home-accent-light);
+            color: #0b0d12;
+            transform: translateY(-2px);
         }
 
-        .home-page .project-grid,
-        .home-page .pillar-grid,
-        .home-page .journal-grid,
-        .home-page .proof-grid,
-        .home-page .service-grid,
-        .home-page .link-grid {
-            display: grid;
-            grid-template-columns: repeat(
-                auto-fit,
-                minmax(250px, 1fr)
+        .home-button-secondary {
+            border-color: var(--home-border-strong);
+            background: transparent;
+            color: var(--home-text);
+        }
+
+        .home-button-secondary:hover,
+        .home-button-secondary:focus-visible {
+            border-color: var(--home-text);
+            background: var(--home-text);
+            color: var(--home-bg);
+        }
+
+        .home-button-small {
+            min-height: 2.8rem;
+            padding: 0.7rem 1.05rem;
+            font-size: 0.86rem;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 760px;
+            padding: 8rem 0 6.5rem;
+            border-bottom: 1px solid var(--home-border);
+        }
+
+        .hero::before {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(
+                    rgba(255, 255, 255, 0.027) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.027) 1px,
+                    transparent 1px
+                );
+            background-size: 72px 72px;
+            mask-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.82),
+                transparent 92%
             );
-            gap: 1.5rem;
-            margin-top: 2.5rem;
+            content: "";
         }
 
-        .home-page .project-card,
-        .home-page .pillar-card,
-        .home-page .journal-card,
-        .home-page .proof-card,
-        .home-page .service-card,
-        .home-page .link-card {
-            padding: 1.75rem;
-            border: 1px solid rgba(127, 127, 127, 0.3);
-            border-radius: 0.8rem;
+        .hero::after {
+            position: absolute;
+            top: 6rem;
+            right: -14rem;
+            width: 34rem;
+            height: 34rem;
+            border: 1px solid rgba(140, 124, 255, 0.18);
+            border-radius: 50%;
+            box-shadow:
+                0 0 0 5rem rgba(140, 124, 255, 0.025),
+                0 0 0 10rem rgba(140, 124, 255, 0.018);
+            content: "";
+            pointer-events: none;
         }
 
-        .home-page .project-card h3,
-        .home-page .pillar-card h3,
-        .home-page .journal-card h3,
-        .home-page .proof-card h3,
-        .home-page .service-card h3,
-        .home-page .link-card h3 {
-            margin-top: 0;
+        .hero-layout {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: minmax(0, 1.45fr) minmax(290px, 0.55fr);
+            align-items: end;
+            gap: 5rem;
         }
 
-        .home-page .featured-banner {
-            width: 100%;
-            max-width: none;
-            padding: 0;
+        .hero-copy {
+            max-width: 880px;
         }
 
-        .home-page .featured-banner img {
+        .hero h1 {
+            max-width: 920px;
+            margin: 0;
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+            font-size: clamp(3.8rem, 8.2vw, 8rem);
+            font-weight: 500;
+            letter-spacing: -0.062em;
+            line-height: 0.89;
+        }
+
+        .hero h1 span {
             display: block;
-            width: 100%;
-            height: auto;
+            color: var(--home-accent-light);
         }
 
-        .home-page .quote-block {
-            max-width: 860px;
-            margin: 2.5rem 0;
-            padding: 1.75rem 2rem;
-            border-left: 4px solid currentColor;
-            font-size: 1.15rem;
+        .hero-lead {
+            max-width: 760px;
+            margin: 2rem 0 0;
+            color: var(--home-text-soft);
+            font-size: clamp(1.15rem, 2.2vw, 1.42rem);
+            line-height: 1.65;
         }
 
-        .home-page .studio-list {
-            max-width: 850px;
-            padding-left: 1.25rem;
+        .hero-note {
+            padding: 1.6rem;
+            border: 1px solid var(--home-border);
+            border-radius: var(--home-radius);
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255, 255, 255, 0.05),
+                    rgba(255, 255, 255, 0.015)
+                );
+            box-shadow: var(--home-shadow);
         }
 
-        .home-page .studio-list li {
-            margin-bottom: 0.75rem;
+        .hero-note-label {
+            margin: 0 0 1rem;
+            color: var(--home-gold);
+            font-size: 0.72rem;
+            font-weight: 850;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
         }
 
-        .home-page .faq-item {
-            margin-top: 2.75rem;
+        .hero-note p {
+            margin: 0;
+            color: var(--home-text-soft);
+            line-height: 1.7;
         }
 
-        .home-page .closing-cta {
-            padding-top: 5.5rem;
-            padding-bottom: 5.5rem;
+        .hero-note strong {
+            color: var(--home-text);
+        }
+
+        .identity-strip {
+            border-bottom: 1px solid var(--home-border);
+            background: rgba(255, 255, 255, 0.018);
+        }
+
+        .identity-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .identity-item {
+            padding: 2.1rem 2rem;
+        }
+
+        .identity-item + .identity-item {
+            border-left: 1px solid var(--home-border);
+        }
+
+        .identity-number {
+            display: block;
+            margin-bottom: 0.65rem;
+            color: var(--home-accent-light);
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+            font-size: 1.2rem;
+        }
+
+        .identity-item h2 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 850;
+        }
+
+        .identity-item p {
+            margin: 0.55rem 0 0;
+            color: var(--home-text-muted);
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+
+        .studio-definition {
+            display: grid;
+            grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+            gap: 5rem;
+        }
+
+        .definition-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .definition-statement {
+            margin: 0;
+            color: var(--home-text);
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+            font-size: clamp(1.8rem, 3.5vw, 3.4rem);
+            letter-spacing: -0.035em;
+            line-height: 1.18;
+        }
+
+        .definition-details {
+            display: grid;
+            gap: 1px;
+            border: 1px solid var(--home-border);
+            border-radius: var(--home-radius);
+            overflow: hidden;
+            background: var(--home-border);
+        }
+
+        .definition-item {
+            display: grid;
+            grid-template-columns: 4rem minmax(0, 1fr);
+            gap: 1.2rem;
+            padding: 1.7rem;
+            background: var(--home-surface);
+        }
+
+        .definition-index {
+            color: var(--home-accent-light);
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+            font-size: 1.2rem;
+        }
+
+        .definition-item h3 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .definition-item p {
+            margin: 0.55rem 0 0;
+            color: var(--home-text-soft);
+            line-height: 1.7;
+        }
+
+        .slate-header {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .slate-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 3.5rem;
+        }
+
+        .project-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 370px;
+            padding: 2rem;
+            border: 1px solid var(--home-border);
+            border-radius: var(--home-radius);
+            overflow: hidden;
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255, 255, 255, 0.055),
+                    rgba(255, 255, 255, 0.012)
+                ),
+                var(--home-surface-soft);
+            transition:
+                transform 180ms ease,
+                border-color 180ms ease,
+                background 180ms ease;
+        }
+
+        .project-card:hover {
+            border-color: var(--home-border-strong);
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(140, 124, 255, 0.09),
+                    rgba(255, 255, 255, 0.015)
+                ),
+                var(--home-surface-soft);
+            transform: translateY(-4px);
+        }
+
+        .project-card::after {
+            position: absolute;
+            right: -5rem;
+            bottom: -7rem;
+            width: 16rem;
+            height: 16rem;
+            border: 1px solid rgba(255, 255, 255, 0.055);
+            border-radius: 50%;
+            content: "";
+        }
+
+        .project-card-large {
+            grid-column: span 7;
+        }
+
+        .project-card-medium {
+            grid-column: span 5;
+        }
+
+        .project-card-third {
+            grid-column: span 4;
+        }
+
+        .project-type {
+            position: relative;
+            z-index: 2;
+            margin: 0 0 2.6rem;
+            color: var(--home-gold);
+            font-size: 0.74rem;
+            font-weight: 850;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .project-card h3 {
+            position: relative;
+            z-index: 2;
+            max-width: 560px;
+            margin: 0;
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+            font-size: clamp(1.8rem, 3.5vw, 3.2rem);
+            font-weight: 500;
+            letter-spacing: -0.035em;
+            line-height: 1.04;
+        }
+
+        .project-card p {
+            position: relative;
+            z-index: 2;
+            max-width: 590px;
+            margin: 1.2rem 0 0;
+            color: var(--home-text-soft);
+            line-height: 1.72;
+        }
+
+        .project-card .text-link {
+            position: relative;
+            z-index: 2;
+            margin-top: auto;
+            padding-top: 2rem;
+        }
+
+        .project-card-featured {
+            background:
+                radial-gradient(
+                    circle at 90% 15%,
+                    rgba(140, 124, 255, 0.22),
+                    transparent 20rem
+                ),
+                linear-gradient(
+                    145deg,
+                    rgba(140, 124, 255, 0.1),
+                    rgba(255, 255, 255, 0.012)
+                ),
+                var(--home-surface-soft);
+        }
+
+        .mobile-studio {
+            position: relative;
+        }
+
+        .mobile-studio::before {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100vw;
+            height: 100%;
+            background:
+                linear-gradient(
+                    120deg,
+                    rgba(140, 124, 255, 0.08),
+                    transparent 42%
+                ),
+                rgba(255, 255, 255, 0.018);
+            content: "";
+            transform: translateX(-50%);
+        }
+
+        .mobile-layout {
+            position: relative;
+            display: grid;
+            grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+            gap: 5rem;
+        }
+
+        .mobile-copy {
+            align-self: center;
+        }
+
+        .mobile-copy p {
+            max-width: 690px;
+            color: var(--home-text-soft);
+            font-size: 1.08rem;
+            line-height: 1.8;
+        }
+
+        .mobile-panel {
+            position: relative;
+            padding: 2.2rem;
+            border: 1px solid var(--home-border-strong);
+            border-radius: var(--home-radius);
+            background:
+                linear-gradient(
+                    155deg,
+                    rgba(255, 255, 255, 0.065),
+                    rgba(255, 255, 255, 0.012)
+                ),
+                var(--home-surface);
+            box-shadow: var(--home-shadow);
+        }
+
+        .mobile-panel::before {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            width: 0.65rem;
+            height: 0.65rem;
+            border-radius: 50%;
+            background: var(--home-accent);
+            box-shadow:
+                0 0 0 0.35rem rgba(140, 124, 255, 0.12),
+                0 0 1.3rem rgba(140, 124, 255, 0.65);
+            content: "";
+        }
+
+        .mobile-panel h3 {
+            margin: 0 0 1.5rem;
+            font-size: 0.78rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .mobile-list {
+            display: grid;
+            gap: 0;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .mobile-list li {
+            display: grid;
+            grid-template-columns: 1.8rem minmax(0, 1fr);
+            gap: 0.8rem;
+            padding: 1rem 0;
+            border-top: 1px solid var(--home-border);
+            color: var(--home-text-soft);
+            line-height: 1.55;
+        }
+
+        .mobile-list li:first-child {
+            border-top: 0;
+        }
+
+        .mobile-list span {
+            color: var(--home-accent-light);
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+        }
+
+        .journal-header {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(280px, 0.55fr);
+            align-items: end;
+            gap: 4rem;
+        }
+
+        .journal-promise {
+            margin: 0;
+            padding-left: 1.5rem;
+            border-left: 2px solid var(--home-accent);
+            color: var(--home-text-soft);
+            font-size: 1.05rem;
+            line-height: 1.75;
+        }
+
+        .journal-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 0.85rem;
+            margin-top: 3.5rem;
+        }
+
+        .journal-card {
+            display: flex;
+            flex-direction: column;
+            min-height: 260px;
+            padding: 1.5rem;
+            border: 1px solid var(--home-border);
+            border-radius: 1rem;
+            background: var(--home-surface-soft);
+            text-decoration: none;
+            transition:
+                transform 180ms ease,
+                border-color 180ms ease,
+                background 180ms ease;
+        }
+
+        .journal-card:hover,
+        .journal-card:focus-visible {
+            border-color: var(--home-accent);
+            background: var(--home-accent-soft);
+            transform: translateY(-4px);
+        }
+
+        .journal-card-number {
+            color: var(--home-text-muted);
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+        }
+
+        .journal-card h3 {
+            margin: 2.5rem 0 0;
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+            font-size: 1.55rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+        }
+
+        .journal-card p {
+            margin: 0.8rem 0 0;
+            color: var(--home-text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .journal-card-arrow {
+            margin-top: auto;
+            padding-top: 1.5rem;
+            color: var(--home-accent-light);
+            font-size: 1.2rem;
+        }
+
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 3.5rem;
+        }
+
+        .answer-card {
+            padding: 2rem;
+            border: 1px solid var(--home-border);
+            border-radius: var(--home-radius);
+            background: rgba(255, 255, 255, 0.018);
+        }
+
+        .answer-card h3 {
+            margin: 0;
+            font-size: 1.08rem;
+            line-height: 1.45;
+        }
+
+        .answer-card p {
+            margin: 0.85rem 0 0;
+            color: var(--home-text-soft);
+            line-height: 1.75;
+        }
+
+        .work-section {
+            background:
+                radial-gradient(
+                    circle at 12% 40%,
+                    rgba(213, 170, 104, 0.08),
+                    transparent 20rem
+                );
+        }
+
+        .work-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+            gap: 5rem;
+        }
+
+        .work-intro p {
+            max-width: 500px;
+            color: var(--home-text-soft);
+            line-height: 1.75;
+        }
+
+        .work-links {
+            display: grid;
+            gap: 1px;
+            border: 1px solid var(--home-border);
+            border-radius: var(--home-radius);
+            overflow: hidden;
+            background: var(--home-border);
+        }
+
+        .work-link {
+            display: grid;
+            grid-template-columns: 4rem minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 1.5rem;
+            background: var(--home-surface);
+            text-decoration: none;
+            transition: background 160ms ease;
+        }
+
+        .work-link:hover,
+        .work-link:focus-visible {
+            background: var(--home-surface-raised);
+        }
+
+        .work-link-index {
+            color: var(--home-text-muted);
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+        }
+
+        .work-link h3 {
+            margin: 0;
+            font-size: 1.05rem;
+        }
+
+        .work-link p {
+            margin: 0.4rem 0 0;
+            color: var(--home-text-muted);
+            font-size: 0.9rem;
+            line-height: 1.55;
+        }
+
+        .work-link-arrow {
+            color: var(--home-accent-light);
+            font-size: 1.3rem;
+            transition: transform 160ms ease;
+        }
+
+        .work-link:hover .work-link-arrow,
+        .work-link:focus-visible .work-link-arrow {
+            transform: translateX(0.3rem);
+        }
+
+        .closing {
+            position: relative;
+            padding: 8rem 0;
             text-align: center;
         }
 
-        .home-page .closing-cta p {
-            max-width: 800px;
-            margin-right: auto;
-            margin-left: auto;
+        .closing::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 36rem;
+            height: 36rem;
+            border: 1px solid rgba(140, 124, 255, 0.14);
+            border-radius: 50%;
+            content: "";
+            pointer-events: none;
+            transform: translate(-50%, -50%);
         }
 
-        @media (max-width: 700px) {
-            .home-page section {
-                padding-top: 3.25rem;
-                padding-bottom: 3.25rem;
+        .closing-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .closing .eyebrow {
+            justify-content: center;
+        }
+
+        .closing h2 {
+            margin: 0;
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+            font-size: clamp(3rem, 7vw, 6.7rem);
+            font-weight: 500;
+            letter-spacing: -0.055em;
+            line-height: 0.95;
+        }
+
+        .closing p {
+            max-width: 680px;
+            margin: 1.6rem auto 0;
+            color: var(--home-text-soft);
+            font-size: 1.1rem;
+            line-height: 1.75;
+        }
+
+        .closing .button-row {
+            justify-content: center;
+        }
+
+        .site-footer {
+            border-top: 1px solid var(--home-border);
+            background: #07090d;
+        }
+
+        .site-footer-inner {
+            width: min(var(--home-max), calc(100% - 2rem));
+            margin: 0 auto;
+            padding: 3rem 0;
+        }
+
+        .footer-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 3rem;
+        }
+
+        .footer-brand {
+            max-width: 480px;
+        }
+
+        .footer-brand strong {
+            display: block;
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .footer-brand p {
+            margin: 0.7rem 0 0;
+            color: var(--home-text-muted);
+            line-height: 1.65;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 0.5rem 1rem;
+        }
+
+        .footer-nav a {
+            color: var(--home-text-soft);
+            font-size: 0.88rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .footer-nav a:hover,
+        .footer-nav a:focus-visible {
+            color: var(--home-accent-light);
+        }
+
+        .footer-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--home-border);
+            color: var(--home-text-muted);
+            font-size: 0.82rem;
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--home-accent-light);
+            outline-offset: 4px;
+        }
+
+        @media (max-width: 1050px) {
+            .site-header-inner {
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 1rem 0;
+                gap: 0.7rem;
             }
 
-            .home-page .home-hero {
-                padding-top: 4rem;
-                padding-bottom: 4rem;
+            .site-nav {
+                justify-content: flex-start;
+                width: 100%;
             }
 
-            .home-page .hero-actions,
-            .home-page .button-row {
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-layout,
+            .studio-definition,
+            .mobile-layout,
+            .work-layout {
+                grid-template-columns: 1fr;
+                gap: 3.5rem;
+            }
+
+            .hero-note {
+                max-width: 650px;
+            }
+
+            .project-card-large,
+            .project-card-medium,
+            .project-card-third {
+                grid-column: span 6;
+            }
+
+            .journal-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .journal-header {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .home-section {
+                padding: 4.5rem 0;
+            }
+
+            .hero {
+                padding: 5.5rem 0 4.5rem;
+            }
+
+            .hero::after {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: clamp(3.15rem, 17vw, 5.4rem);
+            }
+
+            .identity-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .identity-item + .identity-item {
+                border-top: 1px solid var(--home-border);
+                border-left: 0;
+            }
+
+            .slate-header {
+                align-items: flex-start;
                 flex-direction: column;
             }
 
-            .home-page .button {
+            .project-card-large,
+            .project-card-medium,
+            .project-card-third {
+                grid-column: span 12;
+            }
+
+            .project-card {
+                min-height: 330px;
+            }
+
+            .journal-grid,
+            .answer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .journal-card {
+                min-height: 220px;
+            }
+
+            .work-link {
+                grid-template-columns: 2.5rem minmax(0, 1fr) auto;
+                padding: 1.3rem 1.1rem;
+            }
+
+            .footer-top,
+            .footer-bottom {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .footer-nav {
+                justify-content: flex-start;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .site-nav {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .site-nav a {
+                padding: 0.65rem 0.35rem;
                 text-align: center;
+            }
+
+            .button-row {
+                align-items: stretch;
+                flex-direction: column;
+            }
+
+            .home-button {
+                width: 100%;
+            }
+
+            .definition-item {
+                grid-template-columns: 2.5rem minmax(0, 1fr);
+                padding: 1.35rem;
+            }
+
+            .mobile-panel {
+                padding: 1.45rem;
+            }
+
+            .work-link-index {
+                display: none;
+            }
+
+            .work-link {
+                grid-template-columns: minmax(0, 1fr) auto;
+            }
+
+            .closing {
+                padding: 6rem 0;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
             }
         }
     </style>
@@ -264,28 +1322,34 @@
     {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://ghostwritestudios.com/#organization",
         "name": "GhostWrite Studios",
         "url": "https://ghostwritestudios.com/",
         "logo": "https://ghostwritestudios.com/GhostwriteStudios.png",
-        "description": "GhostWrite Studios is an independent intellectual property development studio creating original films, tabletop games, serialized fiction, journalism and multimedia worlds.",
+        "description": "GhostWrite Studios is an independent intellectual property development studio creating original films, tabletop games, books, journalism, illustrations and expandable entertainment properties while documenting the development process publicly.",
         "founder": {
             "@type": "Person",
             "name": "Rory Kelly",
             "jobTitle": "Founder and Creative Director"
         },
+        "slogan": "Original IP. Built in public. From the road.",
         "knowsAbout": [
             "Intellectual Property Development",
+            "Original IP Development",
             "Franchise Development",
             "Worldbuilding",
             "Narrative Design",
             "Screenwriting",
-            "Tabletop Game Design",
+            "Feature Film Development",
+            "Tabletop Game Development",
             "Trading Card Game Development",
-            "Serialized Fiction",
+            "Publishing",
             "Journalism",
-            "Creative Development",
-            "AI Content Editing",
-            "Mobile Creative Work"
+            "Illustration",
+            "Mobile Creative Studios",
+            "Off-Grid Offices",
+            "Digital Nomad Production",
+            "Answer Engine Optimization"
         ]
     }
     </script>
@@ -294,12 +1358,12 @@
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "GhostWrite Studios",
+        "@id": "https://ghostwritestudios.com/#website",
         "url": "https://ghostwritestudios.com/",
-        "description": "Independent intellectual property development studio and creative publication.",
+        "name": "GhostWrite Studios",
+        "description": "The public home of an independent intellectual property development studio building original entertainment properties and a mobile creative headquarters.",
         "publisher": {
-            "@type": "Organization",
-            "name": "GhostWrite Studios"
+            "@id": "https://ghostwritestudios.com/#organization"
         }
     }
     </script>
@@ -311,42 +1375,34 @@
         "mainEntity": [
             {
                 "@type": "Question",
+                "name": "What is an intellectual property development studio?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "An intellectual property development studio creates original characters, worlds, stories and systems that can expand across film, games, books, illustration, journalism and future media."
+                }
+            },
+            {
+                "@type": "Question",
                 "name": "What is GhostWrite Studios?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "GhostWrite Studios is an independent intellectual property development studio creating original films, tabletop games, serialized fiction, journalism and multimedia worlds while helping creators develop their own intellectual property."
+                    "text": "GhostWrite Studios is an independent intellectual property development studio creating original entertainment properties while publicly documenting the process of building the studio."
                 }
             },
             {
                 "@type": "Question",
-                "name": "What does an intellectual property development studio do?",
+                "name": "What projects is GhostWrite Studios creating?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "An intellectual property development studio creates and expands original concepts, characters, stories, worlds and systems that can grow across film, games, publishing and other media."
+                    "text": "GhostWrite Studios is developing original feature films, Genome: Apex Shifting, the GhostWrite Mini Series, a public development journal and a mobile creative headquarters inside a 2002 Ford Explorer."
                 }
             },
             {
                 "@type": "Question",
-                "name": "What original projects is GhostWrite Studios developing?",
+                "name": "Why build a mobile creative office?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "GhostWrite Studios is developing original feature screenplays, the tabletop trading card game Genome: Apex Shifting, the GhostWrite Mini Series, the GhostWrite Studios Journal and a mobile creative studio built inside a 2002 Ford Explorer."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the GhostWrite Studios mobile office?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The mobile office is an off-grid creative workspace being built inside a 2002 Ford Explorer for writing, editing, publishing, game development and remote creative work while accommodating a dog and cat."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can GhostWrite Studios help develop someone else's intellectual property?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. GhostWrite Studios works with creators who need help with concept development, worldbuilding, screenwriting, story structure, character development, editing, narrative design and AI-assisted content refinement."
+                    "text": "The mobile office is designed to support professional writing, editing, publishing, game development and remote production without requiring a permanent headquarters."
                 }
             },
             {
@@ -354,7 +1410,7 @@
                 "name": "What is Genome: Apex Shifting?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Genome: Apex Shifting is an original competitive trading card game developed by GhostWrite Studios. It features evolving ecosystems, creatures, Genes, Afflictions, Climate effects and Hybrid Apex predators."
+                    "text": "Genome: Apex Shifting is an original competitive tabletop card game developed by GhostWrite Studios around evolving creatures, ecosystems and biological adaptation."
                 }
             }
         ]
@@ -364,794 +1420,997 @@
 
 <body>
 
-<header>
+<a
+    href="#main-content"
+    class="skip-link"
+>
+    Skip to content
+</a>
 
-    <a
-        href="index.html"
-        aria-label="GhostWrite Studios home"
-    >
-        <img
-            src="GhostwriteStudios.png"
-            alt="GhostWrite Studios logo"
-            class="logo"
-        >
-    </a>
+<header class="site-header">
 
-    <nav aria-label="Main navigation">
+    <div class="site-header-inner">
+
         <a
             href="index.html"
-            aria-current="page"
+            class="brand-link"
+            aria-label="GhostWrite Studios home"
         >
-            Home
+            <img
+                src="GhostwriteStudios.png"
+                alt="GhostWrite Studios"
+                class="logo"
+            >
         </a>
 
-        <a href="pages/genome.html">Genome</a>
-        <a href="pages/portfolio.html">Portfolio</a>
-        <a href="pages/writing.html">Writing</a>
-        <a href="pages/journal.html">Journal</a>
-        <a href="pages/hireme.html">Hire Me</a>
-        <a href="pages/about.html">About</a>
-        <a href="pages/contact.html">Contact</a>
-    </nav>
+        <nav
+            class="site-nav"
+            aria-label="Main navigation"
+        >
+            <a
+                href="index.html"
+                aria-current="page"
+            >
+                Home
+            </a>
+
+            <a href="pages/genome.html">Genome</a>
+            <a href="pages/portfolio.html">Portfolio</a>
+            <a href="pages/writing.html">Writing</a>
+            <a href="pages/journal.html">Journal</a>
+            <a href="pages/hireme.html">Services</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
+        </nav>
+
+    </div>
 
 </header>
 
-<main class="home-page">
+<main
+    id="main-content"
+    class="home-page"
+>
 
-    <section class="home-hero">
+    <section class="hero">
 
-        <p class="eyebrow">
-            Independent Intellectual Property Development Studio
-        </p>
+        <div class="home-shell hero-layout">
 
-        <h1>
-            Building Original Worlds, One Franchise at a Time
-        </h1>
+            <div class="hero-copy">
 
-        <p>
-            GhostWrite Studios develops original intellectual property across
-            film, tabletop games, serialized fiction, journalism, publishing
-            and emerging media.
-        </p>
+                <p class="eyebrow">
+                    Independent Intellectual Property Development Studio
+                </p>
 
-        <p>
-            The studio is also documenting the process of building an
-            independent entertainment company from the ground up, including
-            original screenplays, an upcoming trading card game, a public
-            development journal and an off-grid mobile creative office inside
-            a 2002 Ford Explorer.
-        </p>
+                <h1>
+                    Original IP.
+                    <span>Built in public.</span>
+                    From the road.
+                </h1>
 
-        <div class="hero-actions">
+                <p class="hero-lead">
+                    GhostWrite Studios creates original films, tabletop games,
+                    books, journalism, illustrations and expandable
+                    entertainment worlds while documenting the construction of
+                    an independent studio from the ground up.
+                </p>
 
-            <a
-                href="pages/portfolio.html"
-                class="button"
-            >
-                Explore the Studio
-            </a>
+                <div class="button-row">
 
-            <a
-                href="pages/journal.html"
-                class="button button-secondary"
-            >
-                Read the Journal
-            </a>
+                    <a
+                        href="pages/journal.html"
+                        class="home-button"
+                    >
+                        Enter the Journal
+                    </a>
+
+                    <a
+                        href="#current-slate"
+                        class="home-button home-button-secondary"
+                    >
+                        Explore the Current Slate
+                    </a>
+
+                </div>
+
+            </div>
+
+            <aside class="hero-note">
+
+                <p class="hero-note-label">
+                    Current Build
+                </p>
+
+                <p>
+                    A professional, off-grid creative headquarters inside a
+                    <strong>2002 Ford Explorer</strong>, designed for writing,
+                    production, publishing, game development and remote work
+                    with Baldur and Loki on board.
+                </p>
+
+                <div class="button-row">
+
+                    <a
+                        href="pages/journal/digital-nomad.html"
+                        class="text-link"
+                    >
+                        Follow the mobile studio
+                    </a>
+
+                </div>
+
+            </aside>
 
         </div>
 
     </section>
 
-    <section class="question-section">
+    <section
+        class="identity-strip"
+        aria-label="GhostWrite Studios identity"
+    >
 
-        <p class="eyebrow">
-            The Studio
-        </p>
+        <div class="home-shell identity-grid">
 
-        <h2>
-            What Is GhostWrite Studios?
-        </h2>
+            <article class="identity-item">
 
-        <p>
-            GhostWrite Studios is an independent creative studio founded by
-            Rory Kelly to develop original intellectual property with the
-            potential to expand across multiple forms of media.
-        </p>
+                <span class="identity-number">01</span>
 
-        <p>
-            The studio creates screenplays, tabletop games, serialized fiction,
-            journalism, characters, worlds and narrative systems designed to
-            become larger than any single project.
-        </p>
+                <h2>
+                    Create original entertainment
+                </h2>
 
-        <p>
-            GhostWrite Studios also works with independent creators who need
-            help turning early ideas, unfinished stories or loosely connected
-            concepts into structured intellectual property.
-        </p>
+                <p>
+                    Films, games, characters, publications and worlds owned and
+                    developed by the studio.
+                </p>
+
+            </article>
+
+            <article class="identity-item">
+
+                <span class="identity-number">02</span>
+
+                <h2>
+                    Build expandable intellectual property
+                </h2>
+
+                <p>
+                    Projects are developed for long-term narrative, franchise
+                    and cross-media potential.
+                </p>
+
+            </article>
+
+            <article class="identity-item">
+
+                <span class="identity-number">03</span>
+
+                <h2>
+                    Publish the real development process
+                </h2>
+
+                <p>
+                    The Journal records the prototypes, rewrites, failures,
+                    logistics and decisions behind the finished work.
+                </p>
+
+            </article>
+
+        </div>
 
     </section>
 
-    <section>
+    <section class="home-section">
 
-        <p class="eyebrow">
-            Original Intellectual Property
-        </p>
+        <div class="home-shell studio-definition">
 
-        <h2>
-            What Is GhostWrite Studios Building?
-        </h2>
+            <div class="definition-copy">
 
-        <p class="section-intro">
-            GhostWrite Studios is building several interconnected creative
-            projects while documenting the practical work required to develop
-            them.
-        </p>
+                <div>
 
-        <div class="project-grid">
+                    <p class="eyebrow">
+                        The Studio
+                    </p>
 
-            <article class="project-card">
+                    <h2 class="section-heading">
+                        More than a production label. Less interested in
+                        pretending the difficult part never happened.
+                    </h2>
 
-                <h3>
-                    🎲 Genome: Apex Shifting
-                </h3>
+                </div>
 
-                <p>
-                    An original competitive trading card game built around
-                    evolving ecosystems, creatures, Genes, Afflictions,
-                    Climate effects and Hybrid Apex predators.
+                <p class="definition-statement">
+                    GhostWrite Studios develops the idea, the world around it
+                    and the structure that allows it to grow.
                 </p>
 
-                <p>
-                    Genome is currently in alpha development and local
-                    playtesting.
-                </p>
+            </div>
 
-                <a href="pages/genome.html">
-                    Explore Genome
+            <div class="definition-details">
+
+                <article class="definition-item">
+
+                    <span class="definition-index">01</span>
+
+                    <div>
+
+                        <h3>
+                            What is an IP development studio?
+                        </h3>
+
+                        <p>
+                            It is a creative studio that develops original
+                            characters, stories, worlds and systems into
+                            intellectual property capable of expanding across
+                            multiple forms of media.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="definition-item">
+
+                    <span class="definition-index">02</span>
+
+                    <div>
+
+                        <h3>
+                            What does GhostWrite Studios make?
+                        </h3>
+
+                        <p>
+                            Original feature films, tabletop games, serialized
+                            characters, journalism, illustrations and the
+                            narrative architecture connecting them.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="definition-item">
+
+                    <span class="definition-index">03</span>
+
+                    <div>
+
+                        <h3>
+                            Why document the process?
+                        </h3>
+
+                        <p>
+                            Because prototypes, rewrites, field tests, power
+                            systems, financial constraints and wrong turns are
+                            part of building a studio, even when polished
+                            company websites quietly crop them out.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section
+        id="current-slate"
+        class="home-section"
+    >
+
+        <div class="home-shell">
+
+            <div class="slate-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Original Intellectual Property
+                    </p>
+
+                    <h2 class="section-heading">
+                        The current studio slate
+                    </h2>
+
+                </div>
+
+                <a
+                    href="pages/portfolio.html"
+                    class="text-link"
+                >
+                    View the full portfolio
                 </a>
 
-            </article>
+            </div>
 
-            <article class="project-card">
+            <div class="slate-grid">
+
+                <article class="project-card project-card-large">
+
+                    <p class="project-type">
+                        Original Film Development
+                    </p>
+
+                    <h3>
+                        Feature films built as worlds, not disposable content
+                    </h3>
+
+                    <p>
+                        GhostWrite Studios develops original horror, science
+                        fiction, thriller and genre screenplays with distinct
+                        characters, controlled atmosphere and room to expand
+                        beyond a single film.
+                    </p>
+
+                    <a
+                        href="pages/portfolio.html"
+                        class="text-link"
+                    >
+                        Explore the screenplay slate
+                    </a>
+
+                </article>
+
+                <article class="project-card project-card-medium project-card-featured">
+
+                    <p class="project-type">
+                        Flagship Tabletop IP
+                    </p>
+
+                    <h3>
+                        Genome: Apex Shifting
+                    </h3>
+
+                    <p>
+                        An original competitive card game about ecosystems,
+                        adaptation and biological escalation. Genome is moving
+                        through prototype development and local playtesting.
+                    </p>
+
+                    <a
+                        href="pages/genome.html"
+                        class="text-link"
+                    >
+                        Enter the Genome project
+                    </a>
+
+                </article>
+
+                <article class="project-card project-card-third">
+
+                    <p class="project-type">
+                        Illustrated Original Cast
+                    </p>
+
+                    <h3>
+                        GhostWrite Mini Series
+                    </h3>
+
+                    <p>
+                        Inkwell, Glyph, BooRadley, The Saurus and Rory form the
+                        studio's recurring mascot cast, turning creative work,
+                        editing and AI contamination into an illustrated
+                        workplace comedy.
+                    </p>
+
+                    <a
+                        href="pages/journal/ghostwrite-mini-series.html"
+                        class="text-link"
+                    >
+                        Meet the cast
+                    </a>
+
+                </article>
+
+                <article class="project-card project-card-third">
+
+                    <p class="project-type">
+                        Public Development Record
+                    </p>
+
+                    <h3>
+                        The Journal
+                    </h3>
+
+                    <p>
+                        Essays, production notes, experiments, field reports
+                        and ongoing records from the work of building the
+                        studio.
+                    </p>
+
+                    <a
+                        href="pages/journal.html"
+                        class="text-link"
+                    >
+                        Read the Journal
+                    </a>
+
+                </article>
+
+                <article class="project-card project-card-third">
+
+                    <p class="project-type">
+                        Mobile Creative Infrastructure
+                    </p>
+
+                    <h3>
+                        The Explorer Studio
+                    </h3>
+
+                    <p>
+                        A 2002 Ford Explorer is being converted into a compact
+                        professional office for screenwriting, editing,
+                        publishing and game development on the road.
+                    </p>
+
+                    <a
+                        href="pages/journal/digital-nomad.html"
+                        class="text-link"
+                    >
+                        Follow the build
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="home-section mobile-studio">
+
+        <div class="home-shell mobile-layout">
+
+            <div class="mobile-copy">
+
+                <p class="eyebrow">
+                    Featured Studio Project
+                </p>
+
+                <h2 class="section-heading">
+                    A creative headquarters inside a 2002 Ford Explorer
+                </h2>
+
+                <p>
+                    The mobile studio is not a decorative van-life backdrop. It
+                    is a working production environment being designed around
+                    professional creative work, limited space, off-grid power
+                    and the practical reality of traveling with a large dog and
+                    a cat.
+                </p>
+
+                <p>
+                    The goal is a reliable place to write screenplays, edit
+                    client projects, publish journalism, develop Genome,
+                    conduct remote meetings and continue building the company
+                    without waiting for ideal circumstances or a permanent
+                    office lease.
+                </p>
+
+                <div class="button-row">
+
+                    <a
+                        href="pages/journal/digital-nomad.html"
+                        class="home-button"
+                    >
+                        Follow the Explorer Build
+                    </a>
+
+                    <a
+                        href="pages/journal.html"
+                        class="home-button home-button-secondary"
+                    >
+                        Open the Journal
+                    </a>
+
+                </div>
+
+            </div>
+
+            <aside class="mobile-panel">
 
                 <h3>
-                    🎬 Original Screenplays
+                    Documented in the Journal
                 </h3>
 
-                <p>
-                    Feature films, horror, science fiction, thrillers and
-                    original cinematic worlds built around character,
-                    atmosphere and expandable story concepts.
+                <ul class="mobile-list">
+
+                    <li>
+                        <span>01</span>
+                        <div>
+                            Off-grid power systems and electrical planning
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>02</span>
+                        <div>
+                            Mobile office construction, layout and storage
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>03</span>
+                        <div>
+                            Remote writing, editing and production workflows
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>04</span>
+                        <div>
+                            Traveling and working with Baldur and Loki
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>05</span>
+                        <div>
+                            Developing Genome and original films from the road
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>06</span>
+                        <div>
+                            Building an entertainment studio without hiding the
+                            inconvenient parts
+                        </div>
+                    </li>
+
+                </ul>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+    <section class="home-section">
+
+        <div class="home-shell">
+
+            <div class="journal-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        The Reason to Return
+                    </p>
+
+                    <h2 class="section-heading">
+                        The public record of a studio taking shape
+                    </h2>
+
+                </div>
+
+                <p class="journal-promise">
+                    The Journal follows the work while it is still unfinished:
+                    scripts under revision, prototypes under pressure, an
+                    Explorer under construction and a company learning how to
+                    stand on its own feet.
                 </p>
 
-                <p>
-                    The screenplay portfolio includes multiple original genre
-                    projects developed through GhostWrite Studios.
-                </p>
+            </div>
 
-                <a href="pages/portfolio.html">
-                    View the Portfolio
+            <div class="journal-grid">
+
+                <a
+                    href="pages/journal/writing.html"
+                    class="journal-card"
+                >
+
+                    <span class="journal-card-number">01</span>
+
+                    <h3>
+                        Writing
+                    </h3>
+
+                    <p>
+                        Screenwriting, fiction, journalism, structure,
+                        dialogue and creative process.
+                    </p>
+
+                    <span
+                        class="journal-card-arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
                 </a>
 
-            </article>
+                <a
+                    href="pages/journal/editing.html"
+                    class="journal-card"
+                >
 
-            <article class="project-card">
+                    <span class="journal-card-number">02</span>
 
-                <h3>
-                    🎭 GhostWrite Mini Series
-                </h3>
+                    <h3>
+                        Editing
+                    </h3>
 
-                <p>
-                    An illustrated workplace comedy featuring Inkwell, Glyph,
-                    BooRadley, The Saurus and Rory.
-                </p>
+                    <p>
+                        Revision, developmental analysis, author voice and AI
+                        decontamination.
+                    </p>
 
-                <p>
-                    The series turns ghostwriting, editing, AI cleanup and
-                    professional creative work into recurring characters and
-                    short-form stories.
-                </p>
+                    <span
+                        class="journal-card-arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
 
-                <a href="pages/journal/ghostwrite-mini-series.html">
-                    Meet the GhostWrite Team
                 </a>
 
-            </article>
+                <a
+                    href="pages/journal/digital-nomad.html"
+                    class="journal-card"
+                >
 
-            <article class="project-card">
+                    <span class="journal-card-number">03</span>
 
-                <h3>
-                    📖 GhostWrite Studios Journal
-                </h3>
+                    <h3>
+                        Digital Nomad
+                    </h3>
 
-                <p>
-                    A growing publication covering writing, editing, digital
-                    nomad life, independent business development, serialized
-                    fiction, tabletop gaming and the creation of original IP.
+                    <p>
+                        Power, construction, remote work, travel and the mobile
+                        studio build.
+                    </p>
+
+                    <span
+                        class="journal-card-arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </a>
+
+                <a
+                    href="pages/journal/ghostwrite-mini-series.html"
+                    class="journal-card"
+                >
+
+                    <span class="journal-card-number">04</span>
+
+                    <h3>
+                        GhostWrite Mini Series
+                    </h3>
+
+                    <p>
+                        The original illustrated mascot cast and their
+                        recurring creative disasters.
+                    </p>
+
+                    <span
+                        class="journal-card-arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </a>
+
+                <a
+                    href="pages/journal/game-night.html"
+                    class="journal-card"
+                >
+
+                    <span class="journal-card-number">05</span>
+
+                    <h3>
+                        Game Night
+                    </h3>
+
+                    <p>
+                        Tabletop design, playtesting, local communities and
+                        Genome development.
+                    </p>
+
+                    <span
+                        class="journal-card-arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+            <div class="button-row">
+
+                <a
+                    href="pages/journal.html"
+                    class="home-button"
+                >
+                    Browse the Full Journal
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="home-section">
+
+        <div class="home-shell">
+
+            <p class="eyebrow">
+                Direct Answers
+            </p>
+
+            <h2 class="section-heading">
+                GhostWrite Studios at a glance
+            </h2>
+
+            <div class="answer-grid">
+
+                <article class="answer-card">
+
+                    <h3>
+                        What is GhostWrite Studios?
+                    </h3>
+
+                    <p>
+                        GhostWrite Studios is an independent intellectual
+                        property development studio creating original
+                        entertainment projects and documenting the process of
+                        building the company publicly.
+                    </p>
+
+                </article>
+
+                <article class="answer-card">
+
+                    <h3>
+                        What projects is the studio creating?
+                    </h3>
+
+                    <p>
+                        The current slate includes original feature
+                        screenplays, Genome: Apex Shifting, the GhostWrite Mini
+                        Series, the Journal and an off-grid mobile creative
+                        headquarters.
+                    </p>
+
+                </article>
+
+                <article class="answer-card">
+
+                    <h3>
+                        What is Genome: Apex Shifting?
+                    </h3>
+
+                    <p>
+                        Genome is an original competitive tabletop card game
+                        about evolving creatures, changing ecosystems and
+                        biological adaptation.
+                    </p>
+
+                </article>
+
+                <article class="answer-card">
+
+                    <h3>
+                        Why build a mobile creative office?
+                    </h3>
+
+                    <p>
+                        The Explorer studio creates a reliable workspace for
+                        writing, editing, publishing and game development while
+                        traveling, working remotely and operating without a
+                        permanent headquarters.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="home-section work-section">
+
+        <div class="home-shell work-layout">
+
+            <div class="work-intro">
+
+                <p class="eyebrow">
+                    Work With GhostWrite Studios
                 </p>
 
+                <h2 class="section-heading">
+                    Development support from a studio doing the work itself
+                </h2>
+
                 <p>
-                    The Journal documents both the finished work and the
-                    imperfect process behind it.
+                    Client services support the studio's original IP mission.
+                    GhostWrite Studios works with creators who need sharper
+                    structure, stronger worlds, cleaner drafts or practical
+                    help moving an entertainment property forward.
                 </p>
 
-                <a href="pages/journal.html">
+                <a
+                    href="pages/hireme.html"
+                    class="home-button home-button-small"
+                >
+                    View All Services
+                </a>
+
+            </div>
+
+            <div class="work-links">
+
+                <a
+                    href="pages/writing.html"
+                    class="work-link"
+                >
+
+                    <span class="work-link-index">01</span>
+
+                    <div>
+
+                        <h3>
+                            Writing and Narrative Design
+                        </h3>
+
+                        <p>
+                            Screenwriting, story development, worldbuilding,
+                            franchise planning and original narrative systems.
+                        </p>
+
+                    </div>
+
+                    <span
+                        class="work-link-arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </a>
+
+                <a
+                    href="pages/journal/editing.html"
+                    class="work-link"
+                >
+
+                    <span class="work-link-index">02</span>
+
+                    <div>
+
+                        <h3>
+                            Editing and Development
+                        </h3>
+
+                        <p>
+                            Structural revision, narrative diagnosis, voice
+                            preservation and AI content decontamination.
+                        </p>
+
+                    </div>
+
+                    <span
+                        class="work-link-arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </a>
+
+                <a
+                    href="pages/hireme.html"
+                    class="work-link"
+                >
+
+                    <span class="work-link-index">03</span>
+
+                    <div>
+
+                        <h3>
+                            Creative Services
+                        </h3>
+
+                        <p>
+                            Focused development support for screenplays, books,
+                            games, articles and other original intellectual
+                            property.
+                        </p>
+
+                    </div>
+
+                    <span
+                        class="work-link-arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </a>
+
+                <a
+                    href="pages/contact.html"
+                    class="work-link"
+                >
+
+                    <span class="work-link-index">04</span>
+
+                    <div>
+
+                        <h3>
+                            Studio Collaboration
+                        </h3>
+
+                        <p>
+                            Project inquiries, playtesting, creative
+                            partnerships and conversations about original IP.
+                        </p>
+
+                    </div>
+
+                    <span
+                        class="work-link-arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="closing">
+
+        <div class="home-shell closing-content">
+
+            <p class="eyebrow">
+                The Build Is Already Underway
+            </p>
+
+            <h2>
+                Follow the worlds, the work and the road between them.
+            </h2>
+
+            <p>
+                GhostWrite Studios is creating original entertainment while
+                building the infrastructure needed to keep creating it. The
+                Journal records what happens next.
+            </p>
+
+            <div class="button-row">
+
+                <a
+                    href="pages/journal.html"
+                    class="home-button"
+                >
                     Read the Journal
                 </a>
 
-            </article>
-
-        </div>
-
-    </section>
-
-    <section class="question-section">
-
-        <p class="eyebrow">
-            A Studio Built Differently
-        </p>
-
-        <h2>
-            Why Is GhostWrite Studios Building a Mobile Creative Office?
-        </h2>
-
-        <p>
-            GhostWrite Studios is developing an off-grid creative office inside
-            a 2002 Ford Explorer.
-        </p>
-
-        <p>
-            The project is designed to support screenwriting, editing,
-            publishing, game development, remote client work and digital
-            production without relying on a permanent office.
-        </p>
-
-        <p>
-            The build must also safely accommodate Baldur, a 55-pound dog, and
-            Loki, a cat, while managing climate control, power, storage,
-            workspace, internet access and daily living inside a compact
-            vehicle.
-        </p>
-
-        <div class="quote-block">
-            Most digital nomad content shows the laptop after the problem has
-            already been solved. GhostWrite Studios is documenting the wiring,
-            layout failures, pet logistics, heat, storage, power calculations
-            and other inconvenient details that usually disappear before the
-            photograph is taken.
-        </div>
-
-        <a
-            href="pages/journal/digital-nomad.html"
-            class="button"
-        >
-            Follow the Mobile Studio Build
-        </a>
-
-    </section>
-
-    <section>
-
-        <p class="eyebrow">
-            Building in Public
-        </p>
-
-        <h2>
-            What Makes GhostWrite Studios Different?
-        </h2>
-
-        <p class="section-intro">
-            Most creative studios present themselves after the difficult part
-            has already been edited out. GhostWrite Studios is documenting what
-            happens before the polished launch.
-        </p>
-
-        <div class="pillar-grid">
-
-            <article class="pillar-card">
-
-                <h3>
-                    Original Projects
-                </h3>
-
-                <p>
-                    The studio is actively developing its own screenplays,
-                    tabletop game, illustrated series and publishing platform.
-                </p>
-
-            </article>
-
-            <article class="pillar-card">
-
-                <h3>
-                    Public Development
-                </h3>
-
-                <p>
-                    The Journal records experiments, prototypes, failures,
-                    rewrites, discoveries and practical lessons as they happen.
-                </p>
-
-            </article>
-
-            <article class="pillar-card">
-
-                <h3>
-                    Multiple Media
-                </h3>
-
-                <p>
-                    GhostWrite Studios approaches stories as expandable worlds
-                    rather than isolated manuscripts or one-time projects.
-                </p>
-
-            </article>
-
-            <article class="pillar-card">
-
-                <h3>
-                    Mobile Infrastructure
-                </h3>
-
-                <p>
-                    The studio is building a functioning creative office capable
-                    of operating from the road instead of waiting for ideal
-                    circumstances.
-                </p>
-
-            </article>
-
-            <article class="pillar-card">
-
-                <h3>
-                    Creator Collaboration
-                </h3>
-
-                <p>
-                    Client services are grounded in the same practical
-                    development process used to build the studio's own IP.
-                </p>
-
-            </article>
-
-            <article class="pillar-card">
-
-                <h3>
-                    Real Constraints
-                </h3>
-
-                <p>
-                    The studio is being built without pretending money,
-                    transportation, housing, animals, technology or time are
-                    abstract concerns.
-                </p>
-
-            </article>
-
-        </div>
-
-    </section>
-
-    <section class="question-section">
-
-        <p class="eyebrow">
-            Intellectual Property Development
-        </p>
-
-        <h2>
-            What Does an IP Development Studio Do?
-        </h2>
-
-        <p>
-            An intellectual property development studio creates and expands
-            original concepts that can grow across multiple forms of media.
-        </p>
-
-        <p>
-            The work may include worldbuilding, character development,
-            screenwriting, game mechanics, story architecture, franchise
-            planning, visual identity, lore, publishing and narrative design.
-        </p>
-
-        <p>
-            Instead of treating every screenplay, story, game or character as a
-            disconnected product, IP development looks for the larger world,
-            audience and long-term potential surrounding the idea.
-        </p>
-
-    </section>
-
-    <section>
-
-        <p class="eyebrow">
-            Studio Capabilities
-        </p>
-
-        <h2>
-            How Does GhostWrite Studios Develop Original IP?
-        </h2>
-
-        <div class="proof-grid">
-
-            <article class="proof-card">
-
-                <h3>
-                    Story Development
-                </h3>
-
-                <p>
-                    Concepts, conflict, structure, themes, characters, stakes,
-                    reveals and emotional progression.
-                </p>
-
-            </article>
-
-            <article class="proof-card">
-
-                <h3>
-                    Worldbuilding
-                </h3>
-
-                <p>
-                    Mythology, environments, systems, factions, history,
-                    rules, culture and narrative continuity.
-                </p>
-
-            </article>
-
-            <article class="proof-card">
-
-                <h3>
-                    Screenwriting
-                </h3>
-
-                <p>
-                    Feature scripts, pilots, dialogue, pacing, scene
-                    construction and visual storytelling.
-                </p>
-
-            </article>
-
-            <article class="proof-card">
-
-                <h3>
-                    Game Development
-                </h3>
-
-                <p>
-                    Mechanics, card systems, lore, balance, prototype testing
-                    and player experience.
-                </p>
-
-            </article>
-
-            <article class="proof-card">
-
-                <h3>
-                    Publishing
-                </h3>
-
-                <p>
-                    Journalism, essays, serialized fiction, development notes
-                    and audience-building content.
-                </p>
-
-            </article>
-
-            <article class="proof-card">
-
-                <h3>
-                    Narrative Refinement
-                </h3>
-
-                <p>
-                    Editing, rewriting, AI decontamination, consistency,
-                    clarity and voice preservation.
-                </p>
-
-            </article>
-
-        </div>
-
-    </section>
-
-    <section>
-
-        <p class="eyebrow">
-            The Journal
-        </p>
-
-        <h2>
-            Why Follow GhostWrite Studios?
-        </h2>
-
-        <p class="section-intro">
-            The GhostWrite Studios Journal provides an ongoing reason to return
-            by documenting the creative and practical work behind the studio.
-        </p>
-
-        <div class="journal-grid">
-
-            <article class="journal-card">
-
-                <h3>
-                    ✍️ Writing
-                </h3>
-
-                <p>
-                    Screenwriting, fiction, journalism, dialogue, story
-                    structure and creative craft.
-                </p>
-
-                <a href="pages/journal/writing.html">
-                    Explore Writing
+                <a
+                    href="pages/about.html"
+                    class="home-button home-button-secondary"
+                >
+                    About the Studio
                 </a>
 
-            </article>
-
-            <article class="journal-card">
-
-                <h3>
-                    📝 Editing
-                </h3>
-
-                <p>
-                    Developmental editing, revision, screenplay editing,
-                    author voice and AI content cleanup.
-                </p>
-
-                <a href="pages/journal/editing.html">
-                    Explore Editing
-                </a>
-
-            </article>
-
-            <article class="journal-card">
-
-                <h3>
-                    🚙 Digital Nomad
-                </h3>
-
-                <p>
-                    Mobile office construction, remote work, pets, power,
-                    storage, travel and building a studio on the road.
-                </p>
-
-                <a href="pages/journal/digital-nomad.html">
-                    Explore Digital Nomad
-                </a>
-
-            </article>
-
-            <article class="journal-card">
-
-                <h3>
-                    🎭 GhostWrite Mini Series
-                </h3>
-
-                <p>
-                    Illustrated characters, writing humor, editing problems
-                    and the spectral staff behind the studio.
-                </p>
-
-                <a href="pages/journal/ghostwrite-mini-series.html">
-                    Meet the Team
-                </a>
-
-            </article>
-
-            <article class="journal-card">
-
-                <h3>
-                    🎲 Game Night
-                </h3>
-
-                <p>
-                    Tabletop games, TCG development, playtesting, local game
-                    communities and Genome development.
-                </p>
-
-                <a href="pages/journal/game-night.html">
-                    Explore Game Night
-                </a>
-
-            </article>
-
-        </div>
-
-        <div class="button-row">
-
-            <a
-                href="pages/journal.html"
-                class="button"
-            >
-                Visit the Journal
-            </a>
-
-        </div>
-
-    </section>
-
-    <section class="question-section">
-
-        <p class="eyebrow">
-            Working With the Studio
-        </p>
-
-        <h2>
-            Can GhostWrite Studios Help Develop My Intellectual Property?
-        </h2>
-
-        <p>
-            Yes. GhostWrite Studios works with creators who need practical help
-            developing stories, characters, worlds, screenplays, games and
-            other original concepts.
-        </p>
-
-        <p>
-            Support may include worldbuilding, story structure, character
-            development, screenwriting, editing, ghostwriting, narrative
-            design, AI content decontamination and creative consulting.
-        </p>
-
-        <p>
-            These services support the larger identity of the studio rather
-            than defining it. GhostWrite Studios exists to build original IP
-            and to help other creators build theirs.
-        </p>
-
-        <div class="button-row">
-
-            <a
-                href="pages/hireme.html"
-                class="button"
-            >
-                Explore Creative Services
-            </a>
-
-            <a
-                href="pages/contact.html"
-                class="button button-secondary"
-            >
-                Discuss Your Project
-            </a>
-
-        </div>
-
-    </section>
-
-    <section>
-
-        <p class="eyebrow">
-            Studio Questions
-        </p>
-
-        <h2>
-            Frequently Asked Questions
-        </h2>
-
-        <article class="faq-item">
-
-            <h3>
-                Is GhostWrite Studios a Writing Agency?
-            </h3>
-
-            <p>
-                No. GhostWrite Studios provides writing and editing services,
-                but its central identity is an independent intellectual
-                property development studio creating original projects across
-                film, games, publishing and multimedia.
-            </p>
-
-        </article>
-
-        <article class="faq-item">
-
-            <h3>
-                Is GhostWrite Studios Developing Its Own Projects?
-            </h3>
-
-            <p>
-                Yes. Current projects include original feature screenplays,
-                Genome: Apex Shifting, the GhostWrite Mini Series, the
-                GhostWrite Studios Journal and the mobile creative office.
-            </p>
-
-        </article>
-
-        <article class="faq-item">
-
-            <h3>
-                Does GhostWrite Studios Work Across Multiple Media?
-            </h3>
-
-            <p>
-                Yes. The studio develops intellectual property through film,
-                tabletop games, journalism, serialized fiction, illustration,
-                publishing and narrative design.
-            </p>
-
-        </article>
-
-        <article class="faq-item">
-
-            <h3>
-                What Is the Mobile Creative Studio?
-            </h3>
-
-            <p>
-                It is an off-grid office being built inside a 2002 Ford
-                Explorer to support writing, editing, publishing, game
-                development and remote creative work while traveling with a
-                dog and cat.
-            </p>
-
-        </article>
-
-        <article class="faq-item">
-
-            <h3>
-                Can I Follow the Development Process?
-            </h3>
-
-            <p>
-                Yes. The GhostWrite Studios Journal documents the studio's
-                creative work, game development, mobile office build, writing,
-                editing and business development.
-            </p>
-
-        </article>
-
-        <article class="faq-item">
-
-            <h3>
-                Can I Hire GhostWrite Studios?
-            </h3>
-
-            <p>
-                Yes. GhostWrite Studios works with creators who need help with
-                intellectual property development, screenwriting, editing,
-                story structure, worldbuilding, ghostwriting and creative
-                consulting.
-            </p>
-
-        </article>
-
-    </section>
-
-    <section class="closing-cta">
-
-        <p class="eyebrow">
-            Build Something Worth Remembering
-        </p>
-
-        <h2>
-            Develop the World Behind the Idea
-        </h2>
-
-        <p>
-            Whether you are creating a screenplay, tabletop game, fictional
-            universe, serialized project or original franchise, GhostWrite
-            Studios can help develop the structure, characters, world and
-            narrative systems needed to move the idea forward.
-        </p>
-
-        <div class="hero-actions">
-
-            <a
-                href="pages/hireme.html"
-                class="button"
-            >
-                Work With GhostWrite Studios
-            </a>
-
-            <a
-                href="pages/contact.html"
-                class="button button-secondary"
-            >
-                Contact the Studio
-            </a>
+            </div>
 
         </div>
 
@@ -1159,22 +2418,55 @@
 
 </main>
 
-<footer>
+<footer class="site-footer">
 
-    <p>
-        &copy; 2026 GhostWrite Studios. All rights reserved.
-    </p>
+    <div class="site-footer-inner">
 
-    <nav aria-label="Footer navigation">
-        <a href="index.html">Home</a>
-        <a href="pages/genome.html">Genome</a>
-        <a href="pages/portfolio.html">Portfolio</a>
-        <a href="pages/writing.html">Writing</a>
-        <a href="pages/journal.html">Journal</a>
-        <a href="pages/hireme.html">Hire Me</a>
-        <a href="pages/about.html">About</a>
-        <a href="pages/contact.html">Contact</a>
-    </nav>
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <strong>
+                    GhostWrite Studios
+                </strong>
+
+                <p>
+                    An independent intellectual property development studio
+                    creating original entertainment and documenting the build
+                    in public.
+                </p>
+
+            </div>
+
+            <nav
+                class="footer-nav"
+                aria-label="Footer navigation"
+            >
+                <a href="index.html">Home</a>
+                <a href="pages/genome.html">Genome</a>
+                <a href="pages/portfolio.html">Portfolio</a>
+                <a href="pages/writing.html">Writing</a>
+                <a href="pages/journal.html">Journal</a>
+                <a href="pages/hireme.html">Services</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/contact.html">Contact</a>
+            </nav>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                &copy; 2026 GhostWrite Studios. All rights reserved.
+            </span>
+
+            <span>
+                Original IP. Built in public. From the road.
+            </span>
+
+        </div>
+
+    </div>
 
 </footer>
 
